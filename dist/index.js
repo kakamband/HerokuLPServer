@@ -7,6 +7,13 @@ var genetics = require("./tools/genetics");
 // -- =====================================================================================
 var PORT = process.env.PORT || 5000;
 var app = express();
+// const { Pool } = require('pg');
+// const pool = new Pool( {
+//   connectionString: process.env.DATABASE_URL,
+//   ssl: {
+//     rejectUnauthorized: false
+//   }
+// } );
 // -- =====================================================================================
 // .. Providing Ribosomes filtered by Institute
 app.get('/ribosome', function (req, res) {
@@ -19,9 +26,9 @@ app.get('/chromosome', function (req, res) {
     user._validator(req.query.u).then(function (userId) {
         // .. checking credits
         user._hasCredit(userId).then(function (credit) {
-            // .. get a new Chromosome
-            genetics._new_chromosome(req.query.r, req.query.u)
-                .then(function (chromosome) { return res.json(chromosome); })
+            // .. produce a new CELL
+            genetics._crypto_cell(req.query.r, req.query.u)
+                .then(function (crypto_cell) { return res.json(crypto_cell); })
                 .catch(function (err) { return res.json({ "answer": null, "reason": err }); });
         })
             .catch(function (err) { return res.json({ "answer": null, "reason": err }); });

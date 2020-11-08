@@ -2,18 +2,18 @@ import * as express                     from "express"
 import { ribosomesCollection }          from "./ribosomesCollection";
 import * as user                        from "./tools/user";
 import * as genetics                    from "./tools/genetics";
+import { Pool }                         from 'pg';
 
 // -- =====================================================================================
 
 const PORT = process.env.PORT || 5000;
 const app = express()
-// const { Pool } = require('pg');
-// const pool = new Pool( {
-//   connectionString: process.env.DATABASE_URL,
-//   ssl: {
-//     rejectUnauthorized: false
-//   }
-// } );
+const pool = new Pool( {
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
+} );
 
 
 // -- =====================================================================================
@@ -46,6 +46,25 @@ app.get( '/chromosome', ( req: express.Request, res: express.Response ) => {
     .catch( err => res.json( { "answer": null, "reason": err } ) );
 
 } );
+
+// -- =====================================================================================
+
+app.get( '/PGdb', async (req, res) => {
+    
+    try {
+        const client = await pool.connect();
+        let query = 'SELECT * FROM users';
+        const result = await client.query( query );
+        const results = { 'results': result ? result.rows : null };
+        res.render( 'pages/db', results );
+        client.release();
+    } catch (err) {
+        console.error(err);
+        res.send( "Error " + err );
+    }
+
+} )
+
 
 // -- =====================================================================================
 
