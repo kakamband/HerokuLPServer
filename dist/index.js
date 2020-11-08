@@ -1,10 +1,12 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var express = require("express");
-var app = express();
-app.get('/', function (req, res) {
-    res.json({ result: "ok?" });
-});
-app.listen(5000, function () {
-    console.log('server started on port 5000');
-});
+const express = require('express');
+const PORT = process.env.PORT || 5000;
+
+const app = express()
+
+app.get('/', (req, res) => {
+  res.json( { result: "ok?"} )
+})
+
+app.listen(5000, () => {
+    console.log('server started on port 5000')
+  })
