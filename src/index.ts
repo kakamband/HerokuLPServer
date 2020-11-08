@@ -1,5 +1,5 @@
 import * as express                     from "express"
-import { ribosomesCollection }          from "./db/ribosome/ribosomes";
+import { ribosomesCollection }          from "./ribosomesCollection";
 import * as user                        from "./tools/user";
 import * as genetics                    from "./tools/genetics";
 
@@ -26,9 +26,9 @@ app.get( '/chromosome', ( req: express.Request, res: express.Response ) => {
         // .. checking credits
         user._hasCredit( userId ).then( credit => {
             
-            // .. get a gene
-            genetics.gene ( req.query.r as string, req.query.u as string )
-            .then( gene => res.json( gene ) )
+            // .. produce a new CELL
+            genetics._crypto_cell ( req.query.r as string, req.query.u as string )
+            .then( crypto_cell => res.json( crypto_cell ) )
             .catch( err => res.json( { "answer": null, "reason": err } ) );
 
         } )

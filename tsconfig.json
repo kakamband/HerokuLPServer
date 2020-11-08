@@ -11,8 +11,8 @@
       "*": [
         "node_modules/"
       ],
-      "typings/*": [
-        "src/typings/*"
+      "types/*": [
+        "src/types/*"
       ]
     },
   },
