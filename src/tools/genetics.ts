@@ -2,7 +2,7 @@ import * as fexes                       from "../fexes/fexes";
 
 // -- =====================================================================================
 
-const ribosomeToFex = require( "../db/ribosome/ribosomeToFex.json" );
+const ribosomeToFex = require( "../../src/db/ribosome/ribosomeToFex.json" );
 
 // -- =====================================================================================
 

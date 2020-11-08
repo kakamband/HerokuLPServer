@@ -1,5 +1,5 @@
 
-const DNA = require( '../db/DNA/DNAx1382.json' ) as {title: string}[];
+const DNA = require( '../../src/db/DNA/DNAx1382.json' ) as {title: string}[];
 
 // -- =====================================================================================
 
