@@ -56,7 +56,7 @@ app.get( '/PGdb', async (req, res) => {
         let query = 'SELECT * FROM users';
         const result = await client.query( query );
         const results = { 'results': result ? result.rows : null };
-        res.render( 'pages/db', results );
+        res.json( results );
         client.release();
     } catch (err) {
         console.error(err);
