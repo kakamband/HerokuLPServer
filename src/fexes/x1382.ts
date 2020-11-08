@@ -41,7 +41,9 @@ function a_good_gene_for_user ( userId: string, ribosomeCode: string ): Promise<
 
 function user_needs_these ( userId: string, ribosomeCode: string ): Promise<number[]> {
 
-    return new Promise ( (rs, rx) => { 
+    return new Promise ( (rs, rx) => {
+        // .. retrieve user history
+        // .. retrieve 
         rs ( [7,10] );
     } );
 
