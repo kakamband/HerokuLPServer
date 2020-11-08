@@ -3,7 +3,7 @@ import * as express from 'express'
 const app = express()
 
 app.get('/', (req: express.Request, res: express.Response) => {
-  res.json( { result: "ok"} )
+  res.json( { result: "ok?"} )
 })
 
 app.listen(5000, () => {
