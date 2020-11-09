@@ -68,19 +68,26 @@ function junk ( ribosomeCode: string ): Promise<g.junk>{
 
 // -- =====================================================================================
 
-function cell ( gene: g.gene, junk:g.junk ): g.cell {
+function cell ( ribosomeCode: string, gene: g.gene, junk:g.junk ): g.cell {
 
     return {
-        chromosome: {
-            ...junk,
-            title   : gene.title,
-            id      : gene.id,
-            wPath   : {
-                avatarURL: gene.avatarURL,
-                mediaURL: gene.mediaURL,
-            }
-        },
-        context: [ gene.text ] 
+                                             
+        chromosome: {                        
+            title           : gene.title    ,
+            code            : {              
+                ribosome    : ribosomeCode  ,
+                idx         : gene.id       ,
+                name        : null          ,
+            }                               ,
+            ...junk                         ,
+            wPath           : {              
+                avatarURL   : gene.avatarURL,
+                mediaURL    : gene.mediaURL ,
+            }                                
+        }                                   ,
+                                             
+        context             : [ gene.text ] ,
+                                             
     }
 
 }
@@ -98,7 +105,7 @@ function _new_cell ( ribosomeCode: string, user: u.user ): Promise<g.cell> {
         ] 
 
         Promise.all( requiredData )
-        .then( allData => rs ( cell( allData[0], allData[1] ) ) )
+        .then( allData => rs ( cell( ribosomeCode, allData[0], allData[1] ) ) )
         .catch( err => rx(err) );
 
      } );
@@ -114,7 +121,7 @@ export function _crypto_cell ( ribosomeCode: string, user: u.user ): Promise<g.c
         _new_cell( ribosomeCode, user )
         .then( cell => {
             // rs ( JSON.stringify( cell ) );
-            rs ( { id: cell.chromosome.id , cell: cell } );
+            rs ( { id: cell.chromosome.code.idx , cell: cell } );
         } )
         .catch( err => rx(err) );
     

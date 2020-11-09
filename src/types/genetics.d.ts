@@ -34,8 +34,12 @@ export interface _junk {
 export interface Chromosome {
     // .. mandatory properties                       
     institute       : string                        ,
-    id              : number                        ,
     type            : LessonType                    ,
+    code            : {                              
+        ribosome    : string                        ,
+        idx         : number                        ,
+        name        : string                        ,
+    }                                               ,
     level?          : CEF                           ,
     title           : string                        ,
     hPath           : string[]                      ,
