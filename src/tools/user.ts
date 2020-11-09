@@ -27,7 +27,7 @@ _validator ( username: string, password: string, uuid: string ): Promise<u.user>
 
             const result = await client.query( query );
             
-            if ( result ) {
+            if ( result.rows.length ) {
 
                 let devices = result.rows[0].devices.split( "," );
                 // .. valid
