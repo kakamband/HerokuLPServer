@@ -75,8 +75,9 @@ export async function _received_cell ( user: u.user, ribosomeCode: string, id: n
             user.purchased_items[ ribosomeCode ].push( id ) :
             user.purchased_items[ ribosomeCode ] = [id]
 
-        let query = `UPDATE users 
-            SET purchased_items = '${JSON.stringify(user.purchased_items)}' 
+        let query = `UPDATE users SET 
+            purchased_items = '${JSON.stringify(user.purchased_items)}',
+            credit = ${user.credit -1} 
             WHERE id='${user.id}'`;
 
         await client.query( query );
@@ -86,6 +87,6 @@ export async function _received_cell ( user: u.user, ribosomeCode: string, id: n
     }
     
     // TODO should we do something with this err?!
-    catch (err) {}
+    catch (err) { console.log(err) }
 
 }

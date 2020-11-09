@@ -19,7 +19,7 @@ app.get( '/ribosome', ( req: express.Request, res: express.Response ) => {
 // -- =====================================================================================
 
 // .. Providing New Chromosome
-app.get( '/chromosome', ( req: express.Request, res: express.Response ) => {
+app.get( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
     
     // .. validating User
     user._validator( 
