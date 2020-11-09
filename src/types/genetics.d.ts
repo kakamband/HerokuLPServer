@@ -25,6 +25,7 @@ export interface junk {
         avatar      : string                        ,
     }                                               ,
     status          : LessonStatus                  ,
+    etikett         : { [key: string]: number[] }   ,
 }
 
 export interface _junk { 
@@ -54,12 +55,12 @@ export interface Chromosome {
         avatarURL?  : string                        ,
     }                                               ,
     status          : LessonStatus                  ,
+    etikett         : { [key: string]: number[] }   ,
     // .. common properties                          
     icon?           : string                        ,
     isYouTube?      : boolean                       ,
     pinnedPoint?    : number                        ,
     snapMargin?     : { a:number, b: number }       ,
-    etikett?        : { [key: string]: number[] }   ,
     forceRender?    : boolean                       ,
                                                      
 }

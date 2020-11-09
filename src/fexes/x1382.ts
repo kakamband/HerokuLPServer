@@ -85,6 +85,8 @@ export function junk (): Promise<g.junk> {
                 avatar  : null                  ,
             }                                   ,
             status      : "reading"             ,
+            etikett     : {}                    ,
+
         };
 
         rs( junk )
