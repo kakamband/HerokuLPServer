@@ -34,17 +34,17 @@ app.get( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
             // .. produce a new CELL
             genetics._crypto_cell ( req.query.r as string, u as u.user )
             .then( crypto_cell => { 
-                res.json( crypto_cell.cell );
+                res.json( { status: 200, "answer": crypto_cell.cell } );
                 // TODO maybe we should confirm it somewhere else
                 user._received_cell( u, req.query.r as string, crypto_cell.id );
             } )
-            .catch( err => res.json( { "answer": null, "reason": err } ) );
+            .catch( err => res.json( { status: 500, "reason": err } ) );
 
         } )
-        .catch( err => res.json( { "answer": null, "reason": err } ) );
+        .catch( err => res.json( { status: 402, "reason": err } ) );
 
     } ) 
-    .catch( err => res.json( { "answer": null, "reason": err } ) );
+    .catch( err => res.json( { status: 401, "reason": err } ) );
 
 } );
 
