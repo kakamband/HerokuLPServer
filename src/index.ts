@@ -35,6 +35,7 @@ app.get( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
             genetics._crypto_cell ( req.query.r as string, u as u.user )
             .then( crypto_cell => { 
                 res.json( crypto_cell.cell );
+                // TODO maybe we should confirm it somewhere else
                 user._received_cell( u, req.query.r as string, crypto_cell.id );
             } )
             .catch( err => res.json( { "answer": null, "reason": err } ) );
