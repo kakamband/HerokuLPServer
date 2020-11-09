@@ -1,4 +1,5 @@
 import * as g                           from '../types/genetics'
+import * as u                           from "../types/user";
 
 // -- =====================================================================================
 
@@ -6,11 +7,11 @@ const DNA = require( '../../db/DNA/DNAx1382.json' ) as g.gene[];
 
 // -- =====================================================================================
 
-export function new_gene ( userId: string, ribosomeCode: string ): Promise<g.gene> {
+export function new_gene ( ribosomeCode: string, user: u.user ): Promise<g.gene> {
 
     return new Promise ( (rs, rx) => { 
         
-        a_good_gene_for_user( userId, ribosomeCode )
+        a_good_gene_for_user( ribosomeCode, user )
         .then( gene => rs( gene ) )
         .catch( err => rx( err ) );
     
@@ -20,11 +21,11 @@ export function new_gene ( userId: string, ribosomeCode: string ): Promise<g.gen
 
 // -- =====================================================================================
 
-function a_good_gene_for_user ( userId: string, ribosomeCode: string ): Promise<g.gene> {
+function a_good_gene_for_user ( ribosomeCode: string, user: u.user ): Promise<g.gene> {
 
     return new Promise ( (rs, rx) => {
         
-        user_needs_these( userId, ribosomeCode )
+        user_needs_these( ribosomeCode, user )
         .then( ids => { 
             // .. get first suitable gene
             let id = ids[0];
@@ -39,12 +40,27 @@ function a_good_gene_for_user ( userId: string, ribosomeCode: string ): Promise<
 
 // -- =====================================================================================
 
-function user_needs_these ( userId: string, ribosomeCode: string ): Promise<number[]> {
+function user_needs_these ( ribosomeCode: string, user: u.user ): Promise<number[]> {
 
     return new Promise ( (rs, rx) => {
-        // .. retrieve user history
-        // .. retrieve 
-        rs ( [7,10] );
+
+        let list = [];
+    
+        // .. create list
+        for ( let i=0; i < DNA.length; i++ ) list.push(i);
+    
+        // .. first Meet: return result
+        if ( !user.purchased_items ) return rs ( list );
+            
+        // .. trim list
+        user.purchased_items = JSON.parse( user.purchased_items as any );
+        if ( user.purchased_items.hasOwnProperty( ribosomeCode ) ) {
+            list = list.filter( i => !user.purchased_items[ ribosomeCode ].includes(i) );
+        }
+
+        // .. return result
+        return list.length ? rs( list ) : rx( "no more lesson" );
+    
     } );
 
 }

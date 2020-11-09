@@ -2,19 +2,12 @@ import * as express                     from "express"
 import { ribosomesCollection }          from "./ribosomesCollection";
 import * as user                        from "./tools/user";
 import * as genetics                    from "./tools/genetics";
-import { Pool }                         from 'pg';
+import * as u                           from "./types/user";
 
 // -- =====================================================================================
 
 const PORT = process.env.PORT || 5000;
-const app = express()
-const pool = new Pool( {
-  connectionString: process.env.DATABASE_URL,
-  ssl: {
-    rejectUnauthorized: false
-  }
-} );
-
+const app = express();
 
 // -- =====================================================================================
 
@@ -29,14 +22,21 @@ app.get( '/ribosome', ( req: express.Request, res: express.Response ) => {
 app.get( '/chromosome', ( req: express.Request, res: express.Response ) => {
     
     // .. validating User
-    user._validator( req.query.u as string ).then( userId => { 
+    user._validator( 
+        req.query.u as string, 
+        req.query.p as string, 
+        req.query.d as string 
+    ).then( u => { 
 
         // .. checking credits
-        user._hasCredit( userId ).then( credit => {
+        user._hasCredit( u ).then( () => {
             
             // .. produce a new CELL
-            genetics._crypto_cell ( req.query.r as string, req.query.u as string )
-            .then( crypto_cell => res.json( crypto_cell ) )
+            genetics._crypto_cell ( req.query.r as string, u as u.user )
+            .then( crypto_cell => { 
+                res.json( crypto_cell.cell );
+                user._received_cell( u, req.query.r as string, crypto_cell.id );
+            } )
             .catch( err => res.json( { "answer": null, "reason": err } ) );
 
         } )
@@ -46,25 +46,6 @@ app.get( '/chromosome', ( req: express.Request, res: express.Response ) => {
     .catch( err => res.json( { "answer": null, "reason": err } ) );
 
 } );
-
-// -- =====================================================================================
-
-app.get( '/PGdb', async (req, res) => {
-    
-    try {
-        const client = await pool.connect();
-        let query = 'SELECT * FROM users';
-        const result = await client.query( query );
-        const results = { 'results': result ? result.rows : null };
-        res.json( results );
-        client.release();
-    } catch (err) {
-        console.error(err);
-        res.send( "Error " + err );
-    }
-
-} )
-
 
 // -- =====================================================================================
 

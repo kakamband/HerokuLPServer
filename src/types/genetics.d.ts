@@ -1,3 +1,5 @@
+import * as u                           from "./user";
+
 export interface gene {
     id              : number;
     title           : string;
@@ -7,7 +9,7 @@ export interface gene {
 }
 
 export interface _new_gene { 
-    [key: string ]  : ( userId: string, ribosomeCode: string ) => Promise<gene> 
+    [key: string ]  : ( ribosomeCode: string, user: u.user ) => Promise<gene> 
 }
 
 export interface junk {
@@ -28,7 +30,6 @@ export interface junk {
 export interface _junk { 
     [key: string ]  : () => Promise<junk> 
 }
-
 
 export interface Chromosome {
     // .. mandatory properties                       
@@ -57,6 +58,18 @@ export interface Chromosome {
     etikett?        : { [key: string]: number[] }   ,
     forceRender?    : boolean                       ,
                                                      
+}
+
+export interface cell { 
+    "chromosome"    : Chromosome                    , 
+    // TODO define it
+    "context"       : any                           ,
+}
+
+export interface cryptoCell {
+    // TODO define it
+    id              : number                        ,
+    cell            : cell                          ,
 }
 
 

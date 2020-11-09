@@ -1,5 +1,5 @@
-import * as x1382                      from "./x1382";
-import * as g                          from '../types/genetics'
+import * as x1382                       from "./x1382";
+import * as g                           from '../types/genetics'
 
 // -- =====================================================================================
 

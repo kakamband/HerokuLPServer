@@ -1,5 +1,6 @@
-import * as fexes                      from "../fexes/fexes";
-import * as g                          from '../types/genetics'
+import * as fexes                       from "../fexes/fexes";
+import * as g                           from '../types/genetics'
+import * as u                           from "../types/user";
 
 // -- =====================================================================================
 
@@ -7,12 +8,12 @@ const ribosomeToFex = require( "../../db/ribosome/ribosomeToFex.json" );
 
 // -- =====================================================================================
 
-function gene ( ribosomeCode: string, userId: string ): Promise<g.gene>{
+function gene ( ribosomeCode: string, user: u.user ): Promise<g.gene>{
 
     return new Promise ( (rs, rx) => {
 
         // .. insufficient data
-        if ( !ribosomeCode || !userId ) return rx( "Entry mismatched!" );
+        if ( !ribosomeCode || !user ) return rx( "Entry mismatched!" );
         
         let fex = ribosomeToFex[ ribosomeCode ];
 
@@ -20,7 +21,7 @@ function gene ( ribosomeCode: string, userId: string ): Promise<g.gene>{
             
             // .. fex has been found
             if ( fexes.new_gene.hasOwnProperty( fex ) ) {
-                fexes.new_gene[ fex ]( userId, ribosomeCode )
+                fexes.new_gene[ fex ]( ribosomeCode, user )
                 .then( gene => rs( gene ) )
                 .catch( err => rx( err ) );
             }
@@ -67,7 +68,7 @@ function junk ( ribosomeCode: string ): Promise<g.junk>{
 
 // -- =====================================================================================
 
-function cell ( gene: g.gene, junk:g.junk ): { "chromosome": g.Chromosome, "context": any } {
+function cell ( gene: g.gene, junk:g.junk ): g.cell {
 
     return {
         chromosome: {
@@ -87,12 +88,12 @@ function cell ( gene: g.gene, junk:g.junk ): { "chromosome": g.Chromosome, "cont
 // -- =====================================================================================
 
 // TODO define return type!!!
-function _new_cell ( ribosomeCode: string, userId: string ) {
+function _new_cell ( ribosomeCode: string, user: u.user ): Promise<g.cell> {
     
     return new Promise( async (rs, rx) => {
 
         let requiredData: any[] = [
-            gene ( ribosomeCode, userId ),
+            gene ( ribosomeCode, user ),
             junk ( ribosomeCode ),
         ] 
 
@@ -106,14 +107,14 @@ function _new_cell ( ribosomeCode: string, userId: string ) {
 
 // -- =====================================================================================
 
-export function _crypto_cell ( ribosomeCode: string, userId: string ) {
+export function _crypto_cell ( ribosomeCode: string, user: u.user ): Promise<g.cryptoCell>{
     
     return new Promise( async (rs, rx) => {
         
-        _new_cell( ribosomeCode, userId )
+        _new_cell( ribosomeCode, user )
         .then( cell => {
             // rs ( JSON.stringify( cell ) );
-            rs ( cell );
+            rs ( { id: cell.chromosome.id , cell: cell } );
         } )
         .catch( err => rx(err) );
     
