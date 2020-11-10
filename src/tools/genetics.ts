@@ -28,7 +28,7 @@ function cell ( ribosomeCode: string, gene: g.gene, junk:g.junk, snap: string[] 
                                                  
         rawText             : gene.text         ,
                                                  
-        rawSnaps            : snap              ,
+        rawSnap             : snap              ,
                                                  
     }
 

@@ -68,7 +68,7 @@ export interface Chromosome {
 export interface cell { 
     "chromosome"    : Chromosome                    ,
     "rawText"       : string                        ,
-    "rawSnaps"      : { [key: number]: string }     ,
+    "rawSnap"      : { [key: number]: string }     ,
 }
 
 export interface cryptoCell {
