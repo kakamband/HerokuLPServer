@@ -7,7 +7,7 @@ export const en_r: g.Ribosome[] = [
         type        : "audio",
         level       : "A2",
         title       : "Easy Reading",
-		avatar      : "https://www.gse.harvard.edu/sites/default/files//styles/landscape__1000x500/public/banner/Comics_1500x750.jpg?itok=B0mXX3q0&timestamp=1512499432",
+		avatar      : "https://www.gse.harvard.edu/sites/default/files//styles/landscape__1000x500/public/banner/Comics_1500x750.jpg",
         cellsState  : []
     },
     {

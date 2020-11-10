@@ -1,10 +1,7 @@
 import { fexes }                        from "../fexes/fexes";
 import * as g                           from '../types/genetics'
 import * as u                           from "../types/user";
-
-// -- =====================================================================================
-
-const ribosomeToFex = require( "../../db/ribosome/ribosomeToFex.json" );
+import { ribosomeToFex }                from "../ribosomes/ribosomeToFex";
 
 // -- =====================================================================================
 
