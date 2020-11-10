@@ -36,9 +36,9 @@ _validator ( username: string, password: string, uuid: string ): Promise<u.user>
                 else {
                     devices.push(uuid);
                     let query2 = `UPDATE users SET 
-                        device = '${devices.join(",")}'
+                        devices = '${devices.join(",")}'
                         WHERE id=${result.rows[0].id}`;
-                    // ! Does this update result??
+                    // TODO it does not update result!
                     await client.query( query2 );
 
                     rs( result.rows[0] );
