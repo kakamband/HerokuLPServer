@@ -1,11 +1,23 @@
 import * as u                           from "./user";
 
+export interface Ribosome {
+    institute       : string                        ,
+    code            : string                        ,
+    type            : LessonType                    ,
+    level           : CEF                           ,
+    title           : string                        ,
+    avatar          : string                        ,
+    icon?           : string                        ,
+    cellsState      : cellsState[]                  ,
+}
+
 export interface gene {
-    id              : number;
+    id?             : number;
     title           : string;
     text            : string;
     avatarURL       : string;
     mediaURL        : string;
+    hPath?          : string[];
 }
 
 export interface _new_gene { 
@@ -83,3 +95,5 @@ export interface cryptoCell {
 type LessonType = 'audio' | 'video';
 type LessonStatus = 'reading' | 'read';
 type CEF = "A1"|"A2"|"B1"|"B2"|"C1"|"C2";
+type cellsState = "new" | "reading" | "read" | "skipped";
+// TODO diff enum vs type

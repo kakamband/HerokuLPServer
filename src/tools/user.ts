@@ -1,4 +1,5 @@
 import { Pool }                         from 'pg';
+import * as g                           from '../types/genetics'
 import * as u                           from '../types/user'
 
 // -- =====================================================================================
@@ -98,5 +99,53 @@ export async function _received_cell ( user: u.user, ribosomeCode: string, id: n
     
     // TODO should we do something with this err?!
     catch (err) { console.log(err) }
+
+}
+
+// -- =====================================================================================
+
+export function 
+a_good_gene_4_user ( ribosomeCode: string, user: u.user, DNA: g.gene[] ): Promise<g.gene> {
+
+    return new Promise ( (rs, rx) => {
+        
+        user_needs_these( ribosomeCode, user, DNA )
+        .then( ids => { 
+            // .. get first suitable gene
+            let id = ids[0];
+            let gene = { id: id, ...DNA[ id ] };
+            rs( gene );
+        } )
+        .catch( err => rx(err) )
+    
+    } );
+
+}
+
+// -- =====================================================================================
+
+export function 
+user_needs_these ( ribosomeCode: string, user: u.user, DNA: g.gene[] ): Promise<number[]> {
+
+    return new Promise ( (rs, rx) => {
+
+        let list = [];
+    
+        // .. create list
+        for ( let i=0; i < DNA.length; i++ ) list.push(i);
+    
+        // .. first Meet: return result
+        if ( !user.purchased_items ) return rs ( list );
+            
+        // .. trim list
+        user.purchased_items = JSON.parse( user.purchased_items as any );
+        if ( user.purchased_items.hasOwnProperty( ribosomeCode ) ) {
+            list = list.filter( i => !user.purchased_items[ ribosomeCode ].includes(i) );
+        }
+
+        // .. return result
+        return list.length ? rs( list ) : rx( "no more lesson" );
+    
+    } );
 
 }

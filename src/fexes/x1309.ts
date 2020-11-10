@@ -1,7 +1,7 @@
 import * as g                           from '../types/genetics'
 import * as u                           from "../types/user";
 import { a_good_gene_4_user }           from "../tools/user";
-import { DNA }                          from "../DNA/DNAx1382"
+import { DNA }                          from "../DNA/DNAx1309";
 
 // -- =====================================================================================
 
@@ -28,8 +28,8 @@ export function junk ( ribosomeCode: string ): Promise<g.junk> {
         junk = {
             institute   : "de"                  ,
             type        : "audio"               ,
-            level       : "B1"                  ,
-            hPath       : [ "Das sagt man so!" ],
+            level       : "B2"                  ,
+            hPath       : [ "Wort der Woche" ]  ,
             vPath       : null                  ,
             uPath       : {                      
                 context : null                  ,

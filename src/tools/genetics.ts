@@ -11,6 +11,9 @@ const ribosomeToFex = require( "../../db/ribosome/ribosomeToFex.json" );
 function 
 cell ( ribosomeCode: string, gene: g.gene, junk:g.junk, snap: g.rawSnap ): g.cell {
 
+    // .. concat category
+    if ( gene.hPath ) junk.hPath = [ ...junk.hPath, ...gene.hPath ];
+    
     return {
                                                  
         chromosome: {                            

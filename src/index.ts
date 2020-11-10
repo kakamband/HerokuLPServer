@@ -1,5 +1,5 @@
 import * as express                     from "express"
-import { ribosomesCollection }          from "./ribosomesCollection";
+import { ribosomesCollection }          from "./ribosomes/ribosomesCollection";
 import * as user                        from "./tools/user";
 import * as genetics                    from "./tools/genetics";
 import * as u                           from "./types/user";
