@@ -104,16 +104,27 @@ export async function _received_cell ( user: u.user, ribosomeCode: string, id: n
 
 // -- =====================================================================================
 
-export function 
-a_good_gene_4_user ( ribosomeCode: string, user: u.user, DNA: g.gene[] ): Promise<g.gene> {
+export function a_good_gene_4_user ( 
+    
+    ribosomeCode: string, 
+    user: u.user, 
+    DNA: g.gene[], 
+    by: "start"|"random"|"end"
+
+): Promise<g.gene> {
 
     return new Promise ( (rs, rx) => {
         
         user_needs_these( ribosomeCode, user, DNA )
-        .then( ids => { 
-            // .. get first suitable gene
-            let id = ids[0];
-            let gene = { id: id, ...DNA[ id ] };
+        .then( ids => {
+            // .. get first|random|last suitable gene
+            let id: number;
+            switch ( by ) {
+                case "start" : id = 0;                                        break;
+                case "random": id = Math.floor( Math.random() * ids.length ); break;
+                case "end"   : id = ids.length -1;                            break;
+            }
+            let gene = { id: id, ...DNA[ ids[ id ] ] };
             rs( gene );
         } )
         .catch( err => rx(err) )

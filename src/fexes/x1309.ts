@@ -9,7 +9,7 @@ export function gene ( ribosomeCode: string, user: u.user ): Promise<g.gene> {
 
     return new Promise ( (rs, rx) => { 
         
-        a_good_gene_4_user( ribosomeCode, user, DNA )
+        a_good_gene_4_user( ribosomeCode, user, DNA, "random" )
         .then( gene => rs( gene ) )
         .catch( err => rx( err ) );
     
