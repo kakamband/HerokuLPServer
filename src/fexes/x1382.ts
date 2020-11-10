@@ -102,7 +102,7 @@ export function snap ( ribosomeCode: string ): Promise<string[]> {
     return new Promise ( (rs, rx) => { 
         let snap = [];
         snap[1] = "10";
-        snap[2] = "10";
+        snap[-2] = "10";
         rs( snap )
     } );
 
