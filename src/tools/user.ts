@@ -33,7 +33,17 @@ _validator ( username: string, password: string, uuid: string ): Promise<u.user>
                 // .. valid
                 if ( !devices.length || devices.includes( uuid ) ) rs( result.rows[0] );
                 // TODO define slot
-                else rx( "unrecognizable device!" );
+                else {
+
+                    let query2 = `UPDATE users SET 
+                        device = '${devices.push(uuid).join(",")}'
+                        WHERE id=${result.rows[0].id}`;
+                    // ! Does this update result??
+                    await client.query( query2 );
+
+                    rs( result.rows[0] );
+                }
+                // rx( "unrecognizable device!" );
             
             }
 
