@@ -1,4 +1,5 @@
 import * as x1382                       from "./x1382";
+import * as x1309                       from "./x1309";
 import * as g                           from '../types/genetics'
 import * as u                           from "../types/user";
 
@@ -9,4 +10,7 @@ interface aFex {
    snap: ( ribosomeCode: string ) => Promise<g.rawSnap>
 } 
 
-export const fexes: { [key: string]: aFex } = { x1382 }
+export const fexes: { [key: string]: aFex } = { 
+   x1382,
+   x1309
+}
