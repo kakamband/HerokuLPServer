@@ -66,9 +66,9 @@ export interface Chromosome {
 }
 
 export interface cell { 
-    "chromosome"    : Chromosome                    , 
-    // TODO define it
-    "context"       : any                           ,
+    "chromosome"    : Chromosome                    ,
+    "rawText"       : string                        ,
+    "rawSnaps"      : { [key: number]: string }     ,
 }
 
 export interface cryptoCell {

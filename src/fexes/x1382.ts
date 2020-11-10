@@ -7,7 +7,7 @@ const DNA = require( '../../db/DNA/DNAx1382.json' ) as g.gene[];
 
 // -- =====================================================================================
 
-export function new_gene ( ribosomeCode: string, user: u.user ): Promise<g.gene> {
+export function gene ( ribosomeCode: string, user: u.user ): Promise<g.gene> {
 
     return new Promise ( (rs, rx) => { 
         
@@ -67,7 +67,7 @@ function user_needs_these ( ribosomeCode: string, user: u.user ): Promise<number
 
 // -- =====================================================================================
 
-export function junk (): Promise<g.junk> {
+export function junk ( ribosomeCode: string ): Promise<g.junk> {
 
     return new Promise ( (rs, rx) => { 
         
@@ -91,6 +91,19 @@ export function junk (): Promise<g.junk> {
 
         rs( junk )
     
+    } );
+
+}
+
+// -- =====================================================================================
+
+export function snap ( ribosomeCode: string ): Promise<string[]> {
+
+    return new Promise ( (rs, rx) => { 
+        let snap = [];
+        snap[-1] = "10";
+        snap[-2] = "10";
+        rs( snap )
     } );
 
 }
