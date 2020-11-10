@@ -97,12 +97,12 @@ export function junk ( ribosomeCode: string ): Promise<g.junk> {
 
 // -- =====================================================================================
 
-export function snap ( ribosomeCode: string ): Promise<string[]> {
+export function snap ( ribosomeCode: string ): Promise<{ [key: string]: string }> {
 
     return new Promise ( (rs, rx) => { 
-        let snap = [];
-        snap[1] = "10";
-        snap[-2] = "10";
+        let snap = {} as { [key: string]: string };
+        snap.a = "10";
+        snap.b = "10";
         rs( snap )
     } );
 

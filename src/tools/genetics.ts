@@ -8,7 +8,8 @@ const ribosomeToFex = require( "../../db/ribosome/ribosomeToFex.json" );
 
 // -- =====================================================================================
 
-function cell ( ribosomeCode: string, gene: g.gene, junk:g.junk, snap: string[] ): g.cell {
+function 
+cell ( ribosomeCode: string, gene: g.gene, junk:g.junk, snap: g.rawSnap ): g.cell {
 
     return {
                                                  
@@ -58,7 +59,7 @@ function _new_cell ( ribosomeCode: string, user: u.user ): Promise<g.cell> {
                 ] as [ 
                     Promise<g.gene>,
                     Promise<g.junk>,
-                    Promise<string[]>
+                    Promise<g.rawSnap>
                 ]
         
                 Promise.all( requiredData )
