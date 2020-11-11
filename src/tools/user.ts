@@ -73,34 +73,34 @@ export function _hasCredit ( user: u.user ): Promise<void> {
 
 // -- =====================================================================================
 
-export async function _received_cell ( user: u.user, ribosomeCode: string, id: string ) {
+// export async function _received_cell ( user: u.user, ribosomeCode: string, id: string ) {
 
-    try {
+    // try {
 
-        const client = await pool.connect();
+    //     const client = await pool.connect();
     
-        // .. touch
-        if ( !user.purchased_items ) user.purchased_items = {};
-        // .. register
-        user.purchased_items[ ribosomeCode ] ? 
-            user.purchased_items[ ribosomeCode ].push( id ) :
-            user.purchased_items[ ribosomeCode ] = [id]
+    //     // .. touch
+    //     if ( !user.purchased_items ) user.purchased_items = {};
+    //     // .. register
+    //     user.purchased_items[ ribosomeCode ] ? 
+    //         user.purchased_items[ ribosomeCode ].push( id ) :
+    //         user.purchased_items[ ribosomeCode ] = [id]
 
-        let query = `UPDATE users SET 
-            purchased_items = '${JSON.stringify(user.purchased_items)}',
-            credit = ${user.credit -1} 
-            WHERE id='${user.id}'`;
+    //     let query = `UPDATE users SET 
+    //         purchased_items = '${JSON.stringify(user.purchased_items)}',
+    //         credit = ${user.credit -1} 
+    //         WHERE id='${user.id}'`;
 
-        await client.query( query );
+    //     await client.query( query );
         
-        client.release();
+    //     client.release();
     
-    }
+    // }
     
-    // TODO should we do something with this err?!
-    catch (err) { console.log(err) }
+    // // TODO should we do something with this err?!
+    // catch (err) { console.log(err) }
 
-}
+// }
 
 // -- =====================================================================================
 

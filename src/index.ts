@@ -39,7 +39,7 @@ app.get( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
 
                 res.json( { status: 200, "answer": crypto_cell.cell } );
                 // TODO maybe we should confirm it somewhere else
-                user._received_cell( u, req.query.r as string, crypto_cell.id );
+                // user._received_cell( u, req.query.r as string, crypto_cell.id );
             
             } )
             .catch( err => res.json( { status: 500, "reason": err } ) );
