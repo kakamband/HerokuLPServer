@@ -11,7 +11,7 @@ export function gene ( ribosomeCode: string, user: u.user ): Promise<g.gene> {
 
         DNA_maker()
         .then( DNA => { 
-            a_good_gene_4_user( ribosomeCode, user, DNA, "random" )
+            a_good_gene_4_user( ribosomeCode, user, DNA, "end" )
             .then( gene => rs( gene ) )
             .catch( err => rx( err ) );
         } )
@@ -57,8 +57,8 @@ export function snap ( ribosomeCode: string ): Promise<{ [key: string]: string }
 
     return new Promise ( (rs, rx) => { 
         let snap = {} as { [key: string]: string };
-        snap.a = "10";
-        snap.b = "10";
+        snap.a = "12";
+        snap.b = "12";
         rs( snap )
     } );
 
