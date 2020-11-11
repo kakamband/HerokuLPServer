@@ -32,8 +32,8 @@ export function junk ( ribosomeCode: string ): Promise<g.junk> {
         junk = {
             institute   : "de"                  ,
             type        : "audio"               ,
-            level       : "B2"                  ,
-            hPath       : [ "Wort der Woche" ]  ,
+            level       : "C1"                  ,
+            hPath       : [ "Nachrichten" ]     ,
             vPath       : null                  ,
             uPath       : {                      
                 context : null                  ,
