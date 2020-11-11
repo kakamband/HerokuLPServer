@@ -26,7 +26,7 @@ export const de_r: g.Ribosome[] = [
         type        : "audio",
         level       : "C1",
         title       : "Nachrichten",
-        avatar      : "https://www.dw.com/image/15707577_304.jpg",
+        avatar      : "https://media2.faz.net/ppmedia/aktuell/feuilleton/medien/3466251136/1.5177774/article_multimedia_overview/das-gebaeude-der-deutschen.jpg",
         cellsState  : []
     }
 

@@ -7,16 +7,24 @@ export function DNA_maker (): Promise<g.gene[]> {
 
     return new Promise ( (rs, rx) => { 
 
+        
         const req = request(
             {
-              host: 'jsonplaceholder.typicode.com',
-              path: '/todos/1',
+              host: 'www.dw.com',
+              path: '/de/deutsch-lernen/nachrichten/s-8030',
               method: 'GET',
             },
             response => {
-                DNA.push( { title: "test", text: "response", avatarURL: null, mediaURL: null } );
-                rs ( DNA );
-                console.log(response.statusCode); // 200
+                let body = "";
+                response.on('readable', function() {
+                    body += response.read();
+                    console.log(response.read());
+                    console.log(body);
+                    DNA.push( { title: body, text: body, avatarURL: null, mediaURL: null } );
+                    rs ( DNA );
+                    
+                });
+                
             }
           );
            

@@ -9,11 +9,12 @@ export function gene ( ribosomeCode: string, user: u.user ): Promise<g.gene> {
 
     return new Promise ( (rs, rx) => { 
 
-        DNA_maker()
-        .then( DNA => { 
+        DNA_maker().then( DNA => { 
+            
             a_good_gene_4_user( ribosomeCode, user, DNA, "end" )
             .then( gene => rs( gene ) )
             .catch( err => rx( err ) );
+        
         } )
         .catch( err => rx( err ) );
     
@@ -57,8 +58,8 @@ export function snap ( ribosomeCode: string ): Promise<{ [key: string]: string }
 
     return new Promise ( (rs, rx) => { 
         let snap = {} as { [key: string]: string };
-        snap.a = "12";
-        snap.b = "12";
+        snap.a = "14";
+        snap.b = "14";
         rs( snap )
     } );
 
