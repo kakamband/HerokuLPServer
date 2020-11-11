@@ -19,6 +19,15 @@ export const de_r: g.Ribosome[] = [
         title       : "Wort der Woche",
         avatar      : "https://www.dw.com/image/15707577_304.jpg",
         cellsState  : []
+    },
+    {
+        institute   : "de",
+        code        : "LRT1689",
+        type        : "audio",
+        level       : "C1",
+        title       : "Nachrichten",
+        avatar      : "https://www.dw.com/image/15707577_304.jpg",
+        cellsState  : []
     }
 
 ]
