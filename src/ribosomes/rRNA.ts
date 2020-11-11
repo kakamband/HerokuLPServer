@@ -1,8 +1,8 @@
-export const ribosomeToFex = {
+export const ribosomeToRNA = {
     "S95A5W8": "x1382"  ,
     "3IQD618": "x1309"  ,
-    
     "LRT1689": "x1127"  ,
+    
     "TTFGH8V": "x834"   ,
 
     "OBDQL9U": "x549"   ,

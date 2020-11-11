@@ -1,7 +1,7 @@
 import { RNA }                          from "../RNA/RNA";
 import * as g                           from '../types/genetics'
 import * as u                           from "../types/user";
-import { ribosomeToFex }                from "../ribosomes/ribosomeToFex";
+import { ribosomeToRNA }                from "../ribosomes/rRNA";
 
 // -- =====================================================================================
 
@@ -45,7 +45,7 @@ function _new_cell ( ribosomeCode: string, user: u.user ): Promise<g.cell> {
         // .. insufficient data
         if ( !ribosomeCode ) return rx( "Entry mismatched!" );
 
-        let rCode = ribosomeToFex[ ribosomeCode ];
+        let rCode = ribosomeToRNA[ ribosomeCode ];
 
         if ( rCode ) {
 
