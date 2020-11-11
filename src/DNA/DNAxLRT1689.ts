@@ -16,15 +16,16 @@ export function DNA_maker (): Promise<g.gene[]> {
 
             let heute = heuteIst();
 
-            if ( homePage.includes( heute ) ) {
-                html( newsPage( homePage, heute ) ).then( newsPage => {
+            if ( homePage.includes( heute.code ) ) {
+                html( newsPage( homePage, heute.code ) ).then( newsPage => {
                     html( audio_page( newsPage ) ).then( audioPage => { 
                         
                         DNA.push( { 
-                            title: heute,
-                            text: text( newsPage ),
-                            avatarURL: avatar( newsPage ),
-                            mediaURL: audio( audioPage )
+                            title       : heute.name,
+                            text        : text( newsPage ),
+                            avatarURL   : avatar( newsPage ),
+                            mediaURL    : audio( audioPage ),
+                            hPath       : heute.hPath 
                         } );
 
                         rs ( DNA );
@@ -65,12 +66,32 @@ function html ( link: string ): Promise<string> {
 
 function heuteIst () {
 
-    let heute: string|object;
+    let date: Date,
+        code: string;
 
-    heute = new Date().toJSON().slice(0,10);
-    heute = heute.split( '-' );
-    heute = heute[2] + '.' + heute[1] + '.' + heute[0];
+    const monthNames = [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
 
+    date = new Date();
+
+    let YYYY = date.getFullYear().toString();
+    let YY   = YYYY.substr(2,2);
+    let MM   = monthNames[ date.getMonth() ];
+    let DD   = date.getDate().toString();
+
+    date  = new Date();
+    code = DD + '.' + ( date.getMonth() +1 ) + '.' + YY;
+
+    let heute = {
+        code: code,
+        name: DD + " " + MM + " " + YYYY, 
+        hPath: [ YYYY, MM ],
+    };
+
+    console.log(heute);
+    
     return heute;
     
 }

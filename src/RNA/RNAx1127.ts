@@ -1,6 +1,5 @@
 import * as g                           from '../types/genetics'
 import * as u                           from "../types/user";
-import { a_good_gene_4_user }           from "../tools/user";
 import { DNA_maker }                    from "../DNA/DNAxLRT1689";
 
 // -- =====================================================================================
@@ -9,14 +8,8 @@ export function gene ( ribosomeCode: string, user: u.user ): Promise<g.gene> {
 
     return new Promise ( (rs, rx) => { 
 
-        DNA_maker().then( DNA => { 
-            
-            rs( DNA[0] );
-            // a_good_gene_4_user( ribosomeCode, user, DNA, "end" )
-            // .then( gene => rs( gene ) )
-            // .catch( err => rx( err ) );
-        
-        } )
+        DNA_maker()
+        .then( DNA => rs( DNA[0] ) )
         .catch( err => rx( err ) );
     
     } );
