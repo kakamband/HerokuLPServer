@@ -70,10 +70,10 @@ function heuteIst () {
         code: string;
 
     const monthNames = [
-        "January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December"
+        "Januar", "Februar", "März", "April", "Mai", "Juni",
+        "Juli", "August", "September", "Oktober", "November", "Dezember"
     ];
-
+	
     date = new Date();
 
     let YYYY = date.getFullYear().toString();
