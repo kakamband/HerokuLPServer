@@ -10,7 +10,7 @@ interface aFex {
    snap: ( ribosomeCode: string ) => Promise<g.rawSnap>
 } 
 
-export const fexes: { [key: string]: aFex } = { 
+export const RNA: { [key: string]: aFex } = { 
    x1382,
    x1309
 }

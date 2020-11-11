@@ -1,4 +1,4 @@
-import { fexes }                        from "../fexes/fexes";
+import { RNA }                          from "../RNA/RNA";
 import * as g                           from '../types/genetics'
 import * as u                           from "../types/user";
 import { ribosomeToFex }                from "../ribosomes/ribosomeToFex";
@@ -45,17 +45,17 @@ function _new_cell ( ribosomeCode: string, user: u.user ): Promise<g.cell> {
         // .. insufficient data
         if ( !ribosomeCode ) return rx( "Entry mismatched!" );
 
-        let fex = ribosomeToFex[ ribosomeCode ];
+        let rCode = ribosomeToFex[ ribosomeCode ];
 
-        if ( fex ) {
+        if ( rCode ) {
 
             // .. fex has been found
-            if ( fexes.hasOwnProperty( fex ) ) {
+            if ( RNA.hasOwnProperty( rCode ) ) {
                
                 let requiredData = [
-                    fexes[ fex ].gene( ribosomeCode, user ),
-                    fexes[ fex ].junk( ribosomeCode ),
-                    fexes[ fex ].snap( ribosomeCode ),
+                    RNA[ rCode ].gene( ribosomeCode, user ),
+                    RNA[ rCode ].junk( ribosomeCode ),
+                    RNA[ rCode ].snap( ribosomeCode ),
                 ] as [ 
                     Promise<g.gene>,
                     Promise<g.junk>,
