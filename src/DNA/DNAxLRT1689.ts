@@ -33,7 +33,7 @@ export function DNA_maker (): Promise<g.gene[]> {
                     } )
                 } );
             }
-            else rx ( "No News: " + heute );
+            else rx ( "No News: " + heute.name );
     
         } );
 
