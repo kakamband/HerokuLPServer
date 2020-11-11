@@ -30,20 +30,14 @@ _validator ( username: string, password: string, uuid: string ): Promise<u.user>
             
             if ( result.rows.length ) {
 
+                let devices = result.rows[0].devices.split( "," );
                 // .. valid
-                if 
-                ( 
-                    !result.rows[0].devices.length || 
-                    result.rows[0].devices.includes( uuid ) 
-                ) {
-                    rs( result.rows[0] );
-                }
-                
+                if ( !devices.length || devices.includes( uuid ) ) rs( result.rows[0] );
                 // TODO define slot
                 else {
-                    result.rows[0].devices.push(uuid);
+                    devices.push(uuid);
                     let query2 = `UPDATE users SET 
-                        devices = '${result.rows[0].devices}'
+                        devices = '${devices.join(",")}'
                         WHERE id=${result.rows[0].id}`;
                     // TODO it does not update result!
                     await client.query( query2 );
