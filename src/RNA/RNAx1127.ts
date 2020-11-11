@@ -11,9 +11,10 @@ export function gene ( ribosomeCode: string, user: u.user ): Promise<g.gene> {
 
         DNA_maker().then( DNA => { 
             
-            a_good_gene_4_user( ribosomeCode, user, DNA, "end" )
-            .then( gene => rs( gene ) )
-            .catch( err => rx( err ) );
+            rs( DNA[0] );
+            // a_good_gene_4_user( ribosomeCode, user, DNA, "end" )
+            // .then( gene => rs( gene ) )
+            // .catch( err => rx( err ) );
         
         } )
         .catch( err => rx( err ) );
