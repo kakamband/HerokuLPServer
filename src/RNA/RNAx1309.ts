@@ -1,7 +1,7 @@
 import * as g                           from '../types/genetics'
 import * as u                           from "../types/user";
 import { a_good_gene_4_user }           from "../tools/user";
-import { DNA }                          from "../DNA/DNAx1309";
+import { DNA }                          from "../DNA/DNAx3IQD618";
 
 // -- =====================================================================================
 

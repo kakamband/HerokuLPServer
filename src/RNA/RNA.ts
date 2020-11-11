@@ -1,5 +1,5 @@
-import * as x1382                       from "./x1382";
-import * as x1309                       from "./x1309";
+import * as x1382                       from "./RNAx1382";
+import * as x1309                       from "./RNAx1309";
 import * as g                           from '../types/genetics'
 import * as u                           from "../types/user";
 
