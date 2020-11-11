@@ -12,7 +12,7 @@ export interface Ribosome {
 }
 
 export interface gene {
-    id?             : number;
+    id?             : string;
     title           : string;
     text            : string;
     avatarURL       : string;
@@ -50,7 +50,7 @@ export interface Chromosome {
     type            : LessonType                    ,
     code            : {                              
         ribosome    : string                        ,
-        idx         : number                        ,
+        idx         : string                        ,
         name        : string                        ,
     }                                               ,
     level?          : CEF                           ,
@@ -86,8 +86,8 @@ export interface cell {
 export interface rawSnap { [key: string]: string }
 
 export interface cryptoCell {
+    id              : string                        ,
     // TODO define it
-    id              : number                        ,
     cell            : cell                          ,
 }
 

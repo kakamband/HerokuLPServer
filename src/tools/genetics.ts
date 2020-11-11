@@ -87,7 +87,6 @@ _crypto_cell ( ribosomeCode: string, user: u.user ): Promise<g.cryptoCell> {
         
         _new_cell( ribosomeCode, user )
         .then( cell => {
-            // rs ( JSON.stringify( cell ) );
             rs ( { id: cell.chromosome.code.idx , cell: cell } );
         } )
         .catch( err => rx(err) );

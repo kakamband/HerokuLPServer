@@ -6,5 +6,5 @@ export interface user {
     avatar          : string,
     devices         : string,
     credit          : number,
-    purchased_items : { [key: string]: number[] }
+    purchased_items : { [key: string]: string[] }
 }

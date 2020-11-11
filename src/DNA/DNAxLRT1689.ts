@@ -12,15 +12,16 @@ export function DNA_maker (): Promise<g.gene[]> {
 
     return new Promise ( (rs, rx) => { 
         
-        html( "https://www.dw.com/de/deutsch-lernen/nachrichten/s-8030" ).then( homePage => {
+        let heute = heuteIst();
+        let homeURL = "https://www.dw.com/de/deutsch-lernen/nachrichten/s-8030";
 
-            let heute = heuteIst();
-
+        html( homeURL ).then( homePage => {
             if ( homePage.includes( heute.code ) ) {
                 html( newsPage( homePage, heute.code ) ).then( newsPage => {
                     html( audio_page( newsPage ) ).then( audioPage => { 
                         
                         DNA.push( { 
+                            id          : heute.code,
                             title       : heute.name,
                             text        : text( newsPage ),
                             avatarURL   : avatar( newsPage ),
@@ -34,7 +35,6 @@ export function DNA_maker (): Promise<g.gene[]> {
                 } );
             }
             else rx ( "No News: " + heute.name );
-    
         } );
 
     } );

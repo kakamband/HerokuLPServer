@@ -73,7 +73,7 @@ export function _hasCredit ( user: u.user ): Promise<void> {
 
 // -- =====================================================================================
 
-export async function _received_cell ( user: u.user, ribosomeCode: string, id: number ) {
+export async function _received_cell ( user: u.user, ribosomeCode: string, id: string ) {
 
     try {
 
@@ -124,7 +124,7 @@ export function a_good_gene_4_user (
                 case "random": id = Math.floor( Math.random() * ids.length ); break;
                 case "end"   : id = ids.length -1;                            break;
             }
-            let gene = { id: id, ...DNA[ ids[ id ] ] };
+            let gene = { id: ids[ id ].toString(), ...DNA[ ids[ id ] ] };
             rs( gene );
         } )
         .catch( err => rx(err) )
