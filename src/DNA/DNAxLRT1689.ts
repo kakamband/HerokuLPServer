@@ -1,5 +1,5 @@
 import * as g                           from '../types/genetics'
-import { get }                      from 'http';
+import { get }                      from 'https';
 
 export let DNA: g.gene[] = [];
 
@@ -7,7 +7,7 @@ export function DNA_maker (): Promise<g.gene[]> {
 
     return new Promise ( (rs, rx) => { 
         
-        get( "http://www.dw.com/de/deutsch-lernen/nachrichten/s-8030", res => {
+        get( "https://www.dw.com/en/top-stories/s-9097", res => {
 
             res.setEncoding('utf8');
             
@@ -16,7 +16,7 @@ export function DNA_maker (): Promise<g.gene[]> {
                 res.on( "end", () => {
                     DNA.push( { 
                         title: "======================",
-                        text: data.length + "",
+                        text: data,
                         avatarURL: "--------------------",
                         mediaURL: "--------------------"
                     } );
