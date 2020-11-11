@@ -146,13 +146,10 @@ user_needs_these ( ribosomeCode: string, user: u.user, DNA: g.gene[] ): Promise<
         for ( let i=0; i < DNA.length; i++ ) list.push(i);
     
         // .. first Meet: return result
-        if ( !user.purchased_items ) return rs ( list );
+        if ( !user.gotLessons.length ) return rs ( list );
             
         // .. trim list
-        user.purchased_items = JSON.parse( user.purchased_items as any );
-        if ( user.purchased_items.hasOwnProperty( ribosomeCode ) ) {
-            list = list.filter( i => !user.purchased_items[ ribosomeCode ].includes(i) );
-        }
+        list = list.filter( i => !user.gotLessons.includes(i) );
 
         // .. return result
         return list.length ? rs( list ) : rx( "no more lesson" );

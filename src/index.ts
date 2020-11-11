@@ -31,6 +31,8 @@ app.get( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
         // .. checking credits
         user._hasCredit( u ).then( () => {
             
+            u.gotLessons = req.query.l as string[];
+            
             // .. produce a new CELL
             genetics._crypto_cell ( req.query.r as string, u as u.user )
             .then( crypto_cell => { 
