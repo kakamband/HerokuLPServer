@@ -6,14 +6,13 @@ import { a_good_gene_4_user }           from "../tools/user";
 
 export function gene ( user: u.user, ribosome: g.Ribosome ): Promise<g.gene> {
 
-    return new Promise ( (rs, rx) => { 
+    return new Promise ( async (rs, rx) => { 
         
-        let DNA = require( "../DNA/DNAx3IQD618.ts" ).DNA;
-        
-        return rs( DNA[ 0])
-        // a_good_gene_4_user( user, DNA, "start" )
-        // .then( gene => rs( gene ) )
-        // .catch( err => rx( err ) );
+        let DNA = await require( "../DNA/DNAx" + ribosome.code + ".ts" ).DNA;
+
+        a_good_gene_4_user( user, DNA, "start" )
+        .then( gene => rs( gene ) )
+        .catch( err => rx( err ) );
     
     } );
 
