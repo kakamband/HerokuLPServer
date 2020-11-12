@@ -10,9 +10,10 @@ export function gene ( user: u.user, ribosome: g.Ribosome ): Promise<g.gene> {
         
         let DNA = require( "../DNA/DNAx3IQD618.ts" ).DNA;
         
-        a_good_gene_4_user( user, DNA, "start" )
-        .then( gene => rs( gene ) )
-        .catch( err => rx( err ) );
+        return rs( DNA[ 0])
+        // a_good_gene_4_user( user, DNA, "start" )
+        // .then( gene => rs( gene ) )
+        // .catch( err => rx( err ) );
     
     } );
 
