@@ -8,7 +8,7 @@ export function gene ( user: u.user, ribosome: g.Ribosome ): Promise<g.gene> {
 
     return new Promise ( (rs, rx) => { 
         
-        let path = "../DNA/DNAx" + ribosome.code + ".ts";
+        let path = "../DNA/DNAxOBDQL9U.ts";
         let DNA = require( path );
         
         // a_good_gene_4_user( user, DNA, "start" )
