@@ -54,17 +54,17 @@ function _new_cell ( ribosome: g.Ribosome, user: u.user ): Promise<g.cell> {
             if ( RNA.hasOwnProperty( rCode ) ) {
                 
                 let requiredData = [
-                    // RNA[ rCode ].gene( user, ribosome ),
+                    RNA[ rCode ].gene( user, ribosome ),
                     RNA[ rCode ].junk( ribosome ),
                     RNA[ rCode ].snap(),
                 ] as [ 
-                    // Promise<g.gene>,
+                    Promise<g.gene>,
                     Promise<g.junk>,
                     Promise<g.rawSnap>
                 ]
         
                 Promise.all( requiredData )
-                .then( i => rs ( cell( ribosome, "test" as any, i[0], i[1] ) ) )
+                .then( i => rs ( cell( ribosome, i[0], i[1], i[2] ) ) )
                 .catch( err => rx(err) );
 
             }
