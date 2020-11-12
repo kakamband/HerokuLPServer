@@ -8,7 +8,7 @@ export function gene ( user: u.user, ribosome: g.Ribosome ): Promise<g.gene> {
 
     return new Promise ( (rs, rx) => { 
         
-        let DNA = require( "../DNA/DNAx" + ribosome.code + ".ts" ).DNA;
+        let DNA = require( "../DNA/DNAx" + ribosome.code + ".ts" );
         
         // a_good_gene_4_user( user, DNA, "start" )
         // .then( gene => 
