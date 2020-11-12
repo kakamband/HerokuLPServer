@@ -16,11 +16,10 @@ export function DNA_maker ( id: string, link: string ): Promise<g.gene[]> {
             html( audio_page( themaPage ) ).then( audioPage => { 
                 DNA.push( { 
                     id          : id,
-                    title       : "tttt",
+                    title       : title( themaPage ),
                     text        : text( themaPage ),
                     avatarURL   : avatar( themaPage ),
-                    mediaURL    : audio( audioPage ),
-                    hPath       : ["heute.hPath"] 
+                    mediaURL    : audio( audioPage )
                 } );
 
                 rs ( DNA );
@@ -75,7 +74,7 @@ export function DNAxList (): Promise< { id: string, link: string }[] > {
                 bCut    = '">';
                 bCutID  = item.indexOf( bCut );
                 item  = item.substring( 0, bCutID );
-                list.unshift( {
+                list.push( {
                     id: item.split("/")[2],
                     link: 'https://www.dw.com' + item
                 } );
@@ -92,6 +91,27 @@ export function DNAxList (): Promise< { id: string, link: string }[] > {
 
 // -- =====================================================================================
 
+function title ( str: string ) {
+    
+    let aCut: string,
+        bCut: string,
+        aCutID: number,
+        bCutID: number;
+
+    aCut   = "<h1>";
+    bCut   = "</h1>";
+    aCutID = str.indexOf( aCut ) + aCut.length;
+    bCutID = str.indexOf( bCut );
+    
+    str    = str.substring( aCutID, bCutID );
+    console.log(str);
+    
+    return str;
+
+}
+
+// -- =====================================================================================
+
 function text ( str: string ) {
     
     let aCut: string,
@@ -102,10 +122,10 @@ function text ( str: string ) {
     
     aCutID = str.search( /<div class="dkTaskWrapper tab3" [^>]+>/ );
     bCutID = str.search( /<div class="dkTaskWrapper tab4" [^>]+>/ );
-    str    = str.substr( aCutID , bCutID-aCutID );
+    str    = str.substring( aCutID , bCutID );
     aCut   = '<p>';
     aCutID = str.indexOf( aCut )  + aCut.length;
-    str    = str.substr( aCutID );
+    str    = str.substring( aCutID );
     str    = str.replace( /<p class="dkManu">/g , '\n' );
     str    = str.replace( /<p>/g , '\n' );
     str    = str.replace( /<\/p>/g , '' );
@@ -121,8 +141,8 @@ function text ( str: string ) {
         aCut   = '<a class="bubWrapLink">';
         aCutID = str.indexOf( aCut ) + aCut.length;
         bCut   = '<span';
-        bCutID = str.indexOf( bCut ) - aCutID;
-        tmp    = str.substr( aCutID , bCutID );
+        bCutID = str.indexOf( bCut );
+        tmp    = str.substring( aCutID , bCutID );
         str    = str.replace( /<a class="bubWrapLink">(.*?)<\/a>/ , tmp );
         
         if ( !str.includes( '<a class="bubWrapLink">' ) ) break;
