@@ -8,7 +8,7 @@ export function gene ( user: u.user ): Promise<g.gene> {
 
     return new Promise ( (rs, rx) => { 
         
-        let DNA = require( "../DNA/DNAx3IQD618.ts" ).DNA;
+        let DNA = require( "../DNA/DNAx3IQD618" ).DNA;
 
         a_good_gene_4_user( user, DNA, "random" )
         .then( gene => rs( gene ) )
