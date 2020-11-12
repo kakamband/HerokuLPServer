@@ -17,7 +17,7 @@ cell ( ribosome: g.Ribosome, gene: g.gene, junk:g.junk, snap: g.rawSnap ): g.cel
         chromosome: {                            
             title           : gene.title        ,
             code            : {                  
-                ribosome    : ribosome.code     ,
+                ribosome    : "ribosome.code"     ,
                 idx         : gene.id           ,
                 name        : null              ,
             }                                   ,
@@ -62,11 +62,10 @@ function _new_cell ( ribosome: g.Ribosome, user: u.user ): Promise<g.cell> {
                     Promise<g.junk>,
                     Promise<g.rawSnap>
                 ]
-                return rs ( { chromosome: {} as any, rawSnap: "" as any, rawText: "hatef hatef" } )
         
-                // Promise.all( requiredData )
-                // .then( i => rs ( cell( ribosome, i[0], i[1], i[2] ) ) )
-                // .catch( err => rx(err) );
+                Promise.all( requiredData )
+                .then( i => rs ( cell( ribosome, "test" as any, i[0], i[1] ) ) )
+                .catch( err => rx(err) );
 
             }
             // .. this rRNA is not coded yet!
