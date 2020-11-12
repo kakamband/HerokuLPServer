@@ -7,8 +7,7 @@ import * as g                           from '../types/genetics'
 export function DNA_maker ( id: string, link: string ): Promise<g.gene[]> {
 
     return new Promise ( (rs, rx) => { 
-        console.log(link);
-        
+
         html( link ).then( themaPage => {
             html( audio_page( themaPage ) ).then( audioPage => { 
                 rs ( [ { 

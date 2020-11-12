@@ -61,8 +61,6 @@ function heuteIst () {
         hPath: [ YYYY, MM ],
     };
 
-    console.log(heute);
-    
     return heute;
     
 }

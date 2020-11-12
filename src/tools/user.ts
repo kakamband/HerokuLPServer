@@ -98,7 +98,7 @@ export function _hasCredit ( user: u.user ): Promise<void> {
     // }
     
     // // TODO should we do something with this err?!
-    // catch (err) { console.log(err) }
+    // catch (err) {  }
 
 // }
 
