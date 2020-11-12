@@ -19,7 +19,7 @@ app.get('/crypto_cell', function (req, res) {
     user._validator(req.query.u, req.query.p, req.query.d).then(function (u) {
         // .. checking credits
         user._hasCredit(u).then(function () {
-            u.gotLessons = req.query.l;
+            u.gotFromThisRibosome = req.query.l;
             // .. produce a new CELL
             genetics._crypto_cell(req.query.r, u)
                 .then(function (crypto_cell) {
