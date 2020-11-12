@@ -1,13 +1,14 @@
 import * as g                           from '../types/genetics'
 import * as u                           from "../types/user";
 import { a_good_gene_4_user }           from "../tools/user";
-import { DNA }                          from "../DNA/DNAxS95A5W8"
 
 // -- =====================================================================================
 
-export function gene ( user: u.user ): Promise<g.gene> {
+export function gene ( user: u.user, ribosome: g.Ribosome ): Promise<g.gene> {
 
     return new Promise ( (rs, rx) => { 
+        
+        let DNA = require( "../DNA/DNAx" + ribosome.code + ".ts" ).DNA;
         
         a_good_gene_4_user( user, DNA, "start" )
         .then( gene => rs( gene ) )

@@ -1,0 +1,10 @@
+import * as g                           from '../types/genetics'
+
+export const DNA: g.gene[] = [
+	{
+		title		: "Etwas durch die Blume sagen",
+		text		: "Eine schreckliche Situation: Jemand, den man gerne mag, möchte eine ehrliche Meinung zu etwas. Aber die Wahrheit ist so unangenehm, dass man am liebsten weglaufen möchte. Für solche Situationen gibt es einen tollen Tipp!\n\n„Dieser schreckliche Hut! Wo hat sie ihn her? Und wie sage ich ihr, dass er einfach grauenhaft ist?“, denkt Marc. Währenddessen steht seine Freundin Hanna vor ihm und präsentiert stolz ihren neuen Hut. „Schau mal, Marc, das war ein richtiges Schnäppchen. Nur 120 Euro im Sonderangebot, das letzte Exemplar. In Paris tragen sie ihn alle!“ Marc weiß, dass er jetzt eine Antwort geben muss. Aber er kann ihr unmöglich sagen, dass sie aussieht wie eine verrückte Märchenfigur. Er möchte nicht, dass sie enttäuscht ist. Sie freut sich doch so sehr … Aber er möchte sie auch nicht anlügen. Also greift er zu einer besonderen Methode. Er sagt es ihr durch die Blume, also so, dass es nicht beleidigend ist: „Hanna, dieser Hut ist wirklich außergewöhnlich! Ich glaube, ich habe auch schon ein Foto davon gesehen. Wie heißt noch mal diese verrückte Modedesignerin aus Paris? Ja, ich glaube, sie trägt ihn auch ganz gerne. Ganz toll! Es ist nur ein bisschen schade, dass die blaue Farbe nicht so ganz zu dem wunderschönen Blau deiner Augen passt. Aber wichtig ist nur, dass er dir gefällt.“ „Meinst du wirklich?“, sagt Hanna nachdenklich. Dann kramt sie noch mal in ihrer Handtasche nach der Quittung. Vielleicht kann sie den Hut zurückgeben? Auch wenn Marc ihn ganz gerne mag …",
+		avatarURL	: "https://www.dw.com/image/18842667_302.jpg",
+		mediaURL	: "https://radiodownloaddw-a.akamaihd.net/Events/dwelle/dira/mp3/deutschkurse/dassagtmanso/5E2C843A_2.mp3"
+	}
+];

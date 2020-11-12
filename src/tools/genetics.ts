@@ -54,7 +54,7 @@ function _new_cell ( ribosome: g.Ribosome, user: u.user ): Promise<g.cell> {
             if ( RNA.hasOwnProperty( rCode ) ) {
                
                 let requiredData = [
-                    RNA[ rCode ].gene( user ),
+                    RNA[ rCode ].gene( user, ribosome ),
                     RNA[ rCode ].junk( ribosome ),
                     RNA[ rCode ].snap(),
                 ] as [ 

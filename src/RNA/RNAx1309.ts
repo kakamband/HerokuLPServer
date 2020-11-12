@@ -1,7 +1,6 @@
 import * as g                           from '../types/genetics'
 import * as u                           from "../types/user";
 import { a_good_gene_4_user }           from "../tools/user";
-import { DNA }                          from "../DNA/DNAx3IQD618";
 
 // -- =====================================================================================
 
@@ -9,6 +8,8 @@ export function gene ( user: u.user ): Promise<g.gene> {
 
     return new Promise ( (rs, rx) => { 
         
+        let DNA = require( "../DNA/DNAx3IQD618.ts" ).DNA;
+
         a_good_gene_4_user( user, DNA, "random" )
         .then( gene => rs( gene ) )
         .catch( err => rx( err ) );
