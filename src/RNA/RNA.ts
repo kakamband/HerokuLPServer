@@ -7,9 +7,9 @@ import * as u                           from "../types/user";
 
 // -- =====================================================================================
 interface aRNA { 
-   gene: ( ribosomeCode: string, user: u.user ) => Promise<g.gene>
-   junk: ( ribosomeCode: string ) => Promise<g.junk>
-   snap: ( ribosomeCode: string ) => Promise<g.rawSnap>
+   gene: ( user: u.user ) => Promise<g.gene>
+   junk: ( ribosome: g.Ribosome ) => Promise<g.junk>
+   snap: () => Promise<g.rawSnap>
 } 
 
 export const RNA: { [key: string]: aRNA} = { 

@@ -5,11 +5,11 @@ import { DNA }                          from "../DNA/DNAx3IQD618";
 
 // -- =====================================================================================
 
-export function gene ( ribosomeCode: string, user: u.user ): Promise<g.gene> {
+export function gene ( user: u.user ): Promise<g.gene> {
 
     return new Promise ( (rs, rx) => { 
         
-        a_good_gene_4_user( ribosomeCode, user, DNA, "random" )
+        a_good_gene_4_user( user, DNA, "random" )
         .then( gene => rs( gene ) )
         .catch( err => rx( err ) );
     
@@ -19,18 +19,18 @@ export function gene ( ribosomeCode: string, user: u.user ): Promise<g.gene> {
 
 // -- =====================================================================================
 
-export function junk ( ribosomeCode: string ): Promise<g.junk> {
+export function junk ( ribosome: g.Ribosome ): Promise<g.junk> {
 
     return new Promise ( (rs, rx) => { 
         
         let junk: g.junk;
 
         junk = {
-            institute   : "de"                  ,
-            type        : "audio"               ,
-            level       : "B2"                  ,
-            hPath       : [ "Wort der Woche" ]  ,
-            vPath       : null                  ,
+            institute   : ribosome.institute    ,
+            type        : ribosome.type         ,
+            level       : ribosome.level        ,
+            hPath       : [ ribosome.title ]    ,
+            vPath       : [ ribosome.title ]    ,
             uPath       : {                      
                 context : null                  ,
                 media   : null                  ,
@@ -38,7 +38,6 @@ export function junk ( ribosomeCode: string ): Promise<g.junk> {
             }                                   ,
             status      : "reading"             ,
             etikett     : {}                    ,
-
         };
 
         rs( junk )
@@ -49,7 +48,7 @@ export function junk ( ribosomeCode: string ): Promise<g.junk> {
 
 // -- =====================================================================================
 
-export function snap ( ribosomeCode: string ): Promise<{ [key: string]: string }> {
+export function snap (): Promise<{ [key: string]: string }> {
 
     return new Promise ( (rs, rx) => { 
         let snap = {} as { [key: string]: string };

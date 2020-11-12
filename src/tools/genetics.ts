@@ -2,11 +2,12 @@ import { RNA }                          from "../RNA/RNA";
 import * as g                           from '../types/genetics'
 import * as u                           from "../types/user";
 import { ribosomeToRNA }                from "../ribosomes/rRNA";
+import { rpi }                          from "../ribosomes/rpi";
 
 // -- =====================================================================================
 
 function 
-cell ( ribosomeCode: string, gene: g.gene, junk:g.junk, snap: g.rawSnap ): g.cell {
+cell ( ribosome: g.Ribosome, gene: g.gene, junk:g.junk, snap: g.rawSnap ): g.cell {
 
     // .. concat category
     if ( gene.hPath ) junk.hPath = [ ...junk.hPath, ...gene.hPath ];
@@ -16,7 +17,7 @@ cell ( ribosomeCode: string, gene: g.gene, junk:g.junk, snap: g.rawSnap ): g.cel
         chromosome: {                            
             title           : gene.title        ,
             code            : {                  
-                ribosome    : ribosomeCode      ,
+                ribosome    : ribosome.code     ,
                 idx         : gene.id           ,
                 name        : null              ,
             }                                   ,
@@ -38,14 +39,14 @@ cell ( ribosomeCode: string, gene: g.gene, junk:g.junk, snap: g.rawSnap ): g.cel
 // -- =====================================================================================
 
 // TODO define return type!!!
-function _new_cell ( ribosomeCode: string, user: u.user ): Promise<g.cell> {
+function _new_cell ( ribosome: g.Ribosome, user: u.user ): Promise<g.cell> {
 
     return new Promise ( (rs, rx) => {
 
         // .. insufficient data
-        if ( !ribosomeCode ) return rx( "Entry mismatched!" );
+        if ( !ribosome.code ) return rx( "Entry mismatched!" );
 
-        let rCode = ribosomeToRNA[ ribosomeCode ];
+        let rCode = ribosomeToRNA[ ribosome.code ];
 
         if ( rCode ) {
 
@@ -53,9 +54,9 @@ function _new_cell ( ribosomeCode: string, user: u.user ): Promise<g.cell> {
             if ( RNA.hasOwnProperty( rCode ) ) {
                
                 let requiredData = [
-                    RNA[ rCode ].gene( ribosomeCode, user ),
-                    RNA[ rCode ].junk( ribosomeCode ),
-                    RNA[ rCode ].snap( ribosomeCode ),
+                    RNA[ rCode ].gene( user ),
+                    RNA[ rCode ].junk( ribosome ),
+                    RNA[ rCode ].snap(),
                 ] as [ 
                     Promise<g.gene>,
                     Promise<g.junk>,
@@ -63,7 +64,7 @@ function _new_cell ( ribosomeCode: string, user: u.user ): Promise<g.cell> {
                 ]
         
                 Promise.all( requiredData )
-                .then( i => rs ( cell( ribosomeCode, i[0], i[1], i[2] ) ) )
+                .then( i => rs ( cell( ribosome, i[0], i[1], i[2] ) ) )
                 .catch( err => rx(err) );
 
             }
@@ -85,7 +86,13 @@ _crypto_cell ( ribosomeCode: string, user: u.user ): Promise<g.cryptoCell> {
     
     return new Promise( async (rs, rx) => {
         
-        _new_cell( ribosomeCode, user )
+        let id = rpi.findIndex( row => row.code === ribosomeCode );
+        // .. very odd Error!
+        if ( id === -1 ) return rx( "Ribosome Not Found!" );
+
+        let ribosome = rpi[ id ];
+
+        _new_cell( ribosome, user )
         .then( cell => {
             rs ( { id: cell.chromosome.code.idx , cell: cell } );
         } )

@@ -106,7 +106,6 @@ export function _hasCredit ( user: u.user ): Promise<void> {
 
 export function a_good_gene_4_user ( 
     
-    ribosomeCode: string, 
     user: u.user, 
     DNA: g.gene[], 
     by: "start"|"random"|"end"
@@ -115,8 +114,7 @@ export function a_good_gene_4_user (
 
     return new Promise ( (rs, rx) => {
         
-        user_needs_these( ribosomeCode, user, DNA )
-        .then( ids => {
+        user_needs_these( user, DNA ).then( ids => {
             // .. get first|random|last suitable gene
             let id: number;
             switch ( by ) {
@@ -136,7 +134,7 @@ export function a_good_gene_4_user (
 // -- =====================================================================================
 
 export function 
-user_needs_these ( ribosomeCode: string, user: u.user, DNA: g.gene[] ): Promise<number[]> {
+user_needs_these ( user: u.user, DNA: g.gene[] ): Promise<number[]> {
 
     return new Promise ( (rs, rx) => {
 

@@ -4,7 +4,7 @@ import { DNAxList, DNA_maker }          from "../DNA/DNAxTTFGH8V";
 
 // -- =====================================================================================
 
-export function gene ( ribosomeCode: string, user: u.user ): Promise<g.gene> {
+export function gene ( user: u.user ): Promise<g.gene> {
 
     return new Promise ( (rs, rx) => { 
 
@@ -30,18 +30,18 @@ export function gene ( ribosomeCode: string, user: u.user ): Promise<g.gene> {
 
 // -- =====================================================================================
 
-export function junk ( ribosomeCode: string ): Promise<g.junk> {
+export function junk ( ribosome: g.Ribosome ): Promise<g.junk> {
 
     return new Promise ( (rs, rx) => { 
         
         let junk: g.junk;
 
         junk = {
-            institute   : "de"                  ,
-            type        : "audio"               ,
-            level       : "B1"                  ,
-            hPath       : [ "Top Thema" ]       ,
-            vPath       : null                  ,
+            institute   : ribosome.institute    ,
+            type        : ribosome.type         ,
+            level       : ribosome.level        ,
+            hPath       : [ ribosome.title ]    ,
+            vPath       : [ ribosome.title ]    ,
             uPath       : {                      
                 context : null                  ,
                 media   : null                  ,
@@ -49,7 +49,6 @@ export function junk ( ribosomeCode: string ): Promise<g.junk> {
             }                                   ,
             status      : "reading"             ,
             etikett     : {}                    ,
-
         };
 
         rs( junk )
@@ -60,7 +59,7 @@ export function junk ( ribosomeCode: string ): Promise<g.junk> {
 
 // -- =====================================================================================
 
-export function snap ( ribosomeCode: string ): Promise<{ [key: string]: string }> {
+export function snap (): Promise<{ [key: string]: string }> {
 
     return new Promise ( (rs, rx) => { 
         let snap = {} as { [key: string]: string };
