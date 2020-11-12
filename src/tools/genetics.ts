@@ -42,27 +42,27 @@ cell ( ribosome: g.Ribosome, gene: g.gene, junk:g.junk, snap: g.rawSnap ): g.cel
 function _new_cell ( ribosome: g.Ribosome, user: u.user ): Promise<g.cell> {
 
     return new Promise ( (rs, rx) => {
-        return rs ( { chromosome: {} as any, rawSnap: "" as any, rawText: "hatef hatef" } )
-
+        
         // .. insufficient data
         if ( !ribosome.code ) return rx( "Entry mismatched!" );
-
+        
         let rCode = ribosomeToRNA[ ribosome.code ];
-
+        
         if ( rCode ) {
-
+            
             // .. rRNA has been found
             if ( RNA.hasOwnProperty( rCode ) ) {
-               
-                // let requiredData = [
-                //     RNA[ rCode ].gene( user, ribosome ),
-                //     RNA[ rCode ].junk( ribosome ),
-                //     RNA[ rCode ].snap(),
-                // ] as [ 
-                //     Promise<g.gene>,
-                //     Promise<g.junk>,
-                //     Promise<g.rawSnap>
-                // ]
+                
+                let requiredData = [
+                    RNA[ rCode ].gene( user, ribosome ),
+                    RNA[ rCode ].junk( ribosome ),
+                    RNA[ rCode ].snap(),
+                ] as [ 
+                    Promise<g.gene>,
+                    Promise<g.junk>,
+                    Promise<g.rawSnap>
+                ]
+                return rs ( { chromosome: {} as any, rawSnap: "" as any, rawText: "hatef hatef" } )
         
                 // Promise.all( requiredData )
                 // .then( i => rs ( cell( ribosome, i[0], i[1], i[2] ) ) )
