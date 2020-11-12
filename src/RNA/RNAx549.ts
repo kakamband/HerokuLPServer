@@ -8,10 +8,15 @@ export function gene ( user: u.user, ribosome: g.Ribosome ): Promise<g.gene> {
 
     return new Promise ( (rs, rx) => { 
         
-        let DNA = [];
+        let DNA = require( "../DNA/DNAx" + ribosome.code + ".ts" ).DNA;
         
         a_good_gene_4_user( user, DNA, "start" )
-        .then( gene => rs( gene ) )
+        .then( gene => rs( {
+            title:"ahtef",
+            text:"ppppp",
+            avatarURL:"",
+            mediaURL: ""
+        } ) )
         .catch( err => rx( err ) );
     
     } );

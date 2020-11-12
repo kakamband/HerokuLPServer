@@ -94,7 +94,7 @@ export function _crypto_cell ( ribCode: string, user: u.user ): Promise<g.crypto
 
         _new_cell( ribosome, user )
         .then( cell => {
-            rs ( { id: "cell.chromosome.code.idx" , cell: cell } );
+            rs ( { id: cell.chromosome.code.idx , cell: cell } );
         } )
         .catch( err => rx(err) );
     
