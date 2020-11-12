@@ -1,6 +1,6 @@
+import { html }                         from './DNAx'
+import { audio_page, avatar, audio }    from './DNAxDW'
 import * as g                           from '../types/genetics'
-import { get }                      from 'https';
-const { StringDecoder } = require('string_decoder');
 
 // -- =====================================================================================
 
@@ -38,27 +38,6 @@ export function DNA_maker (): Promise<g.gene[]> {
         } );
 
     } );
-
-}
-
-// -- =====================================================================================
-
-function html ( link: string ): Promise<string> {
-
-    return new Promise ( (rs, rx) => { 
-        
-        get( link, res => {
-    
-            let html = "";
-
-            // TODO Get STATUS CODE
-            res.setEncoding('utf8');
-            res.on( 'data', chunk => html += chunk )
-            res.on( "end", () => rs( html ) );
-        
-        } );
-
-    } )
 
 }
 
@@ -175,87 +154,6 @@ function text ( str: string ) {
     str    = str.replace( /  \n/g , '\n' );
     str    = str.replace( /\n /g , '\n' );
     str    = str.trim();
-
-    return str;
-
-}
-
-
-// -- =====================================================================================
-
-export function avatar ( str: string ) {
-    
-    let aCut: string,
-        bCut: string,
-        aCutID: number,
-        bCutID: number;
-
-        // .. First Attempt
-        aCut = '<meta property="og:image"\ncontent="';
-        bCut   = '"/>';
-        if ( str.includes( aCut ) ) {
-            aCutID = str.indexOf( aCut ) + aCut.length;
-            str    = str.substr( aCutID );
-            bCutID = str.indexOf( bCut );
-            str    = str.substring( 0 , bCutID );
-            str    = str.replace( '_304.' , '_302.' );
-            return str;
-        } 
-    
-        // .. Second Attempt
-        aCut = 'input type="hidden" name="preview_image" value="';
-        bCut   = '">';
-        if ( str.includes( aCut ) ) { 
-            aCutID = str.indexOf( aCut ) + aCut.length;
-            str    = str.substr( aCutID );
-            bCutID = str.indexOf( bCut );
-            str    = str.substring( 0 , bCutID );
-            str    = str.replace( '_401.' , '_302.' );
-            return str;
-        }
-        
-        // .. no Result
-        return null;
-
-}
-
-// -- =====================================================================================
-
-function audio_page ( str: string ) {
-
-    let aCut: string,
-        aCutID: number,
-        bCutID: number;
-
-    aCut    = '<div class="linkList overlayIcon">';
-    aCutID  = str.lastIndexOf( aCut ) + aCut.length;
-    str     = str.substr( aCutID );
-    aCut    = 'href="';
-    aCutID  = str.indexOf( aCut ) + aCut.length;
-    str     = str.substr( aCutID );
-    bCutID  = str.indexOf( '"' );
-    str     = str.substr( 0 , bCutID );
-    str     = 'https://www.dw.com' + str;
-
-    return str;
-
-}
-
-// -- =====================================================================================
-
-function audio ( str: string ) {
-
-    let aCut: string,
-        bCut: string,
-        aCutID: number,
-        bCutID: number;
-
-    bCut    = '.mp3';
-    bCutID  = str.indexOf( bCut ) + bCut.length;
-    str     = str.substr( 0 , bCutID );
-    aCut    = 'https://';
-    aCutID  = str.lastIndexOf( aCut );
-    str     = str.substr( aCutID );
 
     return str;
 

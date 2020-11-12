@@ -28,6 +28,15 @@ export const de_r: g.Ribosome[] = [
         title       : "Nachrichten",
         avatar      : "https://media2.faz.net/ppmedia/aktuell/feuilleton/medien/3466251136/1.5177774/article_multimedia_overview/das-gebaeude-der-deutschen.jpg",
         cellsState  : []
+    },
+    {
+        institute   : "de",
+        code        : "TTFGH8V",
+        type        : "audio",
+        level       : "C1",
+        title       : "Nachrichten",
+        avatar      : "https://i0.wp.com/learnoutlive.com/wp-content/uploads/2018/06/g2043.png",
+        cellsState  : []
     }
 
 ]

@@ -10,8 +10,8 @@ export function gene ( ribosomeCode: string, user: u.user ): Promise<g.gene> {
 
         DNA_maker()
         .then( DNA => {
-            if ( user.gotLessons.includes( DNA[0].id ) ) rx( "No more News for Today!" );
-            else rs( DNA[0] );
+            if ( !user.gotLessons.includes( DNA[0].id ) ) rs( DNA[0] );
+            else rx( "No more News for Today!" );
         } )
         .catch( err => rx( err ) );
     

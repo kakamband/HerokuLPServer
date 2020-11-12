@@ -49,7 +49,7 @@ function _new_cell ( ribosomeCode: string, user: u.user ): Promise<g.cell> {
 
         if ( rCode ) {
 
-            // .. fex has been found
+            // .. rRNA has been found
             if ( RNA.hasOwnProperty( rCode ) ) {
                
                 let requiredData = [
@@ -67,12 +67,12 @@ function _new_cell ( ribosomeCode: string, user: u.user ): Promise<g.cell> {
                 .catch( err => rx(err) );
 
             }
-            // .. this fex is not coded yet!
-            else return rx( "fex error!" );
+            // .. this rRNA is not coded yet!
+            else return rx( "rRNA error!" );
 
         }
-        // .. no fex no way
-        else return rx( "FexCode mismatched!" );
+        // .. no rRNA no way
+        else return rx( "rRNA mismatched!" );
 
     } )
 
