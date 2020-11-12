@@ -11,7 +11,7 @@ cell ( ribosome: g.Ribosome, gene: g.gene, junk:g.junk, snap: g.rawSnap ): g.cel
 
     // .. concat category
     if ( gene.hPath ) junk.hPath = [ ...junk.hPath, ...gene.hPath ];
-    
+
     return {
                                                  
         chromosome: {                            
@@ -22,6 +22,7 @@ cell ( ribosome: g.Ribosome, gene: g.gene, junk:g.junk, snap: g.rawSnap ): g.cel
                 name        : null              ,
             }                                   ,
             ...junk                             ,
+            vPath           : [ gene.title ]    ,
             wPath           : {                  
                 avatarURL   : gene.avatarURL    ,
                 mediaURL    : gene.mediaURL     ,

@@ -30,7 +30,7 @@ export function junk ( ribosome: g.Ribosome ): Promise<g.junk> {
             type        : ribosome.type         ,
             level       : ribosome.level        ,
             hPath       : [ ribosome.title ]    ,
-            vPath       : [ ribosome.title ]    ,
+            vPath       : null                  ,
             uPath       : {                      
                 context : null                  ,
                 media   : null                  ,
