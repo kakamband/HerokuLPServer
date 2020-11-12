@@ -8,13 +8,13 @@ export function gene ( ribosomeCode: string, user: u.user ): Promise<g.gene> {
 
     return new Promise ( (rs, rx) => { 
 
-        DNAxList()
-        .then( list => {
+        DNAxList().then( list => {
             // .. filter list to new ones for user
-            list = list.filter( item => !user.gotLessons.includes( item.id ) );
+            let newOnes = list.filter( item => !user.gotLessons.includes( item.id ) );
             if ( !list.length ) rx( "No more Thema for now!" );
             else {
-                DNA_maker( list[0].id ,list[0].link )
+                console.log(user.gotLessons);
+                DNA_maker( newOnes[0].id ,newOnes[0].link )
                 .then( DNA => rs( DNA[0] ) )
                 .catch( err => rx( err ) );
             };

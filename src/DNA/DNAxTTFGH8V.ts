@@ -4,25 +4,20 @@ import * as g                           from '../types/genetics'
 
 // -- =====================================================================================
 
-export const DNA: g.gene[] = []
-
-// -- =====================================================================================
-
 export function DNA_maker ( id: string, link: string ): Promise<g.gene[]> {
 
     return new Promise ( (rs, rx) => { 
-
+        console.log(link);
+        
         html( link ).then( themaPage => {
             html( audio_page( themaPage ) ).then( audioPage => { 
-                DNA.push( { 
+                rs ( [ { 
                     id          : id,
                     title       : title( themaPage ),
                     text        : text( themaPage ),
                     avatarURL   : avatar( themaPage ),
                     mediaURL    : audio( audioPage )
-                } );
-
-                rs ( DNA );
+                } ] );
             } );
         } );
     

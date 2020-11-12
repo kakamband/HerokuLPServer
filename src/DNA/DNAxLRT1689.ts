@@ -4,10 +4,6 @@ import * as g                           from '../types/genetics'
 
 // -- =====================================================================================
 
-export let DNA: g.gene[] = [];
-
-// -- =====================================================================================
-
 export function DNA_maker (): Promise<g.gene[]> {
 
     return new Promise ( (rs, rx) => { 
@@ -18,19 +14,15 @@ export function DNA_maker (): Promise<g.gene[]> {
         html( homeURL ).then( homePage => {
             if ( homePage.includes( heute.code ) ) {
                 html( newsPage( homePage, heute.code ) ).then( newsPage => {
-                    html( audio_page( newsPage ) ).then( audioPage => { 
-                        
-                        DNA.push( { 
+                    html( audio_page( newsPage ) ).then( audioPage => {
+                        rs ( [ {
                             id          : heute.code,
                             title       : heute.name,
                             text        : text( newsPage ),
                             avatarURL   : avatar( newsPage ),
                             mediaURL    : audio( audioPage ),
                             hPath       : heute.hPath 
-                        } );
-
-                        rs ( DNA );
-                    
+                        } ] );
                     } )
                 } );
             }
