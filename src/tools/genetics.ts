@@ -85,17 +85,19 @@ export function _crypto_cell ( ribCode: string, user: u.user ): Promise<g.crypto
     
     return new Promise( async (rs, rx) => {
         
-        let id = rpi.findIndex( row => row.code === ribCode );
-        // .. very odd Error!
-        if ( id === -1 ) return rx( "Ribosome Not Found!" );
+        rs( [] as any )
+        // let id = rpi.findIndex( row => row.code === ribCode );
+        
+        // // .. very odd Error!
+        // if ( id === -1 ) return rx( "Ribosome Not Found!" );
 
-        let ribosome = rpi[ id ];
+        // let ribosome = rpi[ id ];
 
-        _new_cell( ribosome, user )
-        .then( cell => {
-            rs ( { id: cell.chromosome.code.idx , cell: cell } );
-        } )
-        .catch( err => rx(err) );
+        // _new_cell( ribosome, user )
+        // .then( cell => {
+        //     rs ( { id: cell.chromosome.code.idx , cell: cell } );
+        // } )
+        // .catch( err => rx(err) );
     
     } );
 
