@@ -46,10 +46,11 @@ function _new_cell ( ribosome: g.Ribosome, user: u.user ): Promise<g.cell> {
         // .. insufficient data
         if ( !ribosome.code ) return rx( "Entry mismatched!" );
 
+
         let rCode = ribosomeToRNA[ ribosome.code ];
 
-        return rs ( rCode )
         if ( rCode ) {
+
 
             // .. rRNA has been found
             if ( RNA.hasOwnProperty( rCode ) ) {
