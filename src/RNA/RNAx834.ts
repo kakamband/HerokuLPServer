@@ -34,18 +34,18 @@ export function junk ( ribosomeCode: string ): Promise<g.junk> {
         let junk: g.junk;
 
         junk = {
-            institute   : "de"                          ,
-            type        : "audio"                       ,
-            level       : "B1"                          ,
-            hPath       : [ "Top-Thema mit Vokabeln" ]  ,
-            vPath       : null                          ,
-            uPath       : {                              
-                context : null                          ,
-                media   : null                          ,
-                avatar  : null                          ,
-            }                                           ,
-            status      : "reading"                     ,
-            etikett     : {}                            ,
+            institute   : "de"                  ,
+            type        : "audio"               ,
+            level       : "B1"                  ,
+            hPath       : [ "Top Thema" ]       ,
+            vPath       : null                  ,
+            uPath       : {                      
+                context : null                  ,
+                media   : null                  ,
+                avatar  : null                  ,
+            }                                   ,
+            status      : "reading"             ,
+            etikett     : {}                    ,
 
         };
 

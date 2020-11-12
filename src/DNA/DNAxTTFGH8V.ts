@@ -104,7 +104,6 @@ function title ( str: string ) {
     bCutID = str.indexOf( bCut );
     
     str    = str.substring( aCutID, bCutID );
-    console.log(str);
     
     return str;
 
