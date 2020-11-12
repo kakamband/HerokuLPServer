@@ -86,7 +86,7 @@ export function _crypto_cell ( ribCode: string, user: u.user ): Promise<g.crypto
     return new Promise( async (rs, rx) => {
         
         let id = rpi.findIndex( row => row.code === ribCode );
-        rs( { id: id+"", cell: []  as any} )
+        rs( { id: id+"", cell: [ id ]  as any} )
         
         // // .. very odd Error!
         // if ( id === -1 ) return rx( "Ribosome Not Found!" );
