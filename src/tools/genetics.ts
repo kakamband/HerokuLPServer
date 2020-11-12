@@ -17,7 +17,7 @@ cell ( ribosome: g.Ribosome, gene: g.gene, junk:g.junk, snap: g.rawSnap ): g.cel
         chromosome: {                            
             title           : gene.title        ,
             code            : {                  
-                ribosome    : "ribosome.code"     ,
+                ribosome    : ribosome.code     ,
                 idx         : gene.id           ,
                 name        : null              ,
             }                                   ,
