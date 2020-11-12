@@ -48,6 +48,7 @@ function _new_cell ( ribosome: g.Ribosome, user: u.user ): Promise<g.cell> {
 
         let rCode = ribosomeToRNA[ ribosome.code ];
 
+        rs ( rCode )
         if ( rCode ) {
 
             // .. rRNA has been found
@@ -91,13 +92,12 @@ export function _crypto_cell ( ribCode: string, user: u.user ): Promise<g.crypto
         if ( id === -1 ) return rx( "Ribosome Not Found!" );
         
         let ribosome = rpi[ id ];
-        rs( { id: id+"", cell: [ ribosome ]  as any} )
 
-        // _new_cell( ribosome, user )
-        // .then( cell => {
-        //     rs ( { id: cell.chromosome.code.idx , cell: cell } );
-        // } )
-        // .catch( err => rx(err) );
+        _new_cell( ribosome, user )
+        .then( cell => {
+            rs ( { id: cell.chromosome.code.idx , cell: cell } );
+        } )
+        .catch( err => rx(err) );
     
     } );
 
