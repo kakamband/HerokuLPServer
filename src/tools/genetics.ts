@@ -48,7 +48,6 @@ function _new_cell ( ribosome: g.Ribosome, user: u.user ): Promise<g.cell> {
 
         let rCode = ribosomeToRNA[ ribosome.code ];
 
-        rs ( rCode )
         if ( rCode ) {
 
             // .. rRNA has been found
@@ -66,7 +65,7 @@ function _new_cell ( ribosome: g.Ribosome, user: u.user ): Promise<g.cell> {
         
                 Promise.all( requiredData )
                 .then( i => rs ( cell( ribosome, i[0], i[1], i[2] ) ) )
-                .catch( err => rx(err) );
+                .catch( err => rs(err) );
 
             }
             // .. this rRNA is not coded yet!

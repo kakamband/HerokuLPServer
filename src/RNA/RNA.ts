@@ -13,7 +13,7 @@ interface aRNA {
    snap: () => Promise<g.rawSnap>
 } 
 
-export const RNA: { [key: string]: aRNA} = { 
+export const RNA: { [key: string]: aRNA } = { 
    x1382,
    x1309,
    x1127,
