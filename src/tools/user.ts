@@ -73,7 +73,7 @@ export function _hasCredit ( user: u.user ): Promise<void> {
 
 // -- =====================================================================================
 
-// export async function _received_cell ( user: u.user, ribosomeCode: string, id: string ) {
+// export async function _received_cell ( user: u.user, ribosome: g.Ribosome, id: string ) {
 
     // try {
 
@@ -82,9 +82,9 @@ export function _hasCredit ( user: u.user ): Promise<void> {
     //     // .. touch
     //     if ( !user.purchased_items ) user.purchased_items = {};
     //     // .. register
-    //     user.purchased_items[ ribosomeCode ] ? 
-    //         user.purchased_items[ ribosomeCode ].push( id ) :
-    //         user.purchased_items[ ribosomeCode ] = [id]
+    //     user.purchased_items[ ribosome.code ] ? 
+    //         user.purchased_items[ ribosome.code ].push( id ) :
+    //         user.purchased_items[ ribosome.code ] = [id]
 
     //     let query = `UPDATE users SET 
     //         purchased_items = '${JSON.stringify(user.purchased_items)}',
@@ -144,10 +144,10 @@ user_needs_these ( user: u.user, DNA: g.gene[] ): Promise<number[]> {
         for ( let i=0; i < DNA.length; i++ ) list.push(i);
     
         // .. first Meet: return result
-        if ( !user.gotLessons.length ) return rs ( list );
+        if ( !user.gotFromThisRibosome.length ) return rs ( list );
             
         // .. trim list
-        list = list.filter( i => !user.gotLessons.includes(i) );
+        list = list.filter( i => !user.gotFromThisRibosome.includes(i) );
 
         // .. return result
         return list.length ? rs( list ) : rx( "no more lesson" );

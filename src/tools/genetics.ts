@@ -81,12 +81,11 @@ function _new_cell ( ribosome: g.Ribosome, user: u.user ): Promise<g.cell> {
 
 // -- =====================================================================================
 
-export function 
-_crypto_cell ( ribosomeCode: string, user: u.user ): Promise<g.cryptoCell> {
+export function _crypto_cell ( ribCode: string, user: u.user ): Promise<g.cryptoCell> {
     
     return new Promise( async (rs, rx) => {
         
-        let id = rpi.findIndex( row => row.code === ribosomeCode );
+        let id = rpi.findIndex( row => row.code === ribCode );
         // .. very odd Error!
         if ( id === -1 ) return rx( "Ribosome Not Found!" );
 

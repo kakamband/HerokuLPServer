@@ -10,7 +10,7 @@ export function gene ( user: u.user ): Promise<g.gene> {
 
         DNA_maker()
         .then( DNA => {
-            if ( !user.gotLessons.includes( DNA[0].id ) ) rs( DNA[0] );
+            if ( !user.gotFromThisRibosome.includes( DNA[0].id ) ) rs( DNA[0] );
             else rx( "No more News for Today!" );
         } )
         .catch( err => rx( err ) );

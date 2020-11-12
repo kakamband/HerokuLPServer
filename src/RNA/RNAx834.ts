@@ -11,7 +11,7 @@ export function gene ( user: u.user ): Promise<g.gene> {
         DNAxList().then( list => {
 
             // .. filter list to new ones for user
-            list = list.filter( item => !user.gotLessons.includes( item.id ) );
+            list = list.filter( item => !user.gotFromThisRibosome.includes( item.id ) );
             
             if ( !list.length ) rx( "No more Thema for now!" );
         
