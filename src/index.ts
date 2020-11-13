@@ -14,7 +14,7 @@ const app = express();
 // .. Providing Ribosomes filtered by Institute
 app.get( '/ribosome', ( req: express.Request, res: express.Response ) => {
     let answer = rpi.filter( r => r.institute === req.query.i );
-    for ( let item of answer ) item.title = item.title.replace( " ", "\n" );
+    for ( let item of answer ) item.title = item.title.replace( / /g, "\n" );
     res.json( answer )
 } );
 
