@@ -42,7 +42,7 @@ export const en_r: g.Ribosome[] = [
         code        : "PRENW2A",
         type        : "audio",
 		level       : "C1",
-		title       : "Interesting\nThing\nof\nthe Day",
+		title       : "Interesting\nThing of\nthe Day",
 		avatar      : "https://www.kickassfacts.com/wp-content/uploads/2017/01/fact-of-the-day.jpg",
         cellsState  : []
     }
