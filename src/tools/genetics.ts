@@ -9,8 +9,6 @@ import { rpi }                          from "../ribosomes/rpi";
 function 
 cell ( ribosome: g.Ribosome, gene: g.gene, junk:g.junk, snap: g.rawSnap ): g.cell {
 
-    // .. concat category
-
     return {
                                                  
         chromosome: {                            
@@ -23,7 +21,7 @@ cell ( ribosome: g.Ribosome, gene: g.gene, junk:g.junk, snap: g.rawSnap ): g.cel
             ...junk                                     ,
             hPath           : [                          
                 ribosome.title.replace( /\n/g, ' ' )    ,
-                ...gene.hPath                            
+                ...gene.hPath || []                      
             ]                                           ,
             vPath           : [ gene.title ]            ,
             wPath           : {                          
@@ -69,7 +67,7 @@ function _new_cell ( ribosome: g.Ribosome, user: u.user ): Promise<g.cell> {
         
                 Promise.all( requiredData )
                 .then( i => rs ( cell( ribosome, i[0], i[1], i[2] ) ) )
-                .catch( err => rx(err) );
+                .catch( err => {console.log(err);rx(err)} );
 
             }
             // .. this rRNA is not coded yet!
