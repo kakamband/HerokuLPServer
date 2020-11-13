@@ -10,28 +10,31 @@ function
 cell ( ribosome: g.Ribosome, gene: g.gene, junk:g.junk, snap: g.rawSnap ): g.cell {
 
     // .. concat category
-    if ( gene.hPath ) junk.hPath = [ ...junk.hPath, ...gene.hPath ];
 
     return {
                                                  
         chromosome: {                            
-            title           : gene.title        ,
-            code            : {                  
-                ribosome    : ribosome.code     ,
-                idx         : gene.id           ,
-                name        : null              ,
-            }                                   ,
-            ...junk                             ,
-            vPath           : [ gene.title ]    ,
-            wPath           : {                  
-                avatarURL   : gene.avatarURL    ,
-                mediaURL    : gene.mediaURL     ,
-            }                                    
-        }                                       ,
-                                                 
-        rawText             : gene.text         ,
-                                                 
-        rawSnap             : snap              ,
+            title           : gene.title                ,
+            code            : {                          
+                ribosome    : ribosome.code             ,
+                idx         : gene.id                   ,
+                name        : null                      ,
+            }                                           ,
+            ...junk                                     ,
+            hPath           : [                          
+                ribosome.title.replace( /\n/g, ' ' )    ,
+                ...gene.hPath                            
+            ]                                           ,
+            vPath           : [ gene.title ]            ,
+            wPath           : {                          
+                avatarURL   : gene.avatarURL            ,
+                mediaURL    : gene.mediaURL             ,
+            }                                            
+        }                                               ,
+                                                         
+        rawText             : gene.text                 ,
+                                                         
+        rawSnap             : snap                      ,
                                                  
     }
 

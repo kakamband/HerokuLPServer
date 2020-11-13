@@ -29,7 +29,6 @@ export interface junk {
     institute       : string                        ,
     type            : LessonType                    ,
     level           : CEF                           ,
-    hPath           : string[]                      ,
     vPath           : string[]                      ,
     uPath           : {                              
         context     : string                        ,
