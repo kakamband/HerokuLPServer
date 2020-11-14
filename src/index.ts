@@ -24,7 +24,7 @@ app.get( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
     user._validator( 
         req.query.u as string, 
         req.query.p as string, 
-        req.query.d as string 
+        req.query.k as string 
     ).then( u => { 
 
         // .. checking credits
@@ -34,12 +34,10 @@ app.get( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
 
             // .. produce a new CELL
             genetics._crypto_cell ( req.query.r as string, u as u.user )
-            .then( crypto_cell => { 
-
-                res.json( { status: 200, "answer": crypto_cell.cell } );
+            .then( crypto_cell => {
+                res.json( { status: 200, "answer": crypto_cell } );
                 // TODO maybe we should confirm it somewhere else
                 // user._received_cell( u, req.query.r as string, crypto_cell.id );
-            
             } )
             .catch( err => res.json( { status: 500, "reason": err } ) );
 
@@ -57,3 +55,10 @@ app.get( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
 app.listen( PORT, () => console.info( `\n ... running on ${ PORT } ...\n` ) ); 
 
 // -- =====================================================================================
+
+function unicodeToChar( text ) {
+    return text.replace( /\\u[\dA-F]{4}/gi, 
+        function ( match ) {
+            return String.fromCharCode( parseInt( match.replace( /\\u/g, '' ), 16 ) );
+        } );
+}

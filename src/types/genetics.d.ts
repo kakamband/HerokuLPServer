@@ -83,13 +83,6 @@ export interface cell {
 
 export interface rawSnap { [key: string]: string }
 
-export interface cryptoCell {
-    id              : string                        ,
-    // TODO define it
-    cell            : cell                          ,
-}
-
-
 type LessonType = 'audio' | 'video';
 type LessonStatus = 'reading' | 'read';
 type CEF = "A1"|"A2"|"B1"|"B2"|"C1"|"C2";

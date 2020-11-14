@@ -5,6 +5,7 @@ export interface user {
     email               : string                        ,
     avatar              : string                        ,
     devices             : string                        ,
+    currentDevice       : string                        ,
     credit              : number                        ,
     purchased_items     : { [key: string]: string[] }   ,
     gotFromThisRibosome : string[]                      ,

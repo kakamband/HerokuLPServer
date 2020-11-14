@@ -1,6 +1,7 @@
 import { RNA }                          from "../RNA/RNA";
 import * as g                           from '../types/genetics'
 import * as u                           from "../types/user";
+import { crypto }                       from "../tools/crypto";
 import { ribosomeToRNA }                from "../ribosomes/rRNA";
 import { rpi }                          from "../ribosomes/rpi";
 
@@ -23,7 +24,7 @@ export function _ribosomes ( institute: string ): Promise<g.Ribosome[]> {
 
 // -- =====================================================================================
 
-export function _crypto_cell ( ribCode: string, user: u.user ): Promise<g.cryptoCell> {
+export function _crypto_cell ( ribCode: string, user: u.user ): Promise<string> {
     
     return new Promise( async (rs, rx) => {
         
@@ -35,7 +36,7 @@ export function _crypto_cell ( ribCode: string, user: u.user ): Promise<g.crypto
         let ribosome = rpi[ id ];
 
         new_cell( ribosome, user ).
-            then( cell => rs ( { id: cell.chromosome.code.idx , cell: cell } ) ).
+            then( cell => rs ( crypto( JSON.stringify( cell ), user.currentDevice ) ) ).
             catch( err => rx(err) );
     
     } );
@@ -104,7 +105,7 @@ function new_cell ( ribosome: g.Ribosome, user: u.user ): Promise<g.cell> {
         
                 Promise.all( requiredData )
                 .then( i => rs ( cell( ribosome, i[0], i[1], i[2] ) ) )
-                .catch( err => {console.log(err);rx(err)} );
+                .catch( err => rx(err) );
 
             }
             // .. this rRNA is not coded yet!

@@ -30,6 +30,9 @@ _validator ( username: string, password: string, uuid: string ): Promise<u.user>
             
             if ( result.rows.length ) {
 
+                // .. register current uuid
+                result.rows[0].currentDevice = uuid;
+
                 let devices = result.rows[0].devices.split( "," );
                 // .. valid
                 if ( !devices.length || devices.includes( uuid ) ) rs( result.rows[0] );
