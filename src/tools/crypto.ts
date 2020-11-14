@@ -19,7 +19,7 @@ export function crypto ( str: string, key: string, decode=false ) {
         str = _m( str, "z", "Z" );
         str = _m( str, "6", "9" );
         str = _m( str, "n", "u" );
-        str = _m( str, "b", "d" );
+        str = _m( str, "b", "d" ); 
         str = _m( str, "p", "q" );
         return str;
     }
