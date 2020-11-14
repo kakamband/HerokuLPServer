@@ -2,6 +2,8 @@ import { html }                         from './DNAx'
 import { audio_page, avatar, audio }    from './DNAxDW'
 import * as g                           from '../types/genetics'
 
+export const DNA = { length: "∞" }
+
 // -- =====================================================================================
 
 export function DNA_maker ( id: string, link: string ): Promise<g.gene[]> {

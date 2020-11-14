@@ -1,5 +1,4 @@
 import * as express                     from "express"
-import { rpi }                          from "./ribosomes/rpi";
 import * as user                        from "./tools/user";
 import * as genetics                    from "./tools/genetics";
 import * as u                           from "./types/user";
@@ -13,7 +12,7 @@ const app = express();
 
 // .. Providing Ribosomes filtered by Institute
 app.get( '/ribosome', ( req: express.Request, res: express.Response ) => {
-    res.json( rpi.filter( r => r.institute === req.query.i ) )   
+    genetics._ribosomes( req.query.i as string ).then( list => res.json( list ) );
 } );
 
 // -- =====================================================================================

@@ -6,8 +6,45 @@ import { rpi }                          from "../ribosomes/rpi";
 
 // -- =====================================================================================
 
-function 
-cell ( ribosome: g.Ribosome, gene: g.gene, junk:g.junk, snap: g.rawSnap ): g.cell {
+export function _ribosomes ( institute: string ): Promise<g.Ribosome[]> {
+
+    return new Promise ( (rs, rx) => {
+        
+        let list = rpi.filter( ribosome => ribosome.institute === institute );
+        
+        for ( let item of list ) 
+            item.contains = require( "../DNA/DNAx" + item.code ).DNA.length;
+
+        rs ( list );
+
+    } )
+
+}
+
+// -- =====================================================================================
+
+export function _crypto_cell ( ribCode: string, user: u.user ): Promise<g.cryptoCell> {
+    
+    return new Promise( async (rs, rx) => {
+        
+        let id = rpi.findIndex( row => row.code === ribCode );
+        
+        // .. very odd Error!
+        if ( id === -1 ) return rx( "Ribosome Not Found!" );
+        
+        let ribosome = rpi[ id ];
+
+        new_cell( ribosome, user ).
+            then( cell => rs ( { id: cell.chromosome.code.idx , cell: cell } ) ).
+            catch( err => rx(err) );
+    
+    } );
+
+}
+
+// -- =====================================================================================
+
+function cell ( ribosome: g.Ribosome, gene: g.gene, junk:g.junk, snap: g.rawSnap ): g.cell {
 
     return {
                                                  
@@ -41,7 +78,7 @@ cell ( ribosome: g.Ribosome, gene: g.gene, junk:g.junk, snap: g.rawSnap ): g.cel
 // -- =====================================================================================
 
 // TODO define return type!!!
-function _new_cell ( ribosome: g.Ribosome, user: u.user ): Promise<g.cell> {
+function new_cell ( ribosome: g.Ribosome, user: u.user ): Promise<g.cell> {
 
     return new Promise ( (rs, rx) => {
         
@@ -82,24 +119,3 @@ function _new_cell ( ribosome: g.Ribosome, user: u.user ): Promise<g.cell> {
 }
 
 // -- =====================================================================================
-
-export function _crypto_cell ( ribCode: string, user: u.user ): Promise<g.cryptoCell> {
-    
-    return new Promise( async (rs, rx) => {
-        
-        let id = rpi.findIndex( row => row.code === ribCode );
-        
-        // .. very odd Error!
-        if ( id === -1 ) return rx( "Ribosome Not Found!" );
-        
-        let ribosome = rpi[ id ];
-
-        _new_cell( ribosome, user )
-        .then( cell => {
-            rs ( { id: cell.chromosome.code.idx , cell: cell } );
-        } )
-        .catch( err => rx(err) );
-    
-    } );
-
-}
