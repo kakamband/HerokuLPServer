@@ -12,6 +12,8 @@ import { Pool }                         from 'pg';
 
 app.get( '/verificationCode', function (req, res) {
     
+    if ( !req.query.e || !req.query.c ) return 0;
+    
     let transporter = nodeMailer.createTransport( {
         host: 'smtp.gmail.com',
         port: 465,
@@ -23,14 +25,14 @@ app.get( '/verificationCode', function (req, res) {
     } );
 
     let mailOptions = {
-        to: 'sz.hatef@gmail.com',
-        subject: "req.query.subject",
-        text: "req.query.message"
+        to: req.query.e,
+        subject: "Verification Code: ",
+        text: req.query.c
     };
 
     transporter.sendMail( mailOptions, (error, info) => {} );
     res.end();
-    
+
 } );
 
 
