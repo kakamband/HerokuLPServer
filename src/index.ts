@@ -2,11 +2,70 @@ import * as express                     from "express"
 import * as user                        from "./tools/user";
 import * as genetics                    from "./tools/genetics";
 import * as u                           from "./types/user";
+let nodeMailer = require( 'nodemailer' );
 
 // -- =====================================================================================
 
 const PORT = process.env.PORT || 5000;
 const app = express();
+import { Pool }                         from 'pg';
+
+app.get( '/verificationCode', function (req, res) {
+    
+    let transporter = nodeMailer.createTransport( {
+        host: 'smtp.gmail.com',
+        port: 465,
+        secure: true,
+        auth: {
+            user: 'language.power.mail.center@gmail.com',
+            pass: 'lpmcLPMC!@#$%12345'
+        }
+    } );
+
+    let mailOptions = {
+        to: 'sz.hatef@gmail.com',
+        subject: "req.query.subject",
+        text: "req.query.message"
+    };
+
+    transporter.sendMail( mailOptions, (error, info) => {} );
+    res.end();
+    
+} );
+
+
+
+app.get( '/test', async ( req: express.Request, res: express.Response ) => {
+    
+
+    const pool = new Pool( {
+        connectionString: process.env.DATABASE_URL,
+        ssl: {
+          rejectUnauthorized: false
+        }
+    } );
+
+
+    const client = await pool.connect();
+
+    let query = `SELECT * FROM users WHERE 
+        id = 1`;
+
+    const result = await client.query( query );
+    
+    if ( result.rows.length ) {
+
+        console.log(result.rows[0].devices[0]);
+        
+    
+    }
+
+    else console.log("No Row!");
+    
+    
+    client.release();
+        
+} );
 
 // -- =====================================================================================
 
