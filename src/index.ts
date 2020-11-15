@@ -26,7 +26,7 @@ app.get( '/verificationCode', function (req, res) {
 
     let mailOptions = {
         to: req.query.e,
-        subject: "Verification Code: ",
+        subject: "Verification Code",
         text: req.query.c
     };
 
