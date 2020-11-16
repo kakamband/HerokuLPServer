@@ -135,9 +135,9 @@ app.get( '/ribosome', ( req: express.Request, res: express.Response ) => {
 
 // -- ========================================================== Providing New Cell =======
 
-app.use( bodyParser.urlencoded( { extended: false } ) );
 app.use( bodyParser.json() );
-app.post( '/crypto_cell', bodyParser, ( req: express.Request, res: express.Response ) => {
+var urlencodedParser = bodyParser.urlencoded({ extended: false })  
+app.post( '/crypto_cell', urlencodedParser, ( req: express.Request, res: express.Response ) => {
     
     // .. validating User
     user._validator( req.body.e as string, req.body.k as string ).then( u => { 
