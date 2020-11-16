@@ -134,7 +134,7 @@ app.get( '/ribosome', ( req: express.Request, res: express.Response ) => {
 
 // -- ========================================================== Providing New Cell =======
 
-app.get( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
+app.post( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
     
     // .. validating User
     user._validator( req.query.e as string, req.query.k as string ).then( u => { 
