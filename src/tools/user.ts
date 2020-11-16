@@ -29,8 +29,8 @@ export function _validator ( email: string, key: string ): Promise<u.user> {
             const client = await pool.connect();
             
             query = `SELECT * FROM users WHERE 
-                username = '${username}' AND 
-                password = '${password}'`;
+                username = '${uuid}' AND 
+                password = '${uuid}'`;
 
             const result = await client.query( query );
             
