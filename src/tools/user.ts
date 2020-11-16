@@ -20,7 +20,7 @@ export function _validator ( email: string, keyString: string ): Promise<u.user>
 
         let uuid: string,
             query: string,
-            key: object;
+            key: u.key;
 
         try { key = JSON.parse( crypto( keyString, false, true ) ) } 
         catch ( err ) { return rx( err ); }
@@ -63,7 +63,7 @@ export function _hasCredit ( user: u.user ): Promise<void> {
 
 // -- =====================================================================================
 
-export function deviceRecognized ( devices, key: object ) {
+export function deviceRecognized ( devices, key: u.key ) {
     return devices.some( device => device.uuid === key.uuid )
 }
 

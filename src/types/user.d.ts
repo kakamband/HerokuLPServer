@@ -14,3 +14,9 @@ export interface user {
     purchased_items     : { [key: string]: string[] }   ,
     gotFromThisRibosome : string[]                      ,
 }
+
+export interface key {
+    name: string,
+    uuid: string,
+    date?: number
+}

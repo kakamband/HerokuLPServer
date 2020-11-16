@@ -55,7 +55,7 @@ app.get( '/register', async ( req: express.Request, res: express.Response ) => {
     
     let email = req.query.e,
         keyString = crypto( req.query.k as string, false, true ),
-        key,
+        key: u.key,
         query: string;
 
     try { key = JSON.parse( keyString ) } catch {}
@@ -145,7 +145,11 @@ app.get( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
             u.gotFromThisRibosome = req.query.l as string[];
 
             // .. produce a new CELL
-            genetics._crypto_cell ( req.query.r as string, u as u.user, req.query.k )
+            genetics._crypto_cell ( 
+                req.query.r as string, 
+                u as u.user, 
+                req.query.k as string 
+            )
             .then( crypto_cell => {
                 res.json( { status: 200, "answer": crypto_cell } );
                 // TODO maybe we should confirm it somewhere else

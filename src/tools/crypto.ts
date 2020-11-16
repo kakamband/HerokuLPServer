@@ -1,6 +1,6 @@
-export function crypto ( str: string, key: string|false = false, decode=false ) {
+export function crypto ( str: string, keyString: string|false = false, decode=false ) {
 
-    if ( !key ) return decode ? _d( str ) : _c( str );
+    if ( !keyString ) return decode ? _d( str ) : _c( str );
 
     function _c ( str: string ): string {
         return Buffer.from( str, "utf8" ).toString( 'base64' ).replace( /\=/g, "" );
@@ -27,8 +27,8 @@ export function crypto ( str: string, key: string|false = false, decode=false ) 
     }
 
     return !decode ?
-        _x( _c( _c( key ) + _c( str ) ) ) :
-        _d( _d( _x( str ) ).replace( _c( key ), "" ) )
+        _x( _c( _c( keyString ) + _c( str ) ) ) :
+        _d( _d( _x( str ) ).replace( _c( keyString ), "" ) )
         ;
 
 }
