@@ -146,27 +146,22 @@ app.post( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
         l: string[],
     };
 
-    // try { queries = JSON.parse( req.body.content ) } catch {}
+    try { queries = JSON.parse( req.body.content ) } catch {}
 
-    return res.json( { answer: req.body } );
     // .. validating User
-    user._validator( req.body.e as string, req.body.k as string ).then( u => { 
+    user._validator( queries.e as string, queries.k as string ).then( u => { 
 
         // .. checking credits
         user._hasCredit( u ).then( () => {
             
-            u.gotFromThisRibosome = req.body.l as string[];
+            u.gotFromThisRibosome = queries.l as string[];
 
             // .. produce a new CELL
-            genetics._crypto_cell ( 
-                req.body.r as string, 
-                u as u.user, 
-                req.body.k as string 
-            )
+            genetics._crypto_cell ( queries.r, u as u.user, queries.k )
             .then( crypto_cell => {
                 res.json( { status: 200, "answer": crypto_cell } );
                 // TODO maybe we should confirm it somewhere else
-                // user._received_cell( u, req.body.r as string, crypto_cell.id );
+                // user._received_cell( u, queries.r as string, crypto_cell.id );
             } )
             .catch( err => res.json( { status: 500, "reason": err } ) );
 
