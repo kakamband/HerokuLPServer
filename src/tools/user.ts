@@ -1,6 +1,7 @@
 import { Pool }                         from 'pg';
 import * as g                           from '../types/genetics'
 import * as u                           from '../types/user'
+import { crypto } from './crypto';
 
 // -- =====================================================================================
 
@@ -13,16 +14,21 @@ const pool = new Pool( {
 
 // -- =====================================================================================
 
-export function 
-_validator ( username: string, password: string, uuid: string ): Promise<u.user> {
+export function _validator ( email: string, key: string ): Promise<u.user> {
 
     return new Promise ( async (rs, rx) => {
 
+        let uuid: string,
+            query: string;
+
+        try { uuid = JSON.parse( crypto( key, false, true ) ).uuid } 
+        catch ( err ) { return rx( err ); }
+        
         try {
 
             const client = await pool.connect();
             
-            let query = `SELECT * FROM users WHERE 
+            query = `SELECT * FROM users WHERE 
                 username = '${username}' AND 
                 password = '${password}'`;
 
