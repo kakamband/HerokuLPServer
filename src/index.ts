@@ -149,12 +149,12 @@ app.post( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
     queries = req.body;
 
     // .. validating User
-    user._validator( queries.e as string, queries.k as string ).then( u => { 
+    user._validator( queries.e, queries.k ).then( u => { 
 
         // .. checking credits
         user._hasCredit( u ).then( () => {
             
-            u.gotFromThisRibosome = queries.l as string[];
+            u.gotFromThisRibosome = queries.l;
 
             // .. produce a new CELL
             genetics._crypto_cell ( queries.r, u as u.user, queries.k )

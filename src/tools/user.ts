@@ -143,7 +143,7 @@ user_needs_these ( user: u.user, DNA: g.gene[] ): Promise<number[]> {
         if ( !user.gotFromThisRibosome.length ) return rs ( list );
             
         // .. trim list
-        list = list.filter( i => !user.gotFromThisRibosome.includes(i) );
+        list = list.filter( i => !user.gotFromThisRibosome.includes(i+"") );
 
         // .. return result
         return list.length ? rs( list ) : rx( "no more lesson" );
