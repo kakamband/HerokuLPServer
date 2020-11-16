@@ -146,9 +146,9 @@ app.post( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
         l: string[],
     };
 
-    try { queries = JSON.parse( req.body.content ) } catch {}
+    // try { queries = JSON.parse( req.body.content ) } catch {}
 
-    return res.json( { answer: req.body.content } );
+    return res.json( { answer: "req.body" } );
     // .. validating User
     user._validator( req.body.e as string, req.body.k as string ).then( u => { 
 
