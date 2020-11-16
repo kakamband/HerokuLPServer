@@ -16,7 +16,7 @@ export interface user {
 }
 
 export interface key {
-    name: string,
-    uuid: string,
-    date?: number
+    name                : string                        ,
+    uuid                : string                        ,
+    date?               : number                        ,
 }
