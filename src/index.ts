@@ -135,10 +135,11 @@ app.get( '/ribosome', ( req: express.Request, res: express.Response ) => {
 
 // -- ========================================================== Providing New Cell =======
 
+app.use( bodyParser.urlencoded( { extended: false } ) );
 app.use( bodyParser.json() );
-var urlencodedParser = bodyParser.urlencoded({ extended: false })  
-app.post( '/crypto_cell', urlencodedParser, ( req: express.Request, res: express.Response ) => {
+app.post( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
     
+    return res.json( req.body );
     // .. validating User
     user._validator( req.body.e as string, req.body.k as string ).then( u => { 
 
