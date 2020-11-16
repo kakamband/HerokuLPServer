@@ -145,7 +145,7 @@ app.get( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
             u.gotFromThisRibosome = req.query.l as string[];
 
             // .. produce a new CELL
-            genetics._crypto_cell ( req.query.r as string, u as u.user )
+            genetics._crypto_cell ( req.query.r as string, u as u.user, req.query.k )
             .then( crypto_cell => {
                 res.json( { status: 200, "answer": crypto_cell } );
                 // TODO maybe we should confirm it somewhere else
