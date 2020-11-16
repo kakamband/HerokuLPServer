@@ -139,7 +139,11 @@ app.use( bodyParser.urlencoded( { extended: false } ) );
 app.use( bodyParser.json() );
 app.post( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
     
-    return res.json( req.body );
+    let queries: object;
+
+    try { queries = JSON.parse( req.body.content ) } catch {}
+
+    return res.json( queries );
     // .. validating User
     user._validator( req.body.e as string, req.body.k as string ).then( u => { 
 
