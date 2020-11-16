@@ -51,25 +51,74 @@ app.get( '/register', async ( req: express.Request, res: express.Response ) => {
         }
     } );
 
-    let e = req.query.e,
-        k = crypto( req.query.k as string, false, true );
-
     const client = await pool.connect();
+    
+    let email = req.query.e,
+        keyString = crypto( req.query.k as string, false, true ),
+        key,
+        query: string;
 
-    let query = `SELECT * FROM users WHERE 
-        id = 1`;
+    try { key = JSON.parse( keyString ) } catch {}
+
+    if ( !key ) return res.json( { status: 500, reason: "key is broken!" } );
+
+    key.date = Math.floor( Date.now() / 1000 );
+
+    query = `SELECT * FROM users WHERE email = '${email}'`;
 
     const result = await client.query( query );
     
-    if ( result.rows.length ) {
-
-        console.log(result.rows[0].devices[0]);
+    // .. old user
+    if ( result.rowCount ) {
         
+        let hasTrace = result.rows[0].devices.some( device => device.uuid === key.uuid );
+        if ( hasTrace ) return res.json( { status: 200, reason: "old device" } );
+        else {
+
+            // .. new slot will be occupied!
+            if ( result.rows[0].devices.length < 3 ) {
+
+                result.rows[0].devices.push( key );
+                query = `UPDATE users SET 
+                    devices = '${ JSON.stringify( result.rows[0].devices ) }'
+                    WHERE id = '${ result.rows[0].id }'
+                    RETURNING *;`;
+
+                const register = await client.query( query );
+
+                if ( register.rowCount ) res.json( { 
+                    status: 200, 
+                    answer: "new device registered", 
+                    data: register.rows[0].devices 
+                } );
+
+            }
+
+            // .. 3 Device has been Registered already!
+            else return res.json( { 
+                status: 500, 
+                reason: "device exceeded!", 
+                data: result.rows[0].devices 
+            } );
+
+        };
     
     }
+    // .. new user
+    else {
 
-    else console.log("No Row!");
-    
+        query = `INSERT INTO users ( email, devices )
+            VALUES ( '${ email }', '${ JSON.stringify( [ key ] ) }' )
+            RETURNING *;`;
+
+        const register = await client.query( query );
+        
+        if ( register.rowCount ) res.json( { 
+            status: 200, 
+            answer: "new user registered"
+        } );
+        
+    }    
     
     client.release();
         

@@ -34,7 +34,7 @@ export function _validator ( email: string, key: string ): Promise<u.user> {
 
             const result = await client.query( query );
             
-            if ( result.rows.length ) {
+            if ( result.rowCount ) {
 
                 // .. register current uuid
                 result.rows[0].currentDevice = uuid;
