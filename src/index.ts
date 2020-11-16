@@ -10,6 +10,7 @@ import { crypto }                       from "./tools/crypto";
 let nodeMailer = require( 'nodemailer' );
 const PORT = process.env.PORT || 5000;
 const app = express();
+var bodyParser = require('body-parser');
 
 // -- ================================================= verification  Email Address =======
 
@@ -134,26 +135,28 @@ app.get( '/ribosome', ( req: express.Request, res: express.Response ) => {
 
 // -- ========================================================== Providing New Cell =======
 
+app.use( bodyParser.urlencoded( { extended: false } ) );
+app.use( bodyParser.json() );
 app.post( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
     
     // .. validating User
-    user._validator( req.query.e as string, req.query.k as string ).then( u => { 
+    user._validator( req.body.e as string, req.body.k as string ).then( u => { 
 
         // .. checking credits
         user._hasCredit( u ).then( () => {
             
-            u.gotFromThisRibosome = req.query.l as string[];
+            u.gotFromThisRibosome = req.body.l as string[];
 
             // .. produce a new CELL
             genetics._crypto_cell ( 
-                req.query.r as string, 
+                req.body.r as string, 
                 u as u.user, 
-                req.query.k as string 
+                req.body.k as string 
             )
             .then( crypto_cell => {
                 res.json( { status: 200, "answer": crypto_cell } );
                 // TODO maybe we should confirm it somewhere else
-                // user._received_cell( u, req.query.r as string, crypto_cell.id );
+                // user._received_cell( u, req.body.r as string, crypto_cell.id );
             } )
             .catch( err => res.json( { status: 500, "reason": err } ) );
 
