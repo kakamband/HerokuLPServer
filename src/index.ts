@@ -71,8 +71,10 @@ app.get( '/register', async ( req: express.Request, res: express.Response ) => {
     // .. old user
     if ( result.rowCount ) {
         
-        let hasTrace = result.rows[0].devices.some( device => device.uuid === key.uuid );
+        let hasTrace = user.deviceRecognized( result.rows[0].devices, key );
+
         if ( hasTrace ) return res.json( { status: 200, reason: "old device" } );
+        
         else {
 
             // .. new slot will be occupied!

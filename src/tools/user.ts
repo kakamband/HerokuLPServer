@@ -14,48 +14,29 @@ const pool = new Pool( {
 
 // -- =====================================================================================
 
-export function _validator ( email: string, key: string ): Promise<u.user> {
+export function _validator ( email: string, keyString: string ): Promise<u.user> {
 
     return new Promise ( async (rs, rx) => {
 
         let uuid: string,
-            query: string;
+            query: string,
+            key: object;
 
-        try { uuid = JSON.parse( crypto( key, false, true ) ).uuid } 
+        try { key = JSON.parse( crypto( keyString, false, true ) ) } 
         catch ( err ) { return rx( err ); }
         
         try {
 
             const client = await pool.connect();
             
-            query = `SELECT * FROM users WHERE 
-                username = '${uuid}' AND 
-                password = '${uuid}'`;
+            query = `SELECT * FROM users WHERE email = '${ email }'`;
 
             const result = await client.query( query );
             
-            if ( result.rowCount ) {
-
-                // .. register current uuid
-                result.rows[0].currentDevice = uuid;
-
-                let devices = result.rows[0].devices.split( "," );
-                // .. valid
-                if ( !devices.length || devices.includes( uuid ) ) rs( result.rows[0] );
-                // TODO define slot
-                else {
-                    devices.push(uuid);
-                    let query2 = `UPDATE users SET 
-                        devices = '${devices.join(",")}'
-                        WHERE id=${result.rows[0].id}`;
-                    // TODO it does not update result!
-                    await client.query( query2 );
-
-                    rs( result.rows[0] );
-                }
-                // rx( "unrecognizable device!" );
-            
-            }
+            // .. checking Device
+            if ( result.rowCount )
+                deviceRecognized( result.rows[0].devices, key ) ? 
+                    rs( result.rows[0] ) : rx( "unrecognizable device!" );
 
             else rx( "unrecognizable user!" );
             
@@ -78,6 +59,12 @@ export function _hasCredit ( user: u.user ): Promise<void> {
     
     } );
 
+}
+
+// -- =====================================================================================
+
+export function deviceRecognized ( devices, key: object ) {
+    return devices.some( device => device.uuid === key.uuid )
 }
 
 // -- =====================================================================================

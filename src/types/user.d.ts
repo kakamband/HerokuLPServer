@@ -4,7 +4,11 @@ export interface user {
     password            : string                        ,
     email               : string                        ,
     avatar              : string                        ,
-    devices             : string                        ,
+    devices             : [ {                            
+        name            : string                        , 
+        uuid            : string                        , 
+        date            : number                        ,
+    } ]                                                 ,
     currentDevice       : string                        ,
     credit              : number                        ,
     purchased_items     : { [key: string]: string[] }   ,
