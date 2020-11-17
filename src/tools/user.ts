@@ -174,16 +174,28 @@ export function _received_cell ( user: u.user, ribosomeCode: string, id: string 
         try {
 
             const client = await pool.connect();
+            let alreadyPurchased = false;
+
+            try {
+                if ( user.purchased_items[ ribosomeCode ].includes( id ) ) 
+                    alreadyPurchased = true;
+            } catch {}
 
             // .. register
-            user.purchased_items[ ribosomeCode ] ? 
-                user.purchased_items[ ribosomeCode ].push( id ) :
-                user.purchased_items[ ribosomeCode ] = [ id ];
+            if ( !alreadyPurchased ) {
+
+                user.purchased_items[ ribosomeCode ] ? 
+                    user.purchased_items[ ribosomeCode ].push( id ) :
+                    user.purchased_items[ ribosomeCode ] = [ id ];
+
+                user.credit--;
+            
+            }
 
             let query = `
                 UPDATE users SET 
                     purchased_items = '${ JSON.stringify( user.purchased_items ) }',
-                    credit = ${ user.credit -1 } 
+                    credit = ${ user.credit } 
                 WHERE 
                     id='${ user.id }'
             `;
