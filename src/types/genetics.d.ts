@@ -30,7 +30,6 @@ export interface junk {
     level           : CEF                           ,
     vPath           : string[]                      ,
     uPath           : {                              
-        context     : string                        ,
         media       : string                        ,
         avatar      : string                        ,
     }                                               ,
@@ -47,16 +46,15 @@ export interface Chromosome {
     institute       : string                        ,
     type            : LessonType                    ,
     code            : {                              
+        id          : number                        ,
         ribosome    : string                        ,
         idx         : string                        ,
-        name        : string                        ,
     }                                               ,
     level?          : CEF                           ,
     title           : string                        ,
     hPath           : string[]                      ,
     vPath           : string[]                      ,
     uPath           : {                              
-        context     : string                        ,
         media       : string                        ,
         avatar      : string                        ,
     }                                               ,
@@ -70,7 +68,6 @@ export interface Chromosome {
     icon?           : string                        ,
     isYouTube?      : boolean                       ,
     pinnedPoint?    : number                        ,
-    snapMargin?     : { a:number, b: number }       ,
     forceRender?    : boolean                       ,
                                                      
 }

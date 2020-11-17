@@ -24,7 +24,7 @@ app.get( '/verificationCode', function (req, res) {
         secure: true,
         auth: {
             user: 'language.power.mail.center@gmail.com',
-            pass: ''
+            pass: 'lpmcLPMC!@#$%12345'
         }
     } );
 

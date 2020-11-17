@@ -42,7 +42,6 @@ export function junk ( ribosome: g.Ribosome ): Promise<g.junk> {
             level       : ribosome.level        ,
             vPath       : null                  ,
             uPath       : {                      
-                context : null                  ,
                 media   : null                  ,
                 avatar  : null                  ,
             }                                   ,
