@@ -141,7 +141,7 @@ app.post( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
                 usr._received_cell( user, queries.r, data.id.toString() ).
                 // .. then hand over the lesson to the user
                 then( () => res.json( { status: 200, "answer": data.cryptoCell } ) ).
-                catch( err => res.json( { status: 500, "reason": err } ) );
+                catch( err => res.json( { status: 498, "reason": err } ) );
             
             } )
             .catch( err => res.json( { status: 499, "reason": err } ) );
