@@ -24,9 +24,9 @@ export function _newUser ( email: string, key: u.key ): Promise<u.user> {
 
             let query = `
                 INSERT INTO users 
-                    ( email, devices )
+                    ( email, devices, purchased_items )
                 VALUES 
-                    ( '${ email }', '${ JSON.stringify( [ key ] ) }' )
+                    ( '${ email }', '${ JSON.stringify( [ key ] ) }', '{}' )
                 RETURNING *;
             `;
 
