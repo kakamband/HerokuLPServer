@@ -14,6 +14,104 @@ const pool = new Pool( {
 
 // -- =====================================================================================
 
+export function _newUser ( email: string, key: u.key ): Promise<u.user> {
+
+    return new Promise ( async (rs, rx) => {
+
+        const client = await pool.connect();
+
+        try {
+
+            let query = `
+                INSERT INTO users 
+                    ( email, devices )
+                VALUES 
+                    ( '${ email }', '${ JSON.stringify( [ key ] ) }' )
+                RETURNING *;
+            `;
+
+            const register = await client.query( query );
+
+            if ( register.rowCount ) rs ( register );
+            else rx( "Unable to Register!" );
+        
+        } catch (err) { rx( "Error " + err ) }
+
+        client.release();
+
+    } );
+
+}
+
+// -- =====================================================================================
+
+export function _userExists ( email: string ): Promise<u.user|false> {
+
+    return new Promise ( async (rs, rx) => {
+
+        const client = await pool.connect();
+
+        try {
+
+            let query = `
+                SELECT * FROM users 
+                WHERE 
+                    email = '${email}'
+            `;
+
+            const findUser = await client.query( query );
+
+            if ( findUser.rowCount ) rs ( findUser.rows[0] as u.user );
+            else rs( false );
+        
+        } catch ( err ) { rx( "Error " + err ) }
+
+        client.release();
+
+    } );
+
+}
+
+// -- =====================================================================================
+
+export function _addDevice ( user: u.user, key: u.key ): Promise<u.user> {
+
+    return new Promise ( async (rs, rx) => {
+
+        const client = await pool.connect();
+
+        try {
+
+            user.devices.push( { 
+                ...key, 
+                date: Math.floor( Date.now() / 1000 ) 
+            } );
+
+            let query = `
+                UPDATE users SET 
+                    devices = '${ JSON.stringify( user.devices ) }'
+                WHERE 
+                    id = '${ user.id }'
+                RETURNING *;
+            `;
+
+            const result = await client.query( query );
+
+            if ( result.rowCount ) rs ( user );
+            else rx( "Unable to update user" );
+        
+        } 
+        
+        catch ( err ) { rx( "Error " + err ) }
+
+        client.release();
+
+    } );
+
+}
+
+// -- =====================================================================================
+
 export function _validator ( email: string, keyString: string ): Promise<u.user> {
 
     return new Promise ( async (rs, rx) => {
@@ -69,34 +167,39 @@ export function deviceRecognized ( devices, key: u.key ) {
 
 // -- =====================================================================================
 
-// export async function _received_cell ( user: u.user, ribosome: g.Ribosome, id: string ) {
+export function _received_cell ( user: u.user, ribosomeCode: string, id: string ) {
 
-    // try {
+    return new Promise ( async (rs, rx) => {
 
-    //     const client = await pool.connect();
-    
-    //     // .. touch
-    //     if ( !user.purchased_items ) user.purchased_items = {};
-    //     // .. register
-    //     user.purchased_items[ ribosome.code ] ? 
-    //         user.purchased_items[ ribosome.code ].push( id ) :
-    //         user.purchased_items[ ribosome.code ] = [id]
+        try {
 
-    //     let query = `UPDATE users SET 
-    //         purchased_items = '${JSON.stringify(user.purchased_items)}',
-    //         credit = ${user.credit -1} 
-    //         WHERE id='${user.id}'`;
+            const client = await pool.connect();
 
-    //     await client.query( query );
-        
-    //     client.release();
-    
-    // }
-    
-    // // TODO should we do something with this err?!
-    // catch (err) {  }
+            // .. register
+            user.purchased_items[ ribosomeCode ] ? 
+                user.purchased_items[ ribosomeCode ].push( id ) :
+                user.purchased_items[ ribosomeCode ] = [ id ];
 
-// }
+            let query = `
+                UPDATE users SET 
+                    purchased_items = '${ JSON.stringify( user.purchased_items ) }',
+                    credit = ${ user.credit -1 } 
+                WHERE 
+                    id='${ user.id }'
+            `;
+
+            let result = await client.query( query );
+            
+            if ( result.rowCount ) rs();
+            else rx( "Unable to Update user!" );
+
+            client.release();
+
+        } catch ( err ) { rx ( "err: " + err )  }
+
+    } );
+
+}
 
 // -- =====================================================================================
 
@@ -129,8 +232,7 @@ export function a_good_gene_4_user (
 
 // -- =====================================================================================
 
-export function 
-user_needs_these ( user: u.user, DNA: g.gene[] ): Promise<number[]> {
+export function user_needs_these ( user: u.user, DNA: g.gene[] ): Promise<number[]> {
 
     return new Promise ( (rs, rx) => {
 

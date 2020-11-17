@@ -1,5 +1,5 @@
 import * as express                     from "express"
-import * as user                        from "./tools/user";
+import * as usr                         from "./tools/user";
 import * as genetics                    from "./tools/genetics";
 import * as u                           from "./types/user";
 import { Pool }                         from 'pg';
@@ -44,87 +44,64 @@ app.get( '/verificationCode', function (req, res) {
 // -- ================================================== register New Verified User =======
 
 app.get( '/register', async ( req: express.Request, res: express.Response ) => {
-
-    const pool = new Pool( {
-        connectionString: process.env.DATABASE_URL,
-        ssl: {
-          rejectUnauthorized: false
-        }
-    } );
-
-    const client = await pool.connect();
     
-    let email = req.query.e,
+    let email = req.query.e as string,
         keyString = crypto( req.query.k as string, false, true ),
-        key: u.key,
-        query: string;
+        key: u.key;
 
     try { key = JSON.parse( keyString ) } catch {}
 
     if ( !key ) return res.json( { status: 500, reason: "key is broken!" } );
 
-    key.date = Math.floor( Date.now() / 1000 );
+    usr._userExists( email ).
+    then( user => {
 
-    query = `SELECT * FROM users WHERE email = '${email}'`;
+        // .. new User
+        if ( !user ) {
+            usr._newUser( email, key ).
+            then( () => res.json( { status: 200, answer: "ok" } ) ).
+            catch( err => res.json( { status: 500, "reason": err } ) );
+        }
 
-    const result = await client.query( query );
-    
-    // .. old user
-    if ( result.rowCount ) {
-        
-        let hasTrace = user.deviceRecognized( result.rows[0].devices, key );
-
-        if ( hasTrace ) return res.json( { status: 200, reason: "old device" } );
-        
+        // .. old User
         else {
+            //.. check user
+            let hasTrace = usr.deviceRecognized( user.devices, key );
+            // .. same device
+            if ( hasTrace ) return res.json( { status: 200, reason: "old device" } );
+            // .. different device
+            else {
 
-            // .. new slot will be occupied!
-            if ( result.rows[0].devices.length < 3 ) {
+                // .. new slot will be occupied!
+                if ( user.devices.length < 3 ) {
 
-                result.rows[0].devices.push( key );
-                query = `UPDATE users SET 
-                    devices = '${ JSON.stringify( result.rows[0].devices ) }'
-                    WHERE id = '${ result.rows[0].id }'
-                    RETURNING *;`;
+                    usr._addDevice( user, key ).
+                    then( updatedUser => {
+                        res.json( { 
+                            status: 200, 
+                            answer: "new device registered", 
+                            data: updatedUser.devices 
+                        } );
+                    } ).
+                    catch( err => res.json( { status: 500, "reason": err } ) );
+                }
 
-                const register = await client.query( query );
-
-                if ( register.rowCount ) res.json( { 
-                    status: 200, 
-                    answer: "new device registered", 
-                    data: register.rows[0].devices 
+                // .. 3 Device has been Registered already!
+                else return res.json( { 
+                    status: 500, 
+                    reason: "device exceeded!", 
+                    data: user.devices 
                 } );
 
+
+
             }
+        }
 
-            // .. 3 Device has been Registered already!
-            else return res.json( { 
-                status: 500, 
-                reason: "device exceeded!", 
-                data: result.rows[0].devices 
-            } );
+    } ).
+    catch( err => res.json( { status: 500, "reason": err } ) );
 
-        };
-    
-    }
-    // .. new user
-    else {
 
-        query = `INSERT INTO users ( email, devices )
-            VALUES ( '${ email }', '${ JSON.stringify( [ key ] ) }' )
-            RETURNING *;`;
-
-        const register = await client.query( query );
-        
-        if ( register.rowCount ) res.json( { 
-            status: 200, 
-            answer: "new user registered"
-        } );
-        
-    }    
-    
-    client.release();
-        
 } );
 
 // -- =================================== Providing Ribosomes filtered by Institute =======
@@ -149,27 +126,31 @@ app.post( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
     queries = req.body;
 
     // .. validating User
-    user._validator( queries.e, queries.k ).then( u => { 
+    usr._validator( queries.e, queries.k ).then( user => { 
 
         // .. checking credits
-        user._hasCredit( u ).then( () => {
+        usr._hasCredit( user ).then( () => {
             
-            u.gotFromThisRibosome = queries.l;
+            user.gotFromThisRibosome = queries.l;
 
             // .. produce a new CELL
-            genetics._crypto_cell ( queries.r, u as u.user, queries.k )
-            .then( crypto_cell => {
-                res.json( { status: 200, "answer": crypto_cell } );
-                // TODO maybe we should confirm it somewhere else
-                // user._received_cell( u, queries.r as string, crypto_cell.id );
+            genetics._crypto_cell ( queries.r, user, queries.k ).
+            then( data => {
+
+                // .. first register this lesson for user
+                usr._received_cell( user, queries.r, data.id.toString() ).
+                // .. then hand over the lesson to the user
+                then( () => res.json( { status: 200, "answer": data.cryptoCell } ) ).
+                catch( err => res.json( { status: 500, "reason": err } ) );
+            
             } )
             .catch( err => res.json( { status: 500, "reason": err } ) );
 
-        } )
-        .catch( err => res.json( { status: 402, "reason": err } ) );
+        } ).
+        catch( err => res.json( { status: 402, "reason": err } ) );
 
-    } ) 
-    .catch( err => res.json( { status: 401, "reason": err } ) );
+    } ).
+    catch( err => res.json( { status: 401, "reason": err } ) );
 
 } );
 

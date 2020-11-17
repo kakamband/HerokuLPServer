@@ -24,8 +24,13 @@ export function _ribosomes ( institute: string ): Promise<g.Ribosome[]> {
 
 // -- =====================================================================================
 
-export function 
-_crypto_cell ( ribCode: string, user: u.user, keyString: string ): Promise<string> {
+export function _crypto_cell (
+
+    ribCode: string, 
+    user: u.user, 
+    keyString: string 
+
+): Promise<{ id: number, cryptoCell: string }> {
     
     return new Promise( async (rs, rx) => {
         
@@ -37,7 +42,10 @@ _crypto_cell ( ribCode: string, user: u.user, keyString: string ): Promise<strin
         let ribosome = rpi[ id ];
 
         new_cell( ribosome, user ).
-            then( cell => rs ( crypto( JSON.stringify( cell ), keyString ) ) ).
+            then( cell => rs ( {
+                id: id,
+                cryptoCell: crypto( JSON.stringify( cell ), keyString )
+            } ) ).
             catch( err => rx(err) );
     
     } );
