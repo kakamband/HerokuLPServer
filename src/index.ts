@@ -138,7 +138,7 @@ app.post( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
             then( data => {
 
                 // .. first register this lesson for user
-                usr._received_cell( user, queries.r, data.id.toString() ).
+                usr._received_cell( user, queries.r, data.id ).
                 // .. then hand over the lesson to the user
                 then( () => res.json( { status: 200, "answer": data.cryptoCell } ) ).
                 catch( err => res.json( { status: 500, "reason": err } ) );

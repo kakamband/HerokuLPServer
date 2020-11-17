@@ -30,7 +30,7 @@ export function _crypto_cell (
     user: u.user, 
     keyString: string 
 
-): Promise<{ id: number, cryptoCell: string }> {
+): Promise<{ id: string, cryptoCell: string }> {
     
     return new Promise( async (rs, rx) => {
         
@@ -43,7 +43,7 @@ export function _crypto_cell (
 
         new_cell( ribosome, user ).
             then( cell => rs ( {
-                id: id,
+                id: cell.chromosome.code.idx,
                 cryptoCell: crypto( JSON.stringify( cell ), keyString )
             } ) ).
             catch( err => rx(err) );
