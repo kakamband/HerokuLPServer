@@ -144,7 +144,7 @@ app.post( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
                 catch( err => res.json( { status: 500, "reason": err } ) );
             
             } )
-            .catch( err => res.json( { status: 500, "reason": err } ) );
+            .catch( err => res.json( { status: 499, "reason": err } ) );
 
         } ).
         catch( err => res.json( { status: 402, "reason": err } ) );
