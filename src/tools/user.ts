@@ -116,8 +116,7 @@ export function _validator ( email: string, keyString: string ): Promise<u.user>
 
     return new Promise ( async (rs, rx) => {
 
-        let uuid: string,
-            query: string,
+        let query: string,
             key: u.key;
 
         try { key = JSON.parse( crypto( keyString, false, true ) ) } 
@@ -269,7 +268,7 @@ export function user_needs_these ( user: u.user, DNA: g.gene[] ): Promise<number
 
 // -- =====================================================================================
 
-export function _battery_status ( email: string ): Promise<u.user> {
+export function _battery_status ( email: string ): Promise<Number> {
 
     return new Promise ( async (rs, rx) => {
 
@@ -282,11 +281,43 @@ export function _battery_status ( email: string ): Promise<u.user> {
             query = `SELECT charge FROM users WHERE email = '${ email }'`;
 
             const result = await client.query( query );
-            console.log(query);
             
-            if ( result.rowCount ) rs( result.rows[0] );
+            if ( result.rowCount ) rs( (result.rows[0] as u.user ).charge );
 
             else rx( "unrecognizable user!" );
+            
+            client.release();
+        
+        } catch (err) { rx( "Error " + err ) }
+
+    } );
+
+}
+
+// -- =====================================================================================
+
+export function _charger ( user: u.user ): Promise<Number> {
+    
+    return new Promise ( async (rs, rx) => {
+
+        try {
+
+            user.charge = user.charge +1;
+            if ( user.charge > 5 ) user.charge = 5;
+
+            const client = await pool.connect();
+            
+            let query = `
+                UPDATE users SET 
+                    charge = ${ user.charge } 
+                WHERE 
+                    id='${ user.id }'
+            `;
+
+            const result = await client.query( query );
+            
+            if ( result.rowCount ) rs( (result.rows[0] as u.user ).charge );
+            else rx( "Unable to Update user!" );
             
             client.release();
         

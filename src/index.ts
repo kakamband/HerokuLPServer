@@ -155,18 +155,30 @@ app.post( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
 
 // -- =========================================================== Listening on Port =======
 
-app.get( '/battery', ( req: express.Request, res: express.Response ) => {
+app.post( '/battery', ( req: express.Request, res: express.Response ) => {
     
-    // .. update
+    let queries: {
+        e: string,
+        k: string,
+        p: boolean,
+    };
+
+    queries = req.body;
+
+    // .. charger
     if ( req.query.k ) {
-        usr._charger( req.query.e as string ).
-        then( batteryStatus => res.json( { status: 200, "answer": batteryStatus } ) ).
-        catch( err => res.json( { status: 500, "reason": err } ) );
+        // .. validating User
+        usr._validator( queries.e, queries.k ).then( user => {
+            usr._charger( user ).
+            then( charge => res.json( { status: 200, "answer": charge } ) ).
+            catch( err => res.json( { status: 500, "reason": err } ) );
+        } );
     }
+    
     // .. just report
     else {
         usr._battery_status( req.query.e as string ).
-        then( batteryStatus => res.json( { status: 200, "answer": batteryStatus } ) ).
+        then( charge => res.json( { status: 200, "answer": charge } ) ).
         catch( err => res.json( { status: 500, "reason": err } ) );
     }
 
