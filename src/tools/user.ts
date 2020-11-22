@@ -316,7 +316,7 @@ export function _charger ( user: u.user ): Promise<Number> {
 
             const result = await client.query( query );
             
-            if ( result.rowCount ) rs(  result );
+            if ( result.rowCount ) rs( user.charge );
             else rx( "Unable to Update user!" );
             
             client.release();
