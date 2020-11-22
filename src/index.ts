@@ -2,7 +2,6 @@ import * as express                     from "express"
 import * as usr                         from "./tools/user";
 import * as genetics                    from "./tools/genetics";
 import * as u                           from "./types/user";
-import { Pool }                         from 'pg';
 import { crypto }                       from "./tools/crypto";
 
 // -- ======================================================================= SETUP =======
@@ -128,8 +127,8 @@ app.post( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
     // .. validating User
     usr._validator( queries.e, queries.k ).then( user => { 
 
-        // .. checking credits
-        usr._hasCredit( user ).then( () => {
+        // .. checking charge
+        usr._hasCharge( user ).then( () => {
             
             user.gotFromThisRibosome = queries.l;
 
@@ -152,6 +151,14 @@ app.post( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
     } ).
     catch( err => res.json( { status: 401, "reason": err } ) );
 
+} );
+
+// -- =========================================================== Listening on Port =======
+
+app.get( '/battery', ( req: express.Request, res: express.Response ) => {
+    usr._battery_status( req.query.e as string ).
+    then( batteryStatus => res.json( { status: 200, "answer": batteryStatus } ) ).
+    catch( err => res.json( { status: 500, "reason": err } ) );
 } );
 
 // -- =========================================================== Listening on Port =======

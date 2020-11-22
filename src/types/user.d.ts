@@ -10,7 +10,7 @@ export interface user {
         date            : number                        ,
     } ]                                                 ,
     currentDevice       : string                        ,
-    credit              : number                        ,
+    charge              : number                        ,
     purchased_items     : { [key: string]: string[] }   ,
     gotFromThisRibosome : string[]                      ,
 }

@@ -148,12 +148,12 @@ export function _validator ( email: string, keyString: string ): Promise<u.user>
 
 // -- =====================================================================================
 
-export function _hasCredit ( user: u.user ): Promise<void> {
+export function _hasCharge ( user: u.user ): Promise<void> {
 
     return new Promise ( (rs, rx) => {
 
-        if ( user.credit > 0 ) return rs();
-        else return rx( "insufficient credit!" );
+        if ( user.charge > 0 ) return rs();
+        else return rx( "insufficient charge!" );
     
     } );
 
@@ -188,14 +188,14 @@ export function _received_cell ( user: u.user, ribosomeCode: string, id: string 
                     user.purchased_items[ ribosomeCode ].push( id ) :
                     user.purchased_items[ ribosomeCode ] = [ id ];
 
-                user.credit--;
+                user.charge--;
             
             }
 
             let query = `
                 UPDATE users SET 
                     purchased_items = '${ JSON.stringify( user.purchased_items ) }',
-                    credit = ${ user.credit } 
+                    charge = ${ user.charge } 
                 WHERE 
                     id='${ user.id }'
             `;
@@ -263,6 +263,35 @@ export function user_needs_these ( user: u.user, DNA: g.gene[] ): Promise<number
         // .. return result
         return list.length ? rs( list ) : rx( "no more lesson" );
     
+    } );
+
+}
+
+// -- =====================================================================================
+
+export function _battery_status ( email: string ): Promise<u.user> {
+
+    return new Promise ( async (rs, rx) => {
+
+        let query: string;
+
+        try {
+
+            const client = await pool.connect();
+            
+            query = `SELECT charge FROM users WHERE email = '${ email }'`;
+
+            const result = await client.query( query );
+            console.log(query);
+            
+            if ( result.rowCount ) rs( result.rows[0] );
+
+            else rx( "unrecognizable user!" );
+            
+            client.release();
+        
+        } catch (err) { rx( "Error " + err ) }
+
     } );
 
 }
