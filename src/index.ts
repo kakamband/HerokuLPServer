@@ -177,7 +177,7 @@ app.post( '/battery', ( req: express.Request, res: express.Response ) => {
 
     // .. just report
     else {
-        usr._battery_status( req.query.e as string ).
+        usr._battery_status( queries.e ).
         then( charge => res.json( { status: 200, "answer": charge } ) ).
         catch( err => res.json( { status: 500, "reason": err } ) );
     }
