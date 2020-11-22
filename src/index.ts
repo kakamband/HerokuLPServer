@@ -156,9 +156,20 @@ app.post( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
 // -- =========================================================== Listening on Port =======
 
 app.get( '/battery', ( req: express.Request, res: express.Response ) => {
-    usr._battery_status( req.query.e as string ).
-    then( batteryStatus => res.json( { status: 200, "answer": batteryStatus } ) ).
-    catch( err => res.json( { status: 500, "reason": err } ) );
+    
+    // .. update
+    if ( req.query.k ) {
+        usr._charger( req.query.e as string ).
+        then( batteryStatus => res.json( { status: 200, "answer": batteryStatus } ) ).
+        catch( err => res.json( { status: 500, "reason": err } ) );
+    }
+    // .. just report
+    else {
+        usr._battery_status( req.query.e as string ).
+        then( batteryStatus => res.json( { status: 200, "answer": batteryStatus } ) ).
+        catch( err => res.json( { status: 500, "reason": err } ) );
+    }
+
 } );
 
 // -- =========================================================== Listening on Port =======
