@@ -166,7 +166,7 @@ app.post( '/battery', ( req: express.Request, res: express.Response ) => {
     queries = req.body;
 
     // .. charger
-    if ( req.query.p ) {
+    if ( queries.p ) {
         // .. validating User
         usr._validator( queries.e, queries.k ).then( user => {
             usr._charger( user ).
