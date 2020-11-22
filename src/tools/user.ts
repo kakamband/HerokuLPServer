@@ -284,7 +284,7 @@ export function _battery_status ( email: string ): Promise<Number> {
             
             if ( result.rowCount ) rs( ( result.rows[0] as u.user ).charge );
 
-            else rx( result.rows[0] );
+            else rx( query );
             
             client.release();
         
