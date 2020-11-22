@@ -166,7 +166,7 @@ app.post( '/battery', ( req: express.Request, res: express.Response ) => {
     queries = req.body;
 
     // .. charger
-    if ( req.query.k ) {
+    if ( req.query.p ) {
         // .. validating User
         usr._validator( queries.e, queries.k ).then( user => {
             usr._charger( user ).
@@ -174,7 +174,7 @@ app.post( '/battery', ( req: express.Request, res: express.Response ) => {
             catch( err => res.json( { status: 500, "reason": err } ) );
         } );
     }
-    
+
     // .. just report
     else {
         usr._battery_status( req.query.e as string ).
