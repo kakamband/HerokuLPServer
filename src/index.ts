@@ -160,7 +160,7 @@ app.post( '/battery', ( req: express.Request, res: express.Response ) => {
     let queries: {
         e: string,
         k: string,
-        p: boolean,
+        p: number,
     };
 
     queries = req.body;
@@ -169,7 +169,7 @@ app.post( '/battery', ( req: express.Request, res: express.Response ) => {
     if ( queries.p ) {
         // .. validating User
         usr._validator( queries.e, queries.k ).then( user => {
-            usr._charger( user ).
+            usr._charger( user, queries.p ).
             then( charge => res.json( { status: 200, "answer": charge } ) ).
             catch( err => res.json( { status: 500, "reason": err } ) );
         } );

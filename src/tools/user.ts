@@ -296,14 +296,14 @@ export function _battery_status ( email: string ): Promise<Number> {
 
 // -- =====================================================================================
 
-export function _charger ( user: u.user ): Promise<Number> {
+export function _charger ( user: u.user, power: number ): Promise<Number> {
     
     return new Promise ( async (rs, rx) => {
 
         try {
 
-            user.charge = user.charge +1;
-            if ( user.charge > 5 ) user.charge = 5;
+            user.charge = user.charge + power;
+            if ( user.charge > 100 ) user.charge = 100;
 
             const client = await pool.connect();
             
