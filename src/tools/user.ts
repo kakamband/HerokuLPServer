@@ -187,7 +187,7 @@ export function _received_cell ( user: u.user, ribosomeCode: string, id: string 
                     user.purchased_items[ ribosomeCode ].push( id ) :
                     user.purchased_items[ ribosomeCode ] = [ id ];
 
-                user.charge--;
+                user.charge -= 5;
             
             }
 
