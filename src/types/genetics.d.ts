@@ -46,7 +46,6 @@ export interface Chromosome {
     institute       : string                        ,
     type            : LessonType                    ,
     code            : {                              
-        id          : number                        ,
         ribosome    : string                        ,
         idx         : string                        ,
     }                                               ,

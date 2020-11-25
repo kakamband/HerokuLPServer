@@ -61,7 +61,6 @@ function cell ( ribosome: g.Ribosome, gene: g.gene, junk:g.junk, snap: g.rawSnap
         chromosome: {                            
             title           : gene.title                ,
             code            : {                          
-                id          : null                      ,
                 ribosome    : ribosome.code             ,
                 idx         : gene.id                   ,
             }                                           ,
