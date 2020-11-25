@@ -40,7 +40,7 @@ export const de_r: g.Ribosome[] = [
         type        : "slide",
         level       : "A1",
         title       : "PSE",
-        avatar      : "https://www.pse-stuttgart-ludwigsburg.de/wp-content/uploads/2016/05/Anna-Lena-Gentemann.jpg",
+        avatar      : "https://www.pse-stuttgart-ludwigsburg.de/wp-content/uploads/2019/10/H%C3%B6rsaal-Uni-Vortrag.jpg",
     }
 
 ]
