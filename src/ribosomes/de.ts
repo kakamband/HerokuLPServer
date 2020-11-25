@@ -33,6 +33,14 @@ export const de_r: g.Ribosome[] = [
         level       : "C1",
         title       : "Top\nThema",
         avatar      : "https://i0.wp.com/learnoutlive.com/wp-content/uploads/2018/06/g2043.png",
+    },
+    {
+        institute   : "de",
+        code        : "PSE",
+        type        : "slide",
+        level       : "A1",
+        title       : "PSE",
+        avatar      : "https://www.pse-stuttgart-ludwigsburg.de/wp-content/uploads/2016/05/Anna-Lena-Gentemann.jpg",
     }
 
 ]

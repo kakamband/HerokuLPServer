@@ -80,7 +80,7 @@ export interface cell {
 
 export interface rawSnap { [key: string]: string }
 
-type LessonType = 'audio' | 'video';
+type LessonType = 'audio' | 'video' | 'slide';
 type LessonStatus = 'reading' | 'read';
 type CEF = "A1"|"A2"|"B1"|"B2"|"C1"|"C2";
 // TODO diff enum vs type
