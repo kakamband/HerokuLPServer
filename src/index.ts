@@ -113,7 +113,7 @@ app.get( '/ribosome', ( req: express.Request, res: express.Response ) => {
 
 app.use( bodyParser.urlencoded( { extended: false } ) );
 app.use( bodyParser.json() );
-app.post( '/crypto_cell', ( req: express.Request, res: express.Response ) => {
+app.post( '/x_cell', ( req: express.Request, res: express.Response ) => {
     
     let queries: {
         e: string,
