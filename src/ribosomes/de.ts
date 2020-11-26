@@ -30,7 +30,7 @@ export const de_r: g.Ribosome[] = [
         institute   : "de",
         code        : "TTFGH8V",
         type        : "audio",
-        level       : "C1",
+        level       : "B1",
         title       : "Top\nThema",
         avatar      : "https://i0.wp.com/learnoutlive.com/wp-content/uploads/2018/06/g2043.png",
     },
