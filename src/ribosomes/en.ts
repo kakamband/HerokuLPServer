@@ -29,7 +29,7 @@ export const en_r: g.Ribosome[] = [
         institute   : "en",
         code        : "W9UOQVL",
         type        : "audio",
-		level       : "A2",
+		level       : "B1",
 		title       : "The\nLittle\nPrince",
 		avatar      : "https://static.lingq.com/media/resources/collections/images/2016/08/05/2af63de478_OXQdW5t.jpg",
     },
