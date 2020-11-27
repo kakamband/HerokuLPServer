@@ -187,9 +187,15 @@ export function _received_cell ( user: u.user, ribosomeCode: string, id: string 
                     user.purchased_items[ ribosomeCode ].push( id ) :
                     user.purchased_items[ ribosomeCode ] = [ id ];
 
-                user.charge -= 5;
+                // .. register cost 
+                user.charge -= 3;
             
             }
+
+            // .. download cost 
+            user.charge -= 2;
+
+            if ( user.charge < 0 ) return rx( "insufficient charge!" );
 
             let query = `
                 UPDATE users SET 
