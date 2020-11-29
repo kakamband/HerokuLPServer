@@ -13,6 +13,11 @@ var bodyParser = require('body-parser');
 
 // -- ================================================= verification  Email Address =======
 
+app.use( bodyParser.urlencoded( { extended: false } ) );
+app.use( bodyParser.json() );
+
+// -- ================================================= verification  Email Address =======
+
 app.get( '/verificationCode', function (req, res) {
     
     if ( !req.query.e || !req.query.c ) return 0;
@@ -137,8 +142,6 @@ app.get( '/ribosome', ( req: express.Request, res: express.Response ) => {
 
 // -- ========================================================== Providing New Cell =======
 
-app.use( bodyParser.urlencoded( { extended: false } ) );
-app.use( bodyParser.json() );
 app.post( '/x_cell', ( req: express.Request, res: express.Response ) => {
     
     let queries: {
