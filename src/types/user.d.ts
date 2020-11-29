@@ -1,18 +1,15 @@
 export interface user {
     id                  : number                        ,
-    username            : string                        ,
-    password            : string                        ,
     email               : string                        ,
-    avatar              : string                        ,
     devices             : [ {                            
         name            : string                        , 
         uuid            : string                        , 
         date            : number                        ,
     } ]                                                 ,
-    currentDevice       : string                        ,
     charge              : number                        ,
     purchased_items     : { [key: string]: string[] }   ,
-    gotFromThisRibosome : string[]                      ,
+    currentDevice?      : string                        ,
+    gotFromThisRibosome?: string[]                      ,
 }
 
 export interface key {

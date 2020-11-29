@@ -105,6 +105,24 @@ app.get( '/register', async ( req: express.Request, res: express.Response ) => {
 
 // -- =================================== Providing Ribosomes filtered by Institute =======
 
+app.post( '/purchasedItems', ( req: express.Request, res: express.Response ) => {
+    
+    let queries: {
+        e: string,
+        k: string,
+    };
+
+    queries = req.body;
+
+    // .. validating User
+    usr._validator( queries.e, queries.k ).
+    then( user => res.json( { status: 200, "answer": user.purchased_items } ) ).
+    catch( err => res.json( { status: 500, "reason": err } ) );
+
+} );
+
+// -- =================================== Providing Ribosomes filtered by Institute =======
+
 app.get( '/ribosome', ( req: express.Request, res: express.Response ) => {
     genetics._ribosomes( req.query.i as string ).then( list => res.json( list ) );
 } );
