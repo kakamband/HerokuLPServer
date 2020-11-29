@@ -121,7 +121,10 @@ app.post( '/purchasedItems', ( req: express.Request, res: express.Response ) => 
 
     // .. validating User
     usr._validator( queries.e, queries.k ).
-    then( user => res.json( { status: 200, "answer": user.purchased_items } ) ).
+    then( user => {
+        let cryptoItems = crypto( JSON.stringify( user.purchased_items ), queries.k );
+        res.json( { status: 200, "answer": cryptoItems } )
+    } ).
     catch( err => res.json( { status: 500, "reason": err } ) );
 
 } );
