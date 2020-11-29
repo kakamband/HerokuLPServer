@@ -116,30 +116,30 @@ export function _validator ( email: string, keyString: string ): Promise<u.user>
 
     return new Promise ( async (rs, rx) => {
 
-        let query: string,
-            key: u.key;
+        // let query: string,
+        //     key: u.key;
 
-        try { key = JSON.parse( crypto( keyString, false, true ) ) } 
-        catch ( err ) { return rx( err ); }
+        // try { key = JSON.parse( crypto( keyString, false, true ) ) } 
+        // catch ( err ) { return rx( "err" ); }
+        rs("ok" as any)
+        // try {
+
+        //     const client = await pool.connect();
+            
+        //     query = `SELECT * FROM users WHERE email = '${ email }'`;
+
+        //     const result = await client.query( query );
+            
+        //     // .. checking Device
+        //     if ( result.rowCount )
+        //         deviceRecognized( result.rows[0].devices, key ) ? 
+        //             rs( result.rows[0] ) : rx( "unrecognizable device!" );
+
+        //     else rx( "unrecognizable user!" );
+            
+        //     client.release();
         
-        try {
-
-            const client = await pool.connect();
-            
-            query = `SELECT * FROM users WHERE email = '${ email }'`;
-
-            const result = await client.query( query );
-            
-            // .. checking Device
-            if ( result.rowCount )
-                deviceRecognized( result.rows[0].devices, key ) ? 
-                    rs( result.rows[0] ) : rx( "unrecognizable device!" );
-
-            else rx( "unrecognizable user!" );
-            
-            client.release();
-        
-        } catch (err) { rx( "Error " + err ) }
+        // } catch (err) { rx( "Error " + "err" ) }
 
     } );
 

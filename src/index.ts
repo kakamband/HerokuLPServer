@@ -114,11 +114,10 @@ app.post( '/purchasedItems', ( req: express.Request, res: express.Response ) => 
 
     queries = req.body;
 
-    res.json( { status: 200, "answer": "user.purchased_itemsxxxxxxx" } )
     // .. validating User
-    // usr._validator( queries.e, queries.k ).
-    // then( user => res.json( { status: 200, "answer": "user.purchased_itemsxxxxxxx" } ) ).
-    // catch( err => res.json( { status: 500, "reason": "err" } ) );
+    usr._validator( queries.e, queries.k ).
+    then( user => res.json( { status: 200, "answer": "user.purchased_itemsxxxxxxx" } ) ).
+    catch( err => res.json( { status: 500, "reason": "err" } ) );
 
 } );
 
