@@ -116,7 +116,7 @@ app.post( '/purchasedItems', ( req: express.Request, res: express.Response ) => 
         queries = req.body;
     
     
-        res.json( { status: 200, "answer": queries } )
+        res.json( { status: 200, "answer": JSON.stringify(queries) } )
         
     } catch (error) {
         res.json( { status: 500, "reason": error } )
