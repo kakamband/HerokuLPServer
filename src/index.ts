@@ -107,13 +107,21 @@ app.get( '/register', async ( req: express.Request, res: express.Response ) => {
 
 app.post( '/purchasedItems', ( req: express.Request, res: express.Response ) => {
     
-    let queries: {
-        e: string,
-        k: string,
-    };
-
-    queries = req.body;
-    res.json( { status: 200, "answer": req.body } )
+    try {
+        let queries: {
+            e: string,
+            k: string,
+        };
+    
+        queries = req.body;
+    
+    
+        res.json( { status: 200, "answer": queries } )
+        
+    } catch (error) {
+        res.json( { status: 500, "reason": error } )
+        
+    }
     // .. validating User
     // usr._validator( queries.e, queries.k ).
     // then( user => res.json( { status: 200, "answer": "user.purchased_itemsxxxxxxx" } ) ).
