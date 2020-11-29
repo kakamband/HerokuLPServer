@@ -112,25 +112,17 @@ app.get( '/register', async ( req: express.Request, res: express.Response ) => {
 
 app.post( '/purchasedItems', ( req: express.Request, res: express.Response ) => {
     
-    try {
-        let queries: {
-            e: string,
-            k: string,
-        };
-    
-        queries = req.body;
-    
-    
-        res.json( { status: 200, "answer":"hatef"+ JSON.stringify(queries)  } )
-        
-    } catch (error) {
-        res.json( { status: 500, "reason": error } )
-        
-    }
+    let queries: {
+        e: string,
+        k: string,
+    };
+
+    queries = req.body;
+
     // .. validating User
-    // usr._validator( queries.e, queries.k ).
-    // then( user => res.json( { status: 200, "answer": "user.purchased_itemsxxxxxxx" } ) ).
-    // catch( err => res.json( { status: 500, "reason": "err" } ) );
+    usr._validator( queries.e, queries.k ).
+    then( user => res.json( { status: 200, "answer": user.purchased_items } ) ).
+    catch( err => res.json( { status: 500, "reason": err } ) );
 
 } );
 
