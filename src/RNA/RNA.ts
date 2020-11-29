@@ -3,7 +3,6 @@ import * as x1309                       from "./RNAx1309";
 import * as x1127                       from "./RNAx1127";
 import * as x834                        from "./RNAx834";
 import * as x549                        from "./RNAx549";
-import * as xPSE                        from "./RNAxPSE";
 import * as g                           from '../types/genetics'
 import * as u                           from "../types/user";
 
@@ -19,6 +18,5 @@ export const RNA: { [key: string]: aRNA } = {
    x1309,
    x1127,
    x834,
-   x549,
-   xPSE
+   x549
 }

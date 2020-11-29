@@ -4,7 +4,7 @@ export const ribosomeToRNA = {
     "3IQD618"   : "x1309"  ,
     "LRT1689"   : "x1127"  ,
     "TTFGH8V"   : "x834"   ,
-    "PSE"       : "xPSE"   ,
+    "PSE"       : "x549"   ,
 
     "OBDQL9U"   : "x549"   ,
     
