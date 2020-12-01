@@ -39,13 +39,13 @@ export const DNA: g.gene[] = [
 	},
 	{
 		"title"     : "Red handed",
-		"text"      : "  What the...??\n\nDid I just see what I think I saw, in a private browser window???\n\nHuh? What? No!!!\n\nit's nothing, it's just some, uh,.. light pornography... to relax...\n\nJezz, can a guy not get one moment alone... ?\n\nNo way. you can't trick me! Give me that!\n\nHeyyyyy!!\n\nI knew it!\n\nHow to get current date in PHP?\n\nWait, I can explain...",
+		"text"      : "What the...??\n\nDid I just see what I think I saw, in a private browser window???\n\nHuh? What? No!!!\n\nit's nothing, it's just some, uh,.. light pornography... to relax...\n\nJezz, can a guy not get one moment alone... ?\n\nNo way. you can't trick me! Give me that!\n\nHeyyyyy!!\n\nI knew it!\n\nHow to get current date in PHP?\n\nWait, I can explain...",
 		"avatarURL" : "https://www.commitstrip.com/wp-content/uploads/2020/09/HeadlineImageTemplate-v2.jpg",
 		"mediaURL"  : "https://www.commitstrip.com/wp-content/uploads/2020/09/Strip-Incognito-pour-Javascript-650-finalenglish.jpg"
 	},
 	{
 		"title"		: "Not that simple",
-		"text"		: "What do you mean? What is the point of all your software versioning systems and backups if you can't roll back?\n\nI'm not saying we can't do it, I'm saying it's not that simple!\n\nHey guys, what's up?\n\nHe thinks I don't know how Git works! He's refusing to roll back to the version we published last week because \"It's not that simple\"...\n\nYou techies, you think I'm totally f**king stupid! But I know, know how it works!!\n\nSo we're going to do exactly what the customer wants — we're going to roll back to the version from last week, 0K?!?\n\nAh, well, actually...\n\n..it's not that simple...\n\nFor f**s sake... ",
+		"text"		: "What do you mean? What is the point of all your software versioning systems and backups if you can't roll back?\n\nI'm not saying we can't do it, I'm saying it's not that simple!\n\nHey guys, what's up?\n\nHe thinks I don't know how Git works! He's refusing to roll back to the version we published last week because \"It's not that simple\"...\n\nYou techies, you think I'm totally f**king stupid! But I know, I know how it works!!\n\nSo we're going to do exactly what the customer wants — we're going to roll back to the version from last week, 0K?!?\n\nAh, well, actually...\n\n..it's not that simple...\n\nFor f**s sake... ",
 		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/09/HeadlineImageTemplate-.jpg",
 		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/09/Strip-Si-en-fait-cest-pas-si-simple-650-finalenglish.jpg"
 	},
@@ -63,7 +63,7 @@ export const DNA: g.gene[] = [
 	},
 	{
 		"title"		: "I’m watching you…",
-		"text"		: "There you go, adding a function... now I'm sure you're gonna get it wrong...\n\nWHAAAAT?! WHAT THE You declared variable and NEVER use it?\n\nHOW MANY TIMES DO I NEED TO TELL YOU??\n\nUnless you're gonna...\n\nHmm, I see you've assigned a value...\n\n0K well guess that's all right then\n\nBut don't get too confident...\n\nI'm watching you ",
+		"text"		: "There you go, adding a function... now I'm sure you're gonna get it wrong...\n\nWHAAAAT?! WHAT THE F**K?? You declared variable and NEVER use it?\n\nHOW MANY TIMES DO I NEED TO TELL YOU??\n\nUnless you're gonna...\n\nHmm, I see you've assigned a value...\n\n0K well guess that's all right then\n\nBut don't get too confident...\n\nI'm watching you...",
 		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/06/HeadlineImageTemplate-.jpg",
 		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/06/Strip-Visual-Studio-Code-650-finalenglish.jpg"
 	}, 
