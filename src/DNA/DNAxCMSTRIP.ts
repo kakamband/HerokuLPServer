@@ -16,7 +16,7 @@ export const DNA: g.gene[] = [
 	{
 		"title"		: "The ‘no-code’ dream…",
 		"text"		: "Hey guys, come look...\n\nI've been waiting so long for this to happen...\n\nWhat's going on?\n\nThe project manager build his entire project on a 'no-coding' platform...\n\nThat's good, he'll learn a thing or two...\n\nYeah, but now he's noticed there's a core feature that can't be done with his tool...\n\nOh...\n\nHe won't admit he's wasted all that time on it, just to have us rebuild the whole thing...\n\nOh no...\n\nLet's go cheer him up...\n\nNo, wait, let him think about his mistake, just for another 2 minutes...",
-		"avatarURL"	: "https://www.commitstrip.com/2020/10/07/the-no-code-dream/",
+		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/10/HeadlineImageTemplate-1-1.jpg",
 		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/10/Strip-PM-et-le-Nocode650-finalenglish.jpg"
 	},
 	{
@@ -57,7 +57,7 @@ export const DNA: g.gene[] = [
 	},
 	{
 		"title"		: "Talk to me",
-		"text"		: "Come on, little server, talk to me. I want to help...\n\nis something wrong?\n\nThis server works perfectly if turn off logging.\n\n...but as soon as tum logs on, it crashes and restarts\n\nAh 0K, Weird, Have you looked at the io...?\n\nOh...\n\nSee the problems?  ",
+		"text"		: "Come on, little server, talk to me. I want to help...\n\nis something wrong?\n\nThis server works perfectly if I turn off logging...\n\n...but as soon as I turn logs on, it crashes and restarts\n\nAh 0K, Weird, Have you looked at the lo[gs]...?\n\nOh...\n\nSee the problems?  ",
 		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/07/HeadlineImageTemplate-.jpg",
 		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/07/Strip-Serveur-muet-650-finalenglish.jpg"
 	}
