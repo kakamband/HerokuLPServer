@@ -27,7 +27,7 @@ export const DNA: g.gene[] = [
 	},
 	{
 		"title"		: "Not the same",
-		"text"		: "0K I've tried everything, I can't make the image files any smaller\n\nReally?\n\nBut look, look how slow the site is loading! Check out the console, there are a bunch of icons that are 12KB each! 12KB for an icon, that's crazy!\n\nYou could reduce them lot by exporting them as SVG, or even pure CSS!\n\n So actually, I did look in the console, and what I saw was a whole lot of JavaScript!\n\nmore than 900KB of JavaScript libraries in fact Maybe you could make some savings there...?\n\nDon't look at that, JavaScript is not the same\n\nNow go optimize hour PNGs.",
+		"text"		: "0K I've tried everything, I can't make the image files any smaller\n\nReally?\n\nBut look, look how slow the site is loading! Check out the console, there are a bunch of icons that are 12KB each! 12KB for an icon, that's crazy!\n\nYou could reduce them lot by exporting them as SVG, or even pure CSS!\n\nSo actually, I did look in the console, and what I saw was a whole lot of JavaScript!\n\nmore than 900KB of JavaScript libraries in fact Maybe you could make some savings there...?\n\nDon't look at that, JavaScript is not the same\n\nNow go optimize hour PNGs.",
 		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/09/HeadlineImageTemplate-1-2.jpg",
 		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/09/Strip-R%C3%A9duis-tes-ko-650-finalenglish.jpg"
 	},
@@ -39,7 +39,7 @@ export const DNA: g.gene[] = [
 	},
 	{
 		"title"     : "Red handed",
-		"text"      : "  What the...??\n\nDid I just see what I think I saw, in a private browser window???\n\nHuh? What? No!!!\n\n it's nothing, it's just some, uh,.. light pornography... to relax...\n\nJezz, can a guy not get one moment alone... ?\n\nNo way. you can't trick me! Give me that!\n\nHeyyyyy!!\n\nI knew it!\n\nHow to get current date in PHP?\n\nWait, I can explain...",
+		"text"      : "  What the...??\n\nDid I just see what I think I saw, in a private browser window???\n\nHuh? What? No!!!\n\nit's nothing, it's just some, uh,.. light pornography... to relax...\n\nJezz, can a guy not get one moment alone... ?\n\nNo way. you can't trick me! Give me that!\n\nHeyyyyy!!\n\nI knew it!\n\nHow to get current date in PHP?\n\nWait, I can explain...",
 		"avatarURL" : "https://www.commitstrip.com/wp-content/uploads/2020/09/HeadlineImageTemplate-v2.jpg",
 		"mediaURL"  : "https://www.commitstrip.com/wp-content/uploads/2020/09/Strip-Incognito-pour-Javascript-650-finalenglish.jpg"
 	},
@@ -51,13 +51,13 @@ export const DNA: g.gene[] = [
 	},
 	{
 		"title"		: "Back in the office",
-		"text"		: "Hi everyone!\n\n It's so great to be back in the office! And Corona-free as well! Haha!\n\n Working from home was fine and all, but...\n\n It's nicer to be together, right, we can hang out in the break room, catch up.. team spirit and all that!\n\n So, you wanna grab a coffee and a chat?\n\n Shhhh,..\n\n We're working. ",
+		"text"		: "Hi everyone!\n\nIt's so great to be back in the office! And Corona-free as well! Haha!\n\nWorking from home was fine and all, but...\n\nIt's nicer to be together, right, we can hang out in the break room, catch up.. team spirit and all that!\n\nSo, you wanna grab a coffee and a chat?\n\nShhhh,..\n\nWe're working. ",
 		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/07/HeadlineImageTemplate-1-1.jpg",
 		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/07/Strip-Retour-dapr%C3%A8s-confinement-650-finalenglish.jpg"
 	},
 	{
 		"title"		: "Talk to me",
-		"text"		: "Come on, little server, talk to me. I want to help...\n\n is something wrong?\n\n This server works perfectly if turn off logging.\n\n ...but as soon as tum logs on, it crashes and restarts\n\n Ah 0K, Weird, Have you looked at the io...?\n\n Oh...\n\n See the problems?  ",
+		"text"		: "Come on, little server, talk to me. I want to help...\n\nis something wrong?\n\nThis server works perfectly if turn off logging.\n\n...but as soon as tum logs on, it crashes and restarts\n\nAh 0K, Weird, Have you looked at the io...?\n\nOh...\n\nSee the problems?  ",
 		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/07/HeadlineImageTemplate-.jpg",
 		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/07/Strip-Serveur-muet-650-finalenglish.jpg"
 	}
