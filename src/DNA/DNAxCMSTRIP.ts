@@ -3,7 +3,7 @@ import * as g                           from '../types/genetics'
 export const DNA: g.gene[] = [
 	{
 		"title"		: "The ‘no-code’ dream…",
-		"text"		: "Hey guys, come 00k...\n\nI've been waiting so long for this to happen...\n\nWhat's going on?\n\nThe project manager build his entire project on a •no-coding' platform...\n\nYeah, but now he's noticed there's a core feature that can't be done with his tool...\n\nThat's good, he'll beam a thing or two...\n\nHe wont admit he's wasted ail that time on it, just to have us rebuild the whole thing...\n\nOh no...\n\nLet's go cheer him up...\n No, wait, let him think about his mistake, just for another Z minutes...",
+		"text"		: "Hey guys, come look...\n\nI've been waiting so long for this to happen...\n\nWhat's going on?\n\nThe project manager build his entire project on a 'no-coding' platform...\n\nThat's good, he'll beam a thing or two...\n\nYeah, but now he's noticed there's a core feature that can't be done with his tool...\n\nOh...\n\nHe won't admit he's wasted all that time on it, just to have us rebuild the whole thing...\n\nOh no...\n\nLet's go cheer him up...\n\nNo, wait, let him think about his mistake, just for another 2 minutes...",
 		"avatarURL"	: "https://www.commitstrip.com/2020/10/07/the-no-code-dream/",
 		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/10/Strip-PM-et-le-Nocode650-finalenglish.jpg"
 	},
