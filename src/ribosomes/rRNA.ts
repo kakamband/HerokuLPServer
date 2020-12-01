@@ -12,6 +12,7 @@ export const ribosomeToRNA = {
     "IIOKGNP"   : "x549"   ,
     "8CQKEWL"   : "x549"   ,
     "W9UOQVL"   : "x549"   ,
-    "PRENW2A"   : "x549"   
+    "PRENW2A"   : "x549"   ,
+    "CMSTRIP"   : "x549"   ,
 
 }
