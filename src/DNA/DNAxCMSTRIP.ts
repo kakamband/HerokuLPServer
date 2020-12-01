@@ -25,6 +25,12 @@ export const DNA: g.gene[] = [
 		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/10/HeadlineImageTemplate-.jpg",
 		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/10/Strip-Daily-meeting-650-finalenglish.jpg"
 	},
+	{
+		"title"		: "Not the same",
+		"text"		: "0K I've tried everything, I can't make the image files any smaller\n\nReally?\n\nBut look, look how slow the site is loading! Check out the console, there are a bunch of icons that are 12KB each! 12KB for an icon, that's crazy!\n\nYou could reduce them lot by exporting them as SVG, or even pure CSS!\n\n So actually, I did look in the console, and what I saw was a whole lot of JavaScript!\n\nmore than 900KB of JavaScript libraries in Maybe you could make some savings there. ..?\n\nDon't look at that, JavaScript is not the same\n\nNow go optimize hour PNGs.",
+		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/09/HeadlineImageTemplate-1-2.jpg",
+		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/09/Strip-R%C3%A9duis-tes-ko-650-finalenglish.jpg"
+	}
 
 ]
 
