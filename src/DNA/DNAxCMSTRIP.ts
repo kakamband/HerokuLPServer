@@ -55,6 +55,12 @@ export const DNA: g.gene[] = [
 		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/07/HeadlineImageTemplate-1-1.jpg",
 		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/07/Strip-Retour-dapr%C3%A8s-confinement-650-finalenglish.jpg"
 	},
+	{
+		"title"		: "Talk to me",
+		"text"		: "Come on, little server, talk to me. I want to help...\n\n is something wrong?\n\n This server works perfectly if turn off logging.\n\n ...but as soon as tum logs on, it crashes and restarts\n\n Ah 0K, Weird, Have you looked at the io...?\n\n Oh...\n\n See the problems?  ",
+		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/07/HeadlineImageTemplate-.jpg",
+		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/07/Strip-Serveur-muet-650-finalenglish.jpg"
+	}
 
 ]
 
