@@ -36,6 +36,12 @@ export const DNA: g.gene[] = [
 		"text"      : "They've asked me for a budget for our cloud usage for the year\n\nHmm... that won't be easy..\n\nI guess I need to get traffic estimates for next year, and then estimate roughly the number of instances, required capacity processing time... and figure out bandwidth and storage space...\n\n...and then put that into their crazy estimation form, to try and get an idea of the budget for each project...\n\nOr maybe I just make an educated guess... based on my years of experience...\n\nYeah, I'm sure that's fine, you're usually pretty good at that, right?\n\nLATER\n\nSurvey finds that the average business overspends 23% on cloud computing budget each year...\"\n\nHuh. Strange...",
 		"avatarURL" : "https://www.commitstrip.com/wp-content/uploads/2020/09/HeadlineImageTemplate-1-1.jpg",
 		"mediaURL"  : "https://www.commitstrip.com/wp-content/uploads/2020/09/Strip-Devis-Cloud-650-finalenglishv2.jpg"
+	},
+	{
+		"title"     : "Red handed",
+		"text"      : "  What the...??\n\nDid I just see what I think I saw, in a private browser window???\n\nHub? What? No!!!\n\n it's nothing, it's just some, uh,.. light pornography... to relax...\n\nJezz, can guy not get one moment alone... ?\n\nNo way. you can't trick me! Give me that!\n\nHeyyyyy!!\n\nI knew it!\n\nHow to get current date in PHP?\n\nWait, I can explain...",
+		"avatarURL" : "https://www.commitstrip.com/wp-content/uploads/2020/09/HeadlineImageTemplate-v2.jpg",
+		"mediaURL"  : "https://www.commitstrip.com/wp-content/uploads/2020/09/Strip-Incognito-pour-Javascript-650-finalenglish.jpg"
 	}
 
 ]
