@@ -9,7 +9,7 @@ export const DNA: g.gene[] = [
 	},
 	{
 		"title"		: "The best bet for 2030",
-		"text"		: "Have you ever wondered what new web technologies will come out between now md 2030? What we should be betting on right now?\n\nI think in 2030 Node or Python will be leading the pack, or maybe some language that doesn't even exist yet!\n\nThe web moves so fast, we're gonna need to adapt!\n\nDid you know that in 2020, 80% websites are still using PH?, 77% use jQuery and Wordpress has 63% CNS market share?\n\nNo way!\n\nWay. And worse: the numbers are increasing\n\nMaybe it would be best to go all in on PHP/iQuery/Wordpress.,.?",
+		"text"		: "Have you ever wondered what new web technologies will come out between now and 2030? What we should be betting on right now?\n\nI think in 2030 Node or Python will be leading the pack, or maybe some language that doesn't even exist yet!\n\nThe web moves so fast, we're gonna need to adapt!\n\nDid you know that in 2020, 80% websites are still using PHP, 77% use jQuery and Wordpress has 63% CNS market share?\n\nNo way!\n\nWay. And worse: the numbers are increasing\n\nMaybe it would be best to go all in on PHP/iQuery/Wordpress.,.?",
 		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/12/HeadlineImageTemplate-.jpg",
 		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/12/Strip-Top-langage-web-650-finalenglish.jpg"
 	},
