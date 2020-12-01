@@ -4410,5 +4410,9 @@ export const DNA: g.gene[] = [
 		avatarURL	: "https://www.dw.com/image/38717491_302.jpg",
 		mediaURL	: "https://radiodownloaddw-a.akamaihd.net/Events/dwelle/dira/mp3/deutschkurse/wortderwoche/273493C3_2_dwdownload.mp3",
 		hPath  		: [ "XYZ" ]
-	}
+	},
+	// [Archive, Wort der Woche, IJ, Jein]
+	// [Archive, Wort der Woche, PQ, Panschen]
+	// [Archive, Wort der Woche, N, Der Nervenkrieg]
+
 ]

@@ -3,7 +3,7 @@ import * as x1309                       from "./RNAx1309";
 import * as x1127                       from "./RNAx1127";
 import * as x834                        from "./RNAx834";
 import * as x549                        from "./RNAx549";
-import * as g                           from '../types/genetics'
+import * as g                           from "../types/genetics"
 import * as u                           from "../types/user";
 
 // -- =====================================================================================

@@ -40,5 +40,13 @@ export const en_r: g.Ribosome[] = [
 		level       : "C1",
 		title       : "Interesting\nThing of\nthe Day",
 		avatar      : "https://www.kickassfacts.com/wp-content/uploads/2017/01/fact-of-the-day.jpg",
-    }
+    },
+    {
+        institute   : "en",
+        code        : "CMSTRIP",
+        type        : "comic",
+		level       : "B1",
+		title       : "Commit Strip for Developers",
+		avatar      : "https://prashantsani.com/spider/content/images/size/w2000/2017/04/commitStrip-Rise-of-the-coders-English-Hardcover.jpg",
+    },
 ]
