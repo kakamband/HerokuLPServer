@@ -27,9 +27,15 @@ export const DNA: g.gene[] = [
 	},
 	{
 		"title"		: "Not the same",
-		"text"		: "0K I've tried everything, I can't make the image files any smaller\n\nReally?\n\nBut look, look how slow the site is loading! Check out the console, there are a bunch of icons that are 12KB each! 12KB for an icon, that's crazy!\n\nYou could reduce them lot by exporting them as SVG, or even pure CSS!\n\n So actually, I did look in the console, and what I saw was a whole lot of JavaScript!\n\nmore than 900KB of JavaScript libraries in Maybe you could make some savings there. ..?\n\nDon't look at that, JavaScript is not the same\n\nNow go optimize hour PNGs.",
+		"text"		: "0K I've tried everything, I can't make the image files any smaller\n\nReally?\n\nBut look, look how slow the site is loading! Check out the console, there are a bunch of icons that are 12KB each! 12KB for an icon, that's crazy!\n\nYou could reduce them lot by exporting them as SVG, or even pure CSS!\n\n So actually, I did look in the console, and what I saw was a whole lot of JavaScript!\n\nmore than 900KB of JavaScript libraries in fact Maybe you could make some savings there...?\n\nDon't look at that, JavaScript is not the same\n\nNow go optimize hour PNGs.",
 		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/09/HeadlineImageTemplate-1-2.jpg",
 		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/09/Strip-R%C3%A9duis-tes-ko-650-finalenglish.jpg"
+	},
+	{
+		"title"     : "The cloud. It’s… expensive.",
+		"text"      : "They've asked for me a budget for our cloud usage for the year\n\nHmm... that won't be easy..\n\nI guess I need to get traffic estimates for next year, and then estimate roughly the number of instances, required capacity processing time... and figure out bandwidth and storage space...\n\n...and then put that into their crazy estimation form, to try and get an idea of the budget for each project...\n\nOr maybe I just make an educated guess... based on my years of experience...\n\nYeah, I'm sure that's fine, you're usually pretty good at that, right?\n\nLATER\n\nSurvey finds that the average business overspends 23% on cloud computing budget each year...\"\n\nHuh. Strange...",
+		"avatarURL" : "https://www.commitstrip.com/wp-content/uploads/2020/09/HeadlineImageTemplate-1-1.jpg",
+		"mediaURL"  : "https://www.commitstrip.com/wp-content/uploads/2020/09/Strip-Devis-Cloud-650-finalenglishv2.jpg"
 	}
 
 ]
