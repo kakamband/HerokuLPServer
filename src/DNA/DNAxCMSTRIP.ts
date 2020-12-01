@@ -48,7 +48,13 @@ export const DNA: g.gene[] = [
 		"text"		: "What do you mean? What is the point of all your software versioning systems and backups if you can't roll back?\n\nI'm not saying we can't do it, I'm saying it's not that simple!\n\nHey guys, what's up?\n\nHe thinks I don't know how Git works! He's refusing to roll back to the version we published last week because \"It's not that simple\"...\n\nYou techies, you think I'm totally f**king stupid! But I know, know how it works!!\n\nSo we're going to do exactly what the customer wants — we're going to roll back to the version from last week, 0K?!?\n\nAh, well, actually...\n\n..it's not that simple...\n\nFor f**s sake... ",
 		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/09/HeadlineImageTemplate-.jpg",
 		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/09/Strip-Si-en-fait-cest-pas-si-simple-650-finalenglish.jpg"
-	}
+	},
+	{
+		"title"		: "Back in the office",
+		"text"		: "Hi everyone!\n\n It's so great to be back in the office! And Corona-free as well! Haha!\n\n Working from home was fine and all, but...\n\n It's nicer to be together, right, we can hang out in the break room, catch up.. team spirit and all that!\n\n So, you wanna grab a coffee and a chat?\n\n Shhhh,..\n\n We're working. ",
+		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/07/HeadlineImageTemplate-1-1.jpg",
+		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/07/Strip-Retour-dapr%C3%A8s-confinement-650-finalenglish.jpg"
+	},
 
 ]
 
