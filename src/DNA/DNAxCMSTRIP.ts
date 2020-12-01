@@ -60,7 +60,13 @@ export const DNA: g.gene[] = [
 		"text"		: "Come on, little server, talk to me. I want to help...\n\nis something wrong?\n\nThis server works perfectly if I turn off logging...\n\n...but as soon as I turn logs on, it crashes and restarts\n\nAh 0K, Weird, Have you looked at the lo[gs]...?\n\nOh...\n\nSee the problems?  ",
 		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/07/HeadlineImageTemplate-.jpg",
 		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/07/Strip-Serveur-muet-650-finalenglish.jpg"
-	}
+	},
+	{
+		"title"		: "I’m watching you…",
+		"text"		: "There you go, adding a function... now I'm sure you're gonna get it wrong...\n\nWHAAAAT?! WHAT THE You declared variable and NEVER use it?\n\nHOW MANY TIMES DO I NEED TO TELL YOU??\n\nUnless you're gonna...\n\nHmm, I see you've assigned a value...\n\n0K well guess that's all right then\n\nBut don't get too confident...\n\nI'm watching you ",
+		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/06/HeadlineImageTemplate-.jpg",
+		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/06/Strip-Visual-Studio-Code-650-finalenglish.jpg"
+	}, 
 
 ]
 
