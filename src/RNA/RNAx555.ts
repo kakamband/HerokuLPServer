@@ -10,7 +10,7 @@ export function gene ( user: u.user, ribosome: g.Ribosome ): Promise<g.gene> {
         
         let DNA = require( "../DNA/DNAx" + ribosome.code ).DNA;
 
-        a_good_gene_4_user( user, DNA, "start" )
+        a_good_gene_4_user( user, DNA, ribosome.readMode )
         .then( gene => rs( gene ) )
         .catch( err => rx( err ) );
     
