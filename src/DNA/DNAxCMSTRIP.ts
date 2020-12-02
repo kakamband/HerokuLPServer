@@ -67,7 +67,12 @@ export const DNA: g.gene[] = [
 		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/06/HeadlineImageTemplate-.jpg",
 		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/06/Strip-Visual-Studio-Code-650-finalenglish.jpg"
 	}, 
-
+	{
+		"title"		: "The science of front-end",
+		"text"		: "\"The cockpit screens in the Crew Dragon module use Chromium and JS\"\n\n'The UI code has 100% test coverage, they even test the visual output\"\n\nunit test For browser output? I've never heard of that before...\n\nHow do they do it?\n\n\"Test images are generated in advance, and are compared with a screenshot of the live interface. If the output is even one pixel off, the test fails.\"\n\nThat sounds like a good idea!\n\nLATER\n\nDamn, 1545 graphical unit tests to write, thank you SpaceX,..\n\nHaha, space research is driving innovation even in Front-End development!\n\nF**k off",
+		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/06/HeadlineImageTemplate-R%C3%A9cup%C3%A9r%C3%A9.jpg",
+		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/06/Strip-Test-SpaceX-650-finalenglish.jpg"
+	}
 ]
 
 let t = {
