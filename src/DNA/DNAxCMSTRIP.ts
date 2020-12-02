@@ -72,6 +72,12 @@ export const DNA: g.gene[] = [
 		"text"		: "\"The cockpit screens in the Crew Dragon module use Chromium and JS\"\n\n'The UI code has 100% test coverage, they even test the visual output\"\n\nunit test For browser output? I've never heard of that before...\n\nHow do they do it?\n\n\"Test images are generated in advance, and are compared with a screenshot of the live interface. If the output is even one pixel off, the test fails.\"\n\nThat sounds like a good idea!\n\nLATER\n\nDamn, 1545 graphical unit tests to write, thank you SpaceX,..\n\nHaha, space research is driving innovation even in Front-End development!\n\nF**k off",
 		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/06/HeadlineImageTemplate-R%C3%A9cup%C3%A9r%C3%A9.jpg",
 		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/06/Strip-Test-SpaceX-650-finalenglish.jpg"
+	},
+	{
+		"title"		: "COVID Go",
+		"text"		: "We're going to create a bluetooth app so we can know if people have been less than 3 feet from each other\n\nIt'll never work, Bluetooth doesn't let you measure that kind of thing with any precision\n\nDoesn't matter, use a bit of bluetooth, a bit of GPS, you'll figure it out!\n\nGPS? Indoors?\n\n Leave me to deal with the politicians, you guys figure out the technical bits — we launch on Friday with Apple and Google!\n\nTogether, we can beat this virus!\n\nWAIT!\n\nTHE DAILY CODER\n\nTOTAL FAILURE OF COVID 19 TRACKING APP\n\nDON'T WORRY, WE'LL USE NFC IN THE V-2 -- IT'LL BE MUCH BETTER!",
+		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/05/HeadlineImageTemplate-R%C3%A9cup%C3%A9r%C3%A9-1.jpg",
+		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/05/Strip-Appli-stop-Covid-650-finalenglish.jpg"
 	}
 ]
 
