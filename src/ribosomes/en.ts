@@ -1,5 +1,5 @@
 import * as g                           from '../types/genetics'
- 
+
 export const en_r: g.Ribosome[] = [
     {
         institute   : "en",

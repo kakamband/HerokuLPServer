@@ -15,4 +15,4 @@ export const ribosomeToRNA = {
     "PRENW2A"   : "x549"   ,
     "CMSTRIP"   : "x549"   ,
 
-}  
+}

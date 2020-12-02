@@ -1,4 +1,4 @@
- import * as g                           from '../types/genetics'
+import * as g                           from '../types/genetics'
 import * as u                           from "../types/user";
 import { a_good_gene_4_user }           from "../tools/user";
 
