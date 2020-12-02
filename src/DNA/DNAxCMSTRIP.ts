@@ -81,7 +81,7 @@ export const DNA: g.gene[] = [
 	},
 	{
 		"title"		: "Experts",
-		"text"		: "You know you should really migrate all your architecture over to NodeJS. Its much more stable\n\nDo you really think it's a good idea to use Kubemetes in production?\n\nI mean, I don't know much, but my cousin told me...\n\nHTML is 10 000 faster than Kotlin, let people use the language they want, we're a democracy after all!\n\n TOO right!\n\nYou know...\n\n...If I were a doctor I think I would want to punch every single person who has opinion on chloroquine",
+		"text"		: "You know you should really migrate all your architecture over to NodeJS. Its much more stable\n\nDo you really think it's a good idea to use Kubemetes in production?\n\nI mean, I don't know much, but my cousin told me...\n\nHTML is 10 000 faster than Kotlin, let people use the language they want, we're a democracy after all!\n\n TOO right!\n\nYou know...\n\n...If I were a doctor I think I would want to punch every single person who has an opinion on chloroquine",
 		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/05/HeadlineImageTemplate-R%C3%A9cup%C3%A9r%C3%A9.jpg",
 		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/05/Strip-Lavis-Chloroquine-650-finalenglish.jpg"
 	},
