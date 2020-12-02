@@ -173,7 +173,7 @@ export const DNA: g.gene[] = [
 	{
 		"title"		: "Coding maturity",
 		"text"		: "When you first start coding, it feels like you lust discovered a superpower...\n\nThen, as you get better, you start to trust yourself... you get to know your stack and you write the best code you can...\n\nYeah... you feel like a coding God...\n\nAnd then one dab you reach a kind of maturity. You realise your code is still not perfect, that your logic isn't always sound and that maybe you're still human after all...\n\nAh.\n\nAnd when do you it this \"maturity\"?\n\nWell for me it was an hour ago, when I read over one of my old commits\n\nSo there's that...",
-		"avatarURL"	: "https://www.commitstrip.com/2020/02/12/coding-maturity/",
+		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/02/HeadlineImageTemplate-.jpg",
 		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/02/Strip-Le-code-de-la-maturit%C3%A9-650-finalenglsih.jpg"
 	},
 	{
