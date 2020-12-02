@@ -1,27 +1,17 @@
  import * as g                           from '../types/genetics'
 import * as u                           from "../types/user";
-import { DNAxList, DNA_maker }          from "../DNA/DNAxTTFGH8V";
+import { a_good_gene_4_user }           from "../tools/user";
 
 // -- =====================================================================================
 
-export function gene ( user: u.user ): Promise<g.gene> {
+export function gene ( user: u.user, ribosome: g.Ribosome ): Promise<g.gene> {
 
     return new Promise ( (rs, rx) => { 
-
-        DNAxList().then( list => {
-
-            // .. filter list to new ones for user
-            list = list.filter( item => !user.gotFromThisRibosome.includes( item.id ) );
-            
-            if ( !list.length ) rx( "No more Thema for now!" );
         
-            else {
-                DNA_maker( list[0].id ,list[0].link )
-                .then( DNA => rs( DNA[0] ) )
-                .catch( err => rx( err ) );
-            };
-        
-        } )
+        let DNA = require( "../DNA/DNAx" + ribosome.code ).DNA;
+
+        a_good_gene_4_user( user, DNA, "start" )
+        .then( gene => rs( gene ) )
         .catch( err => rx( err ) );
     
     } );
@@ -61,8 +51,8 @@ export function snap (): Promise<{ [key: string]: string }> {
 
     return new Promise ( (rs, rx) => { 
         let snap = {} as { [key: string]: string };
-        snap.a = "12";
-        snap.b = "12";
+        snap.a = "10";
+        snap.b = "10";
         rs( snap )
     } );
 

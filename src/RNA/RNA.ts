@@ -1,4 +1,4 @@
-import * as x1382                       from "./RNAx1382";
+ import * as x1382                       from "./RNAx1382";
 import * as x1309                       from "./RNAx1309";
 import * as x1127                       from "./RNAx1127";
 import * as x834                        from "./RNAx834";
