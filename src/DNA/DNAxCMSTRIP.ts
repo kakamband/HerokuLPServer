@@ -87,7 +87,7 @@ export const DNA: g.gene[] = [
 	},
 	{
 		"title"		: "Coder hazing",
-		"text"		: "Come on, this is not how we should welcome our new team members...\n\nLast time you asked he new dev to set up serverless infra without any server...\n\nJust before that we had the guy who was replying to all our API calls by hard...\n\nCome on, he lasted 16 hours!\n\nAnd now you've asked he new guy to fix all the PHP notices on our corporate Wordpress site!\n\nThis time you've gone too far!",
+		"text"		: "Come on, this is not how we should welcome our new team members...\n\nLast time you asked the new dev to set up serverless infra without any server...\n\nJust before that we had the guy who was replying to all our API calls by hand...\n\nCome on, he lasted 16 hours!\n\nAnd now you've asked the new guy to fix all the PHP notices on our corporate Wordpress site!\n\nThis time you've gone too far!",
 		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/05/HeadlineImageTemplate-1-2.jpg",
 		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/05/Strip-Bizutage-codeur-650-fianlenglish.jpg"
 	},
