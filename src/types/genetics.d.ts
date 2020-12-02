@@ -10,6 +10,7 @@ export interface Ribosome {
     source          : string                        ,
     contains        : number|"∞"                    ,
     readMode        : "start"|"random"|"end"        ,
+    private?        : boolean                       ,
 }
 
 export interface gene {

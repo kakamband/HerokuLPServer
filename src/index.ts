@@ -132,7 +132,8 @@ app.post( '/purchasedItems', ( req: express.Request, res: express.Response ) => 
 // -- =================================== Providing Ribosomes filtered by Institute =======
 
 app.get( '/ribosome', ( req: express.Request, res: express.Response ) => {
-    genetics._ribosomes( req.query.i as string ).then( list => res.json( list ) );
+    genetics._ribosomes( req.query.i as string ).
+    then( list => res.json( list.filter( x => !x.private ) ) );
 } );
 
 // -- ========================================================== Providing New Cell =======
