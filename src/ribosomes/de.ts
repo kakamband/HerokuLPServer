@@ -4,7 +4,7 @@ export const de_r: g.Ribosome[] = [
 
     {
         institute   : "de",
-        code        : "S95A5W8",
+        code        : "DASSAGT",
         type        : "audio",
         level       : "B1",
         title       : "Das\nsagt\nman\nso!",
@@ -12,7 +12,7 @@ export const de_r: g.Ribosome[] = [
     },
     {
         institute   : "de",
-        code        : "3IQD618",
+        code        : "WORTDWO",
         type        : "audio",
         level       : "B2",
         title       : "Wort\nder\nWoche",
@@ -20,7 +20,7 @@ export const de_r: g.Ribosome[] = [
     },
     {
         institute   : "de",
-        code        : "LRT1689",
+        code        : "NACHRIT",
         type        : "audio",
         level       : "C1",
         title       : "DW\nNachricht",
@@ -28,7 +28,7 @@ export const de_r: g.Ribosome[] = [
     },
     {
         institute   : "de",
-        code        : "TTFGH8V",
+        code        : "TPTHEMA",
         type        : "audio",
         level       : "B1",
         title       : "Top\nThema",
@@ -36,7 +36,7 @@ export const de_r: g.Ribosome[] = [
     },
     {
         institute   : "de",
-        code        : "PSE",
+        code        : "PSEGERM",
         type        : "slide",
         level       : "A1",
         title       : "PSE",

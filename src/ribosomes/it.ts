@@ -3,7 +3,7 @@ import * as g                           from '../types/genetics'
 export const it_r: g.Ribosome[] = [
     {
         institute:  "it",
-        code:       "OBDQL9U",
+        code:       "ILCUORE",
         type:       "audio",
         level:      "B2",
         title:      "Cuore",
