@@ -14,7 +14,8 @@ export function _ribosomes ( institute: string ): Promise<g.Ribosome[]> {
         let list = rpi.filter( ribosome => ribosome.institute === institute );
         
         for ( let item of list ) 
-            item.contains = require( "../DNA/DNAx" + item.code ).DNA.length;
+            if ( !item.contains )
+                item.contains = require( "../DNA/DNAx" + item.code ).DNA.length;
 
         rs ( list );
 
