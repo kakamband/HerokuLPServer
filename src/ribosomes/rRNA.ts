@@ -1,19 +1,19 @@
 export const ribosomeToRNA = {
 
-    "DASSAGT"   : "x1382"  ,
-    "WORTDWO"   : "x1309"  ,
-    "NACHRIT"   : "x1127"  ,
-    "TPTHEMA"   : "x834"   ,
+    "NACHRIT"   : "x1127"   ,
+    "TPTHEMA"   : "x834"    ,
+    "DASSAGT"   : "x555"    ,
+    "WORTDWO"   : "x555"    ,
+    "PSEGERM"   : "x555"    ,
     
-    "PSEGERM"   : "x555"   ,
 
-    "ILCUORE"   : "x555"   ,
+    "ILCUORE"   : "x555"    ,
     
-    "FBLM79E"   : "x555"   ,
-    "IIOKGNP"   : "x555"   ,
-    "8CQKEWL"   : "x555"   ,
-    "W9UOQVL"   : "x555"   ,
-    "INTSDAY"   : "x555"   ,
-    "CMSTRIP"   : "x555"   ,
+    "EASYRED"   : "x555"    ,
+    "IIOKGNP"   : "x555"    ,
+    "ENGSTRY"   : "x555"    ,
+    "LTLPRNC"   : "x555"    ,
+    "INTSDAY"   : "x555"    ,
+    "CMSTRIP"   : "x555"    ,
 
 }

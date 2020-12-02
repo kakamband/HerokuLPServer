@@ -7,7 +7,9 @@ export interface Ribosome {
     level           : CEF                           ,
     title           : string                        ,
     avatar          : string                        ,
-    contains?       : number                        ,
+    source          : string                        ,
+    contains        : number|"∞"                    ,
+    readMode        : "start"|"random"|"end"        ,
 }
 
 export interface gene {
