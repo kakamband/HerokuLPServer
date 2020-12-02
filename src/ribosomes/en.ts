@@ -56,7 +56,7 @@ export const en_r: g.Ribosome[] = [
 		level       : "C1",
 		title       : "Interesting\nThing of\nthe Day",
         avatar      : "https://www.kickassfacts.com/wp-content/uploads/2017/01/fact-of-the-day.jpg",
-        source      : "LingQ",
+        source      : "itotd.com",
         contains    : null,
         readMode    : "start",
         private     : true,
@@ -70,6 +70,6 @@ export const en_r: g.Ribosome[] = [
         avatar      : "https://prashantsani.com/spider/content/images/size/w2000/2017/04/commitStrip-Rise-of-the-coders-English-Hardcover.jpg",
         source      : "commitstrip.com",
         contains    : "∞",
-        readMode    : "random"
+        readMode    : "start"
     },
 ]

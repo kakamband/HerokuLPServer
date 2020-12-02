@@ -93,7 +93,7 @@ export const DNA: g.gene[] = [
 	},
 	{
 		"title"		: "5 stages of working from home",
-		"text"		: "5 stages of working from home\n\nDenial\n\nImpossible! We could never wow. from home in this job!\n\nAnger\n\nWho does this f**king Corona-virus think it is anyway? We're not gonna mess up our whole work environment for the flu!\n\nBargaining\n\nI have an idea that will mean you can come back to work!\n\nYou have a sewing machine and a 3D printer, right?\n\nDepression\n\nWell, that's it. Everyone's at home, sitting around doing jack sh*t, meanwhile the company is going under...\n\nAcceptance\n\nGood pews! I ended the lease on he office! Stay at home, we're making huge savings! I love working from home!",
+		"text"		: "5 stages of working from home\n\nDenial\n\nImpossible! We could never work from home in this job!\n\nAnger\n\nWho does this f**king Corona-virus think it is anyway? We're not gonna mess up our whole work environment for the flu!\n\nBargaining\n\nI have an idea that will mean you can come back to work!\n\nYou have a sewing machine and a 3D printer, right?\n\nDepression\n\nWell, that's it. Everyone's at home, sitting around doing jack sh*t, meanwhile the company is going under...\n\nAcceptance\n\nGood news! I ended the lease on the office! Stay at home, we're making huge savings! I love working from home!",
 		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/05/HeadlineImageTemplate-1-1.jpg",
 		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/05/Strip-La-boss-et-le-t%C3%A9l%C3%A9travail-650-finalenglish.jpg"
 	},
@@ -145,106 +145,104 @@ export const DNA: g.gene[] = [
 		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/03/HeadlineImageTemplate-Standup.jpg",
 		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/03/Strip-Stand-up-Covid-1-english650-final.jpg"
 	},
+	{
+		"title"		: "Stay. At. Home.",
+		"text"		: "Good morning. Today, the government and I have launched a total, nationwide, quarantine. This will be the greatest war in the history of mankind\n\n\"Mankind.\" That word should have a pew meaning for all of us today. From today, we can no longer leave our homes, no longer visit our friends, We shall work from home. We will so grocery shopping without our kids. We may even set our groceries delivered, without speaking to the delivery guy of course...\n\nMy fellow citizens. there will be less social interaction. No more handshakes or hugs. All of us will be affected by this change. these sacrifices that I ask of you today. but we do it all, in the knowledge hat it will enable us to win finis most precious victory!\n\nSTAY. AT, HOME,\n\nWe'll be fine...",
+		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/03/HeadlineImageTemplate-1-2.jpg",
+		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/03/Strip-Covid19-1-650-finalenglish.jpg"
+	},
+	{
+		"title"		: "737 Max – Were the developers to blame?",
+		"text"		: "\"March 2020 - 737 Max: a damning report by investigators shows worst safety defect in plane grounded because of software problems\" \n\nIncredible...\n\nWhat the f**k have these developers been doing?\n\nIt looks like their security and quality culture has completely disappeared...\n\nI mean. if the business culture is at fault...\n\nIt's crazy... how can it get that bad...?\n\nA FEW WEEKS AGO...\n\nThere you so! That brightens the place up!",
+		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/03/HeadlineImageTemplate-1-1.jpg",
+		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/03/Strip-Boeing-737-Max-650-finalenglishV2.jpg"
+	},
+	{
+		"title"		: "Do you like containers?",
+		"text"		: "So, let's do an exercise with containers! Do you like containers?\n\nYes!!\n\nGreat! So read the exercise. And be careful, if you read the instructions really carefully you'll be fine!\n\nhave a trick to check if they can Follow simple instructions\n\nOh yeah?\n\nYeah. One of the exercises asked them to run rm -rf / in a container...\n\nOhh... that's mean...\n\nI mean, it's a good way of seeing who isn't capable of following simple instructions...\n\nSir, I have a problem...\n\nme too... mg computer has frozen...",
+		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/03/HeadlineImageTemplate-.jpg",
+		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/03/Strip-Troll-de-prof-650-finalenglish.jpg"
+	},
+	{
+		"title"		: "Excel at the end of the road",
+		"text"		: "Excel's not really that bad... Jack from accounting has v.mitten some scripts to run custom functions...\n\nLook, he updates his columns on the fig with Regex...\n\nHe calls a third-party API using the values from different cells as parameters, in batches...\n\nNot bad...\n\nThe problem is that when you've got thousands of lines, eventually it crashes...\n\nI helped him add sleep() calls randomly in the scripts so that it doesn't freeze up...\n\nIf you optimize it right, it can run 15000 lines in 8mins 36s... it's really not bad...\n\nBut am still sad, because the same script recorded in Python can do everything in 360ms...\n\nShame. I was getting into all these macros...",
+		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/02/HeadlineImageTemplate-1-1.jpg",
+		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/02/Strip-Ce-quon-peut-faire-avec-Excel-650finalenglish.jpg"
+	},
 
-{
-	"title"		: "Stay. At. Home.",
-	"text"		: "Good morning. Today, the government and I have launched a total, nationwide, quarantine. This will be the greatest war in the history of mankind\n\n\"Mankind.\" That word should have a pew meaning for all of us today. From today, we can no longer leave our homes, no longer visit our friends, We shall work from home. We will so grocery shopping without our kids. We may even set our groceries delivered, without speaking to the delivery guy of course...\n\nMy fellow citizens. there will be less social interaction. No more handshakes or hugs. All of us will be affected by this change. these sacrifices that I ask of you today. but we do it all, in the knowledge hat it will enable us to win finis most precious victory!\n\nSTAY. AT, HOME,\n\nWe'll be fine...",
-	"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/03/HeadlineImageTemplate-1-2.jpg",
-	"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/03/Strip-Covid19-1-650-finalenglish.jpg"
-},
-{
-	"title"		: "737 Max – Were the developers to blame?",
-	"text"		: "\"March 2020 - 737 Max: a damning report by investigators shows worst safety defect in plane grounded because of software problems\" \n\nIncredible...\n\nWhat the f**k have these developers been doing?\n\nIt looks like their security and quality culture has completely disappeared...\n\nI mean. if the business culture is at fault...\n\nIt's crazy... how can it get that bad...?\n\nA FEW WEEKS AGO...\n\nThere you so! That brightens the place up!",
-	"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/03/HeadlineImageTemplate-1-1.jpg",
-	"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/03/Strip-Boeing-737-Max-650-finalenglishV2.jpg"
-},
-{
-	"title"		: "Do you like containers?",
-	"text"		: "So, let's do an exercise with containers! Do you like containers?\n\nYes!!\n\nGreat! So read the exercise. And be careful, if you read the instructions really carefully you'll be fine!\n\nhave a trick to check if they can Follow simple instructions\n\nOh yeah?\n\nYeah. One of the exercises asked them to run rm -rf / in a container...\n\nOhh... that's mean...\n\nI mean, it's a good way of seeing who isn't capable of following simple instructions...\n\nSir, I have a problem...\n\nme too... mg computer has frozen...",
-	"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/03/HeadlineImageTemplate-.jpg",
-	"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/03/Strip-Troll-de-prof-650-finalenglish.jpg"
-},
-{
-	"title"		: "Excel at the end of the road",
-	"text"		: "Excel's not really that bad... Jack from accounting has v.mitten some scripts to run custom functions...\n\nLook, he updates his columns on the fig with Regex...\n\nHe calls a third-party API using the values from different cells as parameters, in batches...\n\nNot bad...\n\nThe problem is that when you've got thousands of lines, eventually it crashes...\n\nI helped him add sleep() calls randomly in the scripts so that it doesn't freeze up...\n\nIf you optimize it right, it can run 15000 lines in 8mins 36s... it's really not bad...\n\nBut am still sad, because the same script recorded in Python can do everything in 360ms...\n\nShame. I was getting into all these macros...",
-	"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/02/HeadlineImageTemplate-1-1.jpg",
-	"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/02/Strip-Ce-quon-peut-faire-avec-Excel-650finalenglish.jpg"
-},
+	{
+		"title"		: "Coding maturity",
+		"text"		: "When you first start coding, it feels like you lust discovered a superpower...\n\nThen, as you get better, you start to trust yourself... you get to know your stack and you write the best code you can...\n\nYeah... you feel like a coding God...\n\nAnd then one dab you reach a kind of maturity. You realise your code is still not perfect, that your logic isn't always sound and that maybe you're still human after all...\n\nAh.\n\nAnd when do you it this \"maturity\"?\n\nWell for me it was an hour ago, when I read over one of my old commits\n\nSo there's that...",
+		"avatarURL"	: "https://www.commitstrip.com/2020/02/12/coding-maturity/",
+		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/02/Strip-Le-code-de-la-maturit%C3%A9-650-finalenglsih.jpg"
+	},
+	{
+		"title"		: "A very good day",
+		"text"		: "Hello friend! Happy to have you with me today! There's a bottle of water and some candies in the back — help yourself!\n\nAwesome! Thanks!\n\nThis new ramen place is great, I was right to trust that suggestion!\n\nHey, listen to this, it's awesome! It was in my Youtube recommendations!\n\nLATER\n\nSo how was your day?\n\nAwesome! The Algorithm got everything right, it was amazing!",
+		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/01/HeadlineImageTemplate-1-1.jpg",
+		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/01/Strip-LAlgorithme-heureux-650-finalenglishV2.jpg"
+	},
+	{
+		"title"		: "Not so simple",
+		"text"		: "So, did you or didn't you?\n\nSo... honestly...\n\ncan't say for certain that I didn't...\n\nI mean. 'm more or less sure...\n\n'm pretty sure I might not have...\n\n...but it's not impossible that I did?\n\nTsk, You didn't test your code before sending your pull request, Cant you just admit it?\n\nIt's not that simple...",
+		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/01/HeadlineImageTemplate-.jpg",
+		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/01/Strip-Pull-request-sans-tester-650-finalenglishV2.jpg"
+	},
+	{
+		"title"		: "Other people’s code",
+		"text"		: "I refused his merge request and rewrote everything myself now it's working again.\n\nI mean, his code. was unreadable, couldn't even understand his logic...\n\nIt's always the same — if you want something done right, you have to do it yourself...\n\nDon't you think it's just that it's easier to write your own code from scratch than it is to read and understand someone else's?",
+		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/01/HeadlineImageTemplate-R%C3%A9cup%C3%A9r%C3%A9-1.jpg",
+		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/01/Strip-Paywall-650-finalenglish.jpg"
+	},
 
-{
-	"title"		: "Coding maturity",
-	"text"		: "When you first start coding, it feels like you lust discovered a superpower...\n\nThen, as you get better, you start to trust yourself... you get to know your stack and you write the best code you can...\n\nYeah... you feel like a coding God...\n\nAnd then one dab you reach a kind of maturity. You realise your code is still not perfect, that your logic isn't always sound and that maybe you're still human after all...\n\nAh.\n\nAnd when do you it this \"maturity\"?\n\nWell for me it was an hour ago, when I read over one of my old commits\n\nSo there's that...",
-	"avatarURL"	: "https://www.commitstrip.com/2020/02/12/coding-maturity/",
-	"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/02/Strip-Le-code-de-la-maturit%C3%A9-650-finalenglsih.jpg"
-},
-{
-	"title"		: "A very good day",
-	"text"		: "Hello friend! Happy to have you with me today! There's a bottle of water and some candies in the back — help yourself!\n\nAwesome! Thanks!\n\nThis new ramen place is great, I was right to trust that suggestion!\n\nHey, listen to this, it's awesome! It was in my Youtube recommendations!\n\nLATER\n\nSo how was your day?\n\nAwesome! The Algorithm got everything right, it was amazing!",
-	"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/01/HeadlineImageTemplate-1-1.jpg",
-	"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/01/Strip-LAlgorithme-heureux-650-finalenglishV2.jpg"
-},
-{
-	"title"		: "Not so simple",
-	"text"		: "So, did you or didn't you?\n\nSo... honestly...\n\ncan't say for certain that I didn't...\n\nI mean. 'm more or less sure...\n\n'm pretty sure I might not have...\n\n...but it's not impossible that I did?\n\nTsk, You didn't test your code before sending your pull request, Cant you just admit it?\n\nIt's not that simple...",
-	"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/01/HeadlineImageTemplate-.jpg",
-	"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/01/Strip-Pull-request-sans-tester-650-finalenglishV2.jpg"
-},
-{
-	"title"		: "Other people’s code",
-	"text"		: "I refused his merge request and rewrote everything myself now it's working again.\n\nI mean, his code. was unreadable, couldn't even understand his logic...\n\nIt's always the same — if you want something done right, you have to do it yourself...\n\nDon't you think it's just that it's easier to write your own code from scratch than it is to read and understand someone else's?",
-	"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/01/HeadlineImageTemplate-R%C3%A9cup%C3%A9r%C3%A9-1.jpg",
-	"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/01/Strip-Paywall-650-finalenglish.jpg"
-},
-
-{
-	"title"		: "Unintentional framework",
-	"text"		: "0K looks like a simple script wilI do — we can do this in vanilla JS, no problem!\n\nNo need for a framework...\n\nHmm, guess I should make this a bit more object oriented...\n\n...and it can't hurt to separate out the front-end with templates...\n\nAnd the code will be cleaner if I add an abstraction layer over the database and if I use A? endpoints\n\nI guess I could document it and put it on GitHub, maybe it'll help someone out...\n\nWHAT'S THIS?? ANOTHER Javascript Framework!? And Already 1000 stars on Github?? Tell me you didn't...\n\nI mean... it wasn't on purpose...",
-	"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/01/HeadlineImageTemplate-R%C3%A9cup%C3%A9r%C3%A9.jpg",
-	"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/01/Strip-Framework-malgr%C3%A9-soi-650-finalenglish.jpg"
-},
-{
-	"title"		: "Merry Christmas 2019 !",
-	"text"		: "A Christmas project\n\nOnce upon a time, someone decided to start a new project using the famous Agile method\n\nFull of new ideas and innovative approaches, the team jumped in, and every thing was going great\n\nBut soon there were spec changes every day, and the backlog was overflowing...\n\nAnd it was no surprise that the client stubbornly refused to postpone the go-live date\n\nSo, as always, everyone complained, but everyone got down to coding. And everything (more or less) was delivered on time!",
-	"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/12/HeadlineImageTemplate2.jpg",
-	"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/12/Strip-De-Noel-de-2019-650-finalenglish.jpg"
-},
-{
-	"title"		: "Who’s interested?",
-	"text"		: "Hey guys, yesterday I did something totally cool, linked together three different internet connections at home and tripled my speed!\n\nCool!\n\nYeah was really happy! So I started telling my boyfriend.\n\n.but as soon as I start talking about routing, ports or VPN, he total tunes out...\n\nIt's so frustrating! And none of mg friends appreciate it either...\n\n... I don't have anyone else to talk about it with...\n\nOK... Go on, tell us how you did it...\n\nIs it just a regular fail-over?\n\nHa, no! Not at all! I did it using Multi-path TCP?! Luckily I had a Raspberry Pi lying around and an old switch that I didn't want to throw out. And then I had this problem with a non-public IPv4 address? Did you know,...",
-	"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/11/HeadlineImageTemplate-Conflit.jpg",
-	"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/11/Strip-Raconter-son-exp%C3%A9rience-tech-650-finalenglish.jpg"
-},
-{
-	"title"		: "Python, What Else ?",
-	"text"		: "need to code a new web app and I was saying that maybe...\n\n...you could write it in Python? Great idea!\n\nAnd you're sure that waiting the fat client in Python is...\n\nOf course! What else?\n\nmachine Learning with Python really is soo awesome...\n\nDid you know that you can use embedded Python?\n\nAnd it's super fast!\n\nHey everyone? Guess what's the most popular coding language in 2019!\n\nLATER\n\nYou know, you were right...\n\n...Python really is versatile!",
-	"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/10/HeadlineImageTemplate-Conflit-2.jpg",
-	"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/10/Strip-2019-lann%C3%A9e-du-Python-650-finalenglishLOGO.jpg"
-},
-
-{
-	"title"		: "Everybody loves you",
-	"text"		: "Why are you still here??\n\nGet out of here!\n\nLoser!\n\nI don't know why do these PHP developers still exist...\n\nCome on, don't listen to them, they don't know how important you are...\n\nLook! I've finally found Drupal freelancer!\n\nWell done!\n\nYou saved the project!",
-	"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/10/HeadlineImageTemplate-Conflit-1.jpg",
-	"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/10/Strip-Dev-Drupal-d%C3%A9consid%C3%A9r%C3%A9-650-finalenglish.jpg"
-},
-{
-	"title"		: "Discount",
-	"text"		: "I demand a 20% discount!\n\nBut... $8,000, it's already a very good deal For you...\n\nI don't care, I want a 20% discount, otherwise there is no deal!!\n\nWhat do tell him? Can we code 20% Faster?\n\nNo need, he just wants to see a 20% discount, show him a 20% discount\n\nYes, usual our price is $10K, but exceptionally have managed to negotiate $8k internally\n\nWell, I'm the one who thanks you!",
-	"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/10/HeadlineImageTemplate-Conflit.jpg",
-	"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/10/Strip-La-ristourne-bidon-650-finalenglishV2.jpg"
-},
-{
-	"title"		: "What’s going on with all these divs?",
-	"text"		: "What's going on with all these divs?! You shouldn't be returning all this hard coded HTML...\n\nNowadays we send our data as a JSON object and then we integrate it into the DOM via the front-end\n\nAh, OK...\n\nLATER\n\nDone! It was easier than thought actually!\n\nGreat!\n\nI wrapped all the Ajax responses in a JSON object like you asked!",
-	"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/09/HeadlineImageTemplate-Conflit-5.jpg",
-	"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/09/Strip-Un-beau-Json-650-finalenglish.jpg"
-},
-{
-	"title"		: "The Devil has many faces",
-	"text"		: "This time it's really the end! December 2020! Quick!\n\nBegone evil spirit! This time for good!\n\nThey'll regret this... I'll show them...",
-	"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/09/HeadlineImageTemplate-Conflit-4.jpg",
-	"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/09/Strip-La-vengeance-de-Flash-650-finalenglish.jpg"
-},
+	{
+		"title"		: "Unintentional framework",
+		"text"		: "0K looks like a simple script wilI do — we can do this in vanilla JS, no problem!\n\nNo need for a framework...\n\nHmm, guess I should make this a bit more object oriented...\n\n...and it can't hurt to separate out the front-end with templates...\n\nAnd the code will be cleaner if I add an abstraction layer over the database and if I use A? endpoints\n\nI guess I could document it and put it on GitHub, maybe it'll help someone out...\n\nWHAT'S THIS?? ANOTHER Javascript Framework!? And Already 1000 stars on Github?? Tell me you didn't...\n\nI mean... it wasn't on purpose...",
+		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/01/HeadlineImageTemplate-R%C3%A9cup%C3%A9r%C3%A9.jpg",
+		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/01/Strip-Framework-malgr%C3%A9-soi-650-finalenglish.jpg"
+	},
+	{
+		"title"		: "Merry Christmas 2019 !",
+		"text"		: "A Christmas project\n\nOnce upon a time, someone decided to start a new project using the famous Agile method\n\nFull of new ideas and innovative approaches, the team jumped in, and every thing was going great\n\nBut soon there were spec changes every day, and the backlog was overflowing...\n\nAnd it was no surprise that the client stubbornly refused to postpone the go-live date\n\nSo, as always, everyone complained, but everyone got down to coding. And everything (more or less) was delivered on time!",
+		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/12/HeadlineImageTemplate2.jpg",
+		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/12/Strip-De-Noel-de-2019-650-finalenglish.jpg"
+	},
+	{
+		"title"		: "Who’s interested?",
+		"text"		: "Hey guys, yesterday I did something totally cool, linked together three different internet connections at home and tripled my speed!\n\nCool!\n\nYeah was really happy! So I started telling my boyfriend.\n\n.but as soon as I start talking about routing, ports or VPN, he total tunes out...\n\nIt's so frustrating! And none of mg friends appreciate it either...\n\n... I don't have anyone else to talk about it with...\n\nOK... Go on, tell us how you did it...\n\nIs it just a regular fail-over?\n\nHa, no! Not at all! I did it using Multi-path TCP?! Luckily I had a Raspberry Pi lying around and an old switch that I didn't want to throw out. And then I had this problem with a non-public IPv4 address? Did you know,...",
+		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/11/HeadlineImageTemplate-Conflit.jpg",
+		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/11/Strip-Raconter-son-exp%C3%A9rience-tech-650-finalenglish.jpg"
+	},
+	{
+		"title"		: "Python, What Else ?",
+		"text"		: "need to code a new web app and I was saying that maybe...\n\n...you could write it in Python? Great idea!\n\nAnd you're sure that waiting the fat client in Python is...\n\nOf course! What else?\n\nmachine Learning with Python really is soo awesome...\n\nDid you know that you can use embedded Python?\n\nAnd it's super fast!\n\nHey everyone? Guess what's the most popular coding language in 2019!\n\nLATER\n\nYou know, you were right...\n\n...Python really is versatile!",
+		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/10/HeadlineImageTemplate-Conflit-2.jpg",
+		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/10/Strip-2019-lann%C3%A9e-du-Python-650-finalenglishLOGO.jpg"
+	},
+	{
+		"title"		: "Everybody loves you",
+		"text"		: "Why are you still here??\n\nGet out of here!\n\nLoser!\n\nI don't know why do these PHP developers still exist...\n\nCome on, don't listen to them, they don't know how important you are...\n\nLook! I've finally found Drupal freelancer!\n\nWell done!\n\nYou saved the project!",
+		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/10/HeadlineImageTemplate-Conflit-1.jpg",
+		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/10/Strip-Dev-Drupal-d%C3%A9consid%C3%A9r%C3%A9-650-finalenglish.jpg"
+	},
+	{
+		"title"		: "Discount",
+		"text"		: "I demand a 20% discount!\n\nBut... $8,000, it's already a very good deal For you...\n\nI don't care, I want a 20% discount, otherwise there is no deal!!\n\nWhat do tell him? Can we code 20% Faster?\n\nNo need, he just wants to see a 20% discount, show him a 20% discount\n\nYes, usual our price is $10K, but exceptionally have managed to negotiate $8k internally\n\nWell, I'm the one who thanks you!",
+		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/10/HeadlineImageTemplate-Conflit.jpg",
+		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/10/Strip-La-ristourne-bidon-650-finalenglishV2.jpg"
+	},
+	{
+		"title"		: "What’s going on with all these divs?",
+		"text"		: "What's going on with all these divs?! You shouldn't be returning all this hard coded HTML...\n\nNowadays we send our data as a JSON object and then we integrate it into the DOM via the front-end\n\nAh, OK...\n\nLATER\n\nDone! It was easier than thought actually!\n\nGreat!\n\nI wrapped all the Ajax responses in a JSON object like you asked!",
+		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/09/HeadlineImageTemplate-Conflit-5.jpg",
+		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/09/Strip-Un-beau-Json-650-finalenglish.jpg"
+	},
+	{
+		"title"		: "The Devil has many faces",
+		"text"		: "This time it's really the end! December 2020! Quick!\n\nBegone evil spirit! This time for good!\n\nThey'll regret this... I'll show them...",
+		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/09/HeadlineImageTemplate-Conflit-4.jpg",
+		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2019/09/Strip-La-vengeance-de-Flash-650-finalenglish.jpg"
+	},
 
 	
 ]
