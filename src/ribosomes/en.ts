@@ -15,7 +15,7 @@ export const en_r: g.Ribosome[] = [
     },
     {
         institute   : "en",
-        code        : "IIOKGNP",
+        code        : "EATGOUT",
         type        : "audio",
 		level       : "A2",
 		title       : "Eating\nOut",

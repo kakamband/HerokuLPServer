@@ -10,7 +10,7 @@ export const ribosomeToRNA = {
     "ILCUORE"   : "x555"    ,
     
     "EASYRED"   : "x555"    ,
-    "IIOKGNP"   : "x555"    ,
+    "EATGOUT"   : "x555"    ,
     "ENGSTRY"   : "x555"    ,
     "LTLPRNC"   : "x555"    ,
     "INTSDAY"   : "x555"    ,
