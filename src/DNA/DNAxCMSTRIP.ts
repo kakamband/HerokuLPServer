@@ -99,7 +99,7 @@ export const DNA: g.gene[] = [
 	},
 	{
 		"title"		: "Never lose hope",
-		"text"		: "JAN 2006\n\nSo what's it like in the future, Doc? Is everyone using CSS3?\n\nWait wait, you'll see!\n\nWe're heading to 2020...\n\nKnowing all the problems you have with €6, I'll give you something to look Forward to... !\n\n MAY 2020\n\n Microsoft Edge the IE successor based on Google Chromium engine, is coming to LINUX\n\nIncredible...\n\n",
+		"text"		: "JAN 2006\n\nSo what's it like in the future, Doc? Is everyone using CSS3?\n\nWait wait, you'll see!\n\nWe're heading to 2020...\n\nKnowing all the problems you have with IE6, I'll give you something to look Forward to... !\n\n MAY 2020\n\n Microsoft Edge the IE successor based on Google Chromium engine, is coming to LINUX\n\nIncredible...",
 		"avatarURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/05/HeadlineImageTemplate-.jpg",
 		"mediaURL"	: "https://www.commitstrip.com/wp-content/uploads/2020/05/Strip-iE6-dans-le-futur-650-finalenglish.jpg"
 	},
