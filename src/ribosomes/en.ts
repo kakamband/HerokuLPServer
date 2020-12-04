@@ -11,7 +11,7 @@ export const en_r: g.Ribosome[] = [
         source      : "LingQ",
         contains    : null,
         readMode    : "start",
-        private     : true,
+        private     : false,
     },
     {
         institute   : "en",
@@ -23,7 +23,7 @@ export const en_r: g.Ribosome[] = [
         source      : "LingQ",
         contains    : null,
         readMode    : "start",
-        private     : true,
+        private     : false,
     },
     {
         institute   : "en",
@@ -35,7 +35,7 @@ export const en_r: g.Ribosome[] = [
         source      : "LingQ",
         contains    : null,
         readMode    : "start",
-        private     : true,
+        private     : false,
     },
     {
         institute   : "en",
@@ -47,7 +47,7 @@ export const en_r: g.Ribosome[] = [
         source      : "LingQ",
         contains    : null,
         readMode    : "start",
-        private     : true,
+        private     : false,
     },
     {
         institute   : "en",
@@ -74,10 +74,21 @@ export const en_r: g.Ribosome[] = [
     },
     {
         institute   : "en",
-        code        : "STORYON",
+        code        : "STRYOB2",
         type        : "video",
-		level       : "B1",
-		title       : "Storyline Online",
+		level       : "B2",
+		title       : "Storyline Online\nB2",
+        avatar      : "https://i0.wp.com/speechisbeautiful.com/wp-content/uploads/2016/03/storylineonline.png",
+        source      : "storylineonline.net",
+        contains    : "∞",
+        readMode    : "random"
+    },    
+    {
+        institute   : "en",
+        code        : "STRYOA2",
+        type        : "video",
+		level       : "A2",
+		title       : "Storyline Online\nA2",
         avatar      : "https://i0.wp.com/speechisbeautiful.com/wp-content/uploads/2016/03/storylineonline.png",
         source      : "storylineonline.net",
         contains    : "∞",
