@@ -74,7 +74,7 @@ export const en_r: g.Ribosome[] = [
     },
     {
         institute   : "en",
-        code        : "STROYON",
+        code        : "STORYON",
         type        : "video",
 		level       : "B1",
 		title       : "Storyline Online",
