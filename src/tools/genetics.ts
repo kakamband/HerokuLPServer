@@ -55,34 +55,49 @@ export function _crypto_cell (
 
 // -- =====================================================================================
 
-function cell ( ribosome: g.Ribosome, gene: g.gene, junk:g.junk, snap: g.rawSnap ): g.cell {
+function cell ( 
 
-    return {
+    ribosome: g.Ribosome, 
+    gene: g.gene, 
+    junk:g.junk, 
+    snap: g.rawSnap 
+
+): Promise<g.cell> {
+
+
+    return new Promise ( (rs, rx) => {
+
+        let cellText = gene.text;
+        // if ( !gene.text && !!gene.isYouTube ) cellText = 
+
+        rs ( {
                                                  
-        chromosome: {                            
-            title           : gene.title                ,
-            code            : {                          
-                ribosome    : ribosome.code             ,
-                idx         : gene.id                   ,
-            }                                           ,
-            ...junk                                     ,
-            hPath           : [                          
-                ribosome.title.replace( /\n/g, ' ' )    ,
-                ...gene.hPath || []                      
-            ]                                           ,
-            vPath           : [ gene.title ]            ,
-            wPath           : {                          
-                avatarURL   : gene.avatarURL            ,
-                mediaURL    : gene.mediaURL             ,
-            }                                           ,
-            isYouTube       : !!gene.isYouTube          ,
-        }                                               ,
-                                                         
-        rawText             : gene.text                 ,
-                                                         
-        rawSnap             : snap                      ,
-                                                 
-    }
+            chromosome: {                            
+                title           : gene.title                ,
+                code            : {                          
+                    ribosome    : ribosome.code             ,
+                    idx         : gene.id                   ,
+                }                                           ,
+                ...junk                                     ,
+                hPath           : [                          
+                    ribosome.title.replace( /\n/g, ' ' )    ,
+                    ...gene.hPath || []                      
+                ]                                           ,
+                vPath           : [ gene.title ]            ,
+                wPath           : {                          
+                    avatarURL   : gene.avatarURL            ,
+                    mediaURL    : gene.mediaURL             ,
+                }                                           ,
+                isYouTube       : !!gene.isYouTube          ,
+            }                                               ,
+                                                             
+            rawText             : cellText                  ,
+                                                             
+            rawSnap             : snap                      ,
+                                                             
+        } );
+
+    } );
 
 }
 
@@ -114,7 +129,8 @@ function new_cell ( ribosome: g.Ribosome, user: u.user ): Promise<g.cell> {
                 ]
         
                 Promise.all( requiredData )
-                .then( i => rs ( cell( ribosome, i[0], i[1], i[2] ) ) )
+                .then( i => cell( ribosome, i[0], i[1], i[2] ) )
+                .then( cell => rs( cell ) )
                 .catch( err => rx(err) );
 
             }
