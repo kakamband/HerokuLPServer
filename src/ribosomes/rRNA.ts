@@ -14,7 +14,9 @@ export const ribosomeToRNA = {
     "LTLPRNC"   : "x555"    ,
     "INTSDAY"   : "x555"    ,
     "CMSTRIP"   : "x555"    ,
-    "STRYOB2"   : "x555"    ,
+    "STRYOA1"   : "x555"    ,
     "STRYOA2"   : "x555"    ,
+    "STRYOB1"   : "x555"    ,
+    "STRYOB2"   : "x555"    ,
 
 }

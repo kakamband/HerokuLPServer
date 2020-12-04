@@ -7,5 +7,5 @@ export const DNA: g.gene[] = [
 		"avatarURL"	: "",
 		"mediaURL"	: "",
 		"isYouTube"	: true,
-	},
+	}
 ]
