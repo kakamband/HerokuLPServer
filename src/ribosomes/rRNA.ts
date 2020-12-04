@@ -5,10 +5,9 @@ export const ribosomeToRNA = {
     "DASSAGT"   : "x555"    ,
     "WORTDWO"   : "x555"    ,
     "PSEGERM"   : "x555"    ,
-    
 
     "ILCUORE"   : "x555"    ,
-    
+
     "EASYRED"   : "x555"    ,
     "EATGOUT"   : "x555"    ,
     "ENGSTRY"   : "x555"    ,

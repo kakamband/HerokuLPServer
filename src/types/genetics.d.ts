@@ -20,6 +20,7 @@ export interface gene {
     avatarURL       : string;
     mediaURL        : string;
     hPath?          : string[];
+    isYouTube?      : boolean;
 }
 
 export interface _new_gene { 

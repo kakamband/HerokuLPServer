@@ -74,7 +74,8 @@ function cell ( ribosome: g.Ribosome, gene: g.gene, junk:g.junk, snap: g.rawSnap
             wPath           : {                          
                 avatarURL   : gene.avatarURL            ,
                 mediaURL    : gene.mediaURL             ,
-            }                                            
+            }                                           ,
+            isYouTube       : !!gene.isYouTube          ,
         }                                               ,
                                                          
         rawText             : gene.text                 ,
