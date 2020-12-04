@@ -56,6 +56,17 @@ export const de_r: g.Ribosome[] = [
         source      : "Modjtaba",
         contains    : null,
         readMode    : "start"
+    },
+    {
+        institute   : "de",
+        code        : "RUTHWRB",
+        type        : "video",
+        level       : "B1",
+        title       : "Werbeparodien",
+        avatar      : "https://ruthe.de/medien_bilder/logo_werbeparodien.jpg",
+        source      : "ruthe.de",
+        contains    : null,
+        readMode    : "start"
     }
 
 ]
