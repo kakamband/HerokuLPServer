@@ -36,5 +36,5 @@ export const DNA: g.gene[] = [
 	// 	"mediaURL"	: "https://youtu.be/I31vI7152ew",
 	// 	"isYouTube"	: true
 	// },
-	
+
 ]
