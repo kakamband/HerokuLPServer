@@ -80,7 +80,7 @@ export const en_r: g.Ribosome[] = [
 		title       : "Storyline Online\nB2",
         avatar      : "https://i0.wp.com/speechisbeautiful.com/wp-content/uploads/2016/03/storylineonline.png",
         source      : "storylineonline.net",
-        contains    : "∞",
+        contains    : null,
         readMode    : "random"
     },    
     {
@@ -91,7 +91,7 @@ export const en_r: g.Ribosome[] = [
 		title       : "Storyline Online\nA2",
         avatar      : "https://i0.wp.com/speechisbeautiful.com/wp-content/uploads/2016/03/storylineonline.png",
         source      : "storylineonline.net",
-        contains    : "∞",
+        contains    : null,
         readMode    : "random"
     },
 ]
