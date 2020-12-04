@@ -72,4 +72,15 @@ export const en_r: g.Ribosome[] = [
         contains    : "∞",
         readMode    : "start"
     },
+    {
+        institute   : "en",
+        code        : "STROYON",
+        type        : "video",
+		level       : "B1",
+		title       : "Storyline Online",
+        avatar      : "https://i0.wp.com/speechisbeautiful.com/wp-content/uploads/2016/03/storylineonline.png",
+        source      : "storylineonline.net",
+        contains    : "∞",
+        readMode    : "random"
+    },
 ]

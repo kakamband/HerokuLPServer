@@ -15,5 +15,6 @@ export const ribosomeToRNA = {
     "LTLPRNC"   : "x555"    ,
     "INTSDAY"   : "x555"    ,
     "CMSTRIP"   : "x555"    ,
+    "SRORYON"   : "x555"    ,
 
 }
