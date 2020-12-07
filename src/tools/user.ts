@@ -129,16 +129,16 @@ export function _validator ( email: string, keyString: string ): Promise<u.user>
             query = `SELECT * FROM users WHERE email = '${ email }'`;
 
             const result = await client.query( query );
-            
+
             // .. checking Device
             if ( result.rowCount )
-                deviceRecognized( result.rows[0].devices, key ) ? 
+                email === "guest" || deviceRecognized( result.rows[0].devices, key ) ? 
                     rs( result.rows[0] ) : rx( "unrecognizable device!" );
 
             else rx( "unrecognizable user!" );
-            
+
             client.release();
-        
+
         } catch (err) { rx( "Error " + err ) }
 
     } );
