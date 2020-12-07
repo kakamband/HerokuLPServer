@@ -20,7 +20,7 @@ app.use( bodyParser.json() );
 
 app.get( '/isEmailExists', ( req: express.Request, res: express.Response ) => {
     usr._userExists( req.query.e as string ).
-    then( user => res.json( { status: 200, answer: !!user } ) ).
+    then( user => res.json( { status: 200, answer: !user } ) ).
     catch( err => res.json( { status: 500, "reason": err } ) );
 } );
 
