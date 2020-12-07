@@ -4,17 +4,25 @@ import * as genetics                    from "./tools/genetics";
 import * as u                           from "./types/user";
 import { crypto }                       from "./tools/crypto";
 
-// -- ======================================================================= SETUP =======
+// -- ======================================================================== INIT =======
 
 let nodeMailer = require( 'nodemailer' );
 const PORT = process.env.PORT || 5000;
 const app = express();
 var bodyParser = require('body-parser');
 
-// -- ================================================= verification  Email Address =======
+// -- ======================================================================= SETUP =======
 
 app.use( bodyParser.urlencoded( { extended: false } ) );
 app.use( bodyParser.json() );
+
+// -- ===================================================== CHECKING  Email Address =======
+
+app.get( '/isEmailExists', ( req: express.Request, res: express.Response ) => {
+    usr._userExists( req.query.e as string ).
+    then( user => res.json( { status: 200, answer: !!user } ) ).
+    catch( err => res.json( { status: 500, "reason": err } ) );
+} );
 
 // -- ================================================= verification  Email Address =======
 
