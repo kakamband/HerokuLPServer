@@ -1,0 +1,40 @@
+CREATE TABLE users (
+    id              SERIAL      PRIMARY KEY                 ,
+    email           TEXT        NOT NULL    UNIQUE          ,
+    devices         json        NOT NULL                    ,
+    charge          INTEGER     NOT NULL    DEFAULT 55      ,
+    purchased_items json        NOT NULL    DEFAULT '{}'      ,
+    enter           DATE        NOT NULL    DEFAULT now()   ,
+    stamp           TIMESTAMP   NOT NULL    DEFAULT now()   
+);
+
+INSERT INTO users ( email, devices, charge )
+VALUES 
+( 'sz.hatef@gmail.com', '[{"name":"Xiaomi | Redmi Note 9S","uuid":"8d36c51ae1550f30"}]', 100 ),
+( 'fateme000sharifi@gmail.com'  , '[{"name":"Xiaomi | Redmi Note 9 Pro","uuid":"b1ab7e8bc4085a74"}]', 64 ),
+( 'taghipour_ali@yahoo.com'     , '[{"name":"motorola | Moto G (5)","uuid":"daa84b360bb1e7e1"}]', 47 ),
+( 'modjtabah@hotmail.com'       , '[{"name":"Xiaomi | MI MAX 3","uuid":"54dba5a60b99055b"}]', 22 ),
+( 'biabanimahnaz00@gmail.com'   , '[{"name":"samsung | SM-A207F","uuid":"7fd49863a606f743"}]', 45 ),
+( 'taherikamran@yahoo.com'      , '[{"name":"samsung | SM-T515","uuid":"da127d6e495ced8f"}]', 32 ),
+( 'venusrzz3@gmail.com'         , '[{"name":"samsung | SM-A600FN","uuid":"966d22ccbf0790da"}]', 59 ),
+( 'tmiladthrenody@gmail.com'    , '[{"name":"HUAWEI | JSN-L22","uuid":"cc22aaafaf5a09de"}]', 10 ),
+( 'mojpaydar2@gmail.com'        , '[{"name":"samsung | SM-A305F","uuid":"1d979f13c0e65706"}]', 40 ),
+( 'guest'                       , '{}', 55 )
+RETURNING *;
+
+
+CREATE OR REPLACE FUNCTION trigger_set_timestamp()
+RETURNS TRIGGER AS $$
+BEGIN
+  NEW.stamp = NOW();
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER set_timestamp
+BEFORE UPDATE ON users
+FOR EACH ROW
+EXECUTE PROCEDURE trigger_set_timestamp();
+
+
+select id,email,charge,to_char( now()-stamp,' DD " DAY(s)," HH24 ":" MI "ago!' ) as LAST_ACTIVITY  from users order by LAST_ACTIVITY;
