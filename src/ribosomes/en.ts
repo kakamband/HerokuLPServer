@@ -82,7 +82,7 @@ export const en_r: g.Ribosome[] = [
         source      : "storylineonline.net",
         contains    : null,
         readMode    : "random",
-        private     : true,
+        private     : false,
     },
     {
         institute   : "en",
@@ -94,7 +94,7 @@ export const en_r: g.Ribosome[] = [
         source      : "storylineonline.net",
         contains    : null,
         readMode    : "random",
-        private     : true,
+        private     : false,
     },
     {
         institute   : "en",
@@ -106,7 +106,7 @@ export const en_r: g.Ribosome[] = [
         source      : "storylineonline.net",
         contains    : null,
         readMode    : "random",
-        private     : true,
+        private     : false,
     },
     {
         institute   : "en",
@@ -118,6 +118,6 @@ export const en_r: g.Ribosome[] = [
         source      : "storylineonline.net",
         contains    : null,
         readMode    : "random",
-        private     : true,
+        private     : false,
     },
 ]
