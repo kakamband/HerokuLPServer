@@ -6,7 +6,7 @@ import { crypto }                       from "./tools/crypto";
 
 // -- ======================================================================== INIT =======
 
-let nodeMailer = require( 'nodemailer' );
+let nodeMailer = require( 'nodemailer' ); 
 const PORT = process.env.PORT || 5000;
 const app = express();
 var bodyParser = require('body-parser');
