@@ -120,4 +120,16 @@ export const en_r: g.Ribosome[] = [
         readMode    : "end",
         private     : false,
     },
+    {
+        institute   : "en",
+        code        : "BBCSHSP",
+        type        : "audio",
+		level       : "B1",
+		title       : "Shakespeare Speaks",
+        avatar      : "https://www.open.edu/openlearn/sites/www.open.edu.openlearn/files/styles/ole_ng_content_style_featured/public/ole_images/screen-feat.png",
+        source      : "bbc.co.uk",
+        contains    : null,
+        readMode    : "start",
+        private     : false,
+    },
 ]

@@ -19,5 +19,6 @@ export const ribosomeToRNA = {
     "STRYOA2"   : "x555"    ,
     "STRYOB1"   : "x555"    ,
     "STRYOB2"   : "x555"    ,
+    "BBCSHSP"   : "x555"    ,
 
 }
