@@ -7,11 +7,18 @@ export const DNA: g.gene[] = [
 		"avatarURL"	: "https://ichef.bbci.co.uk/images/ic/1248xn/p03mwdn4.jpg",
 		"mediaURL"	: "http://downloads.bbc.co.uk/learningenglish/shakespeare/bbc_shakespeare_in_a_pickle_download.mp3"
 	},
-
-	// {
-	// 	"title"		: "",
-	// 	"text"		: "",
-	// 	"avatarURL"	: "",
-	// 	"mediaURL"	: ""
-	// },
+	{
+		"title"		: "As dead as a doornail",
+		"text"		: "Narrator: It was a cold morning. William Shakespeare is in the theatre, working on Henry VI part II, whilst his actor friend Thomas Swann is mending a broken door.\nWill: Thomas! Can you stop that banging? I'm trying to write here!\nThomas: Will, this door needs fixing properly. I have to hit this doornail hard… there. That will never come out.\nWill: What's that about a doornail? Hmmm… you've just given me an idea… dead as a doornail… dead as a doornail!\nThomas: Who's dead?! Will?\nWill: Thomas, I have the perfect line for your character… Jack Cade, the rebel leader, strong and proud. But in this scene, he's on the run, hiding from his enemies. He hasn't eaten anything for five days, except herbs… even grass… he's weak… alone… and suddenly, six of his enemies find him.\nThomas: So he's in danger…\nWill: Yes, but he doesn't show any fear: in fact, he threatens to kill all of them dead as a doornail. Come Thomas, let's read your lines. Look on me well: I have eat no meat…\nThomas as Jack Cade: Look on me well: I have eat no meat these five days; yet come thou and thy five men, and if I do not leave you all as dead as a doornail, I pray God I may never eat grass more.\nWill: You have it! Well done Thomas: there's another classic Shakespeare line.\nThomas: I don't know how you do it, Will.\nNarrator: We'll leave them there for now. The phrase as dead as a doornail was in common use in Shakespeare's day. It means the same today as it did back then: Dead. Very dead. Totally dead. It's a very well-known English expression - for example, novelist Charles Dickens used it to describe the character Marley in A Christmas Carol:\nClip 1: Old Marley was as dead as a doornail.\nNarrator: These days we can use it for electrical gadgets that aren't working.\nClip 2: Oh no - I forgot to charge my phone. It's as dead as a doornail.\nWill: Right! All that writing has made me thirsty. Let us go to the Duck and Whistle. Come on Thomas, close the door behind you… Hmmm… perhaps you should put another couple of nails in that door before we go, Thomas?\nThomas: Ahh… To nail, or not to nail: that is the question.",
+		"avatarURL"	: "https://ichef.bbci.co.uk/images/ic/1248xn/p03g77bn.jpg",
+		"mediaURL"	: ""
+	},
 ]
+
+
+// {
+// 	"title"		: "",
+// 	"text"		: "",
+// 	"avatarURL"	: "",
+// 	"mediaURL"	: ""
+// },
