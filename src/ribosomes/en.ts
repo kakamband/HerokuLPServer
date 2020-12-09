@@ -81,7 +81,7 @@ export const en_r: g.Ribosome[] = [
         avatar      : "https://i0.wp.com/speechisbeautiful.com/wp-content/uploads/2016/03/storylineonline.png",
         source      : "storylineonline.net",
         contains    : null,
-        readMode    : "random",
+        readMode    : "end",
         private     : false,
     },
     {
@@ -93,7 +93,7 @@ export const en_r: g.Ribosome[] = [
         avatar      : "https://i0.wp.com/speechisbeautiful.com/wp-content/uploads/2016/03/storylineonline.png",
         source      : "storylineonline.net",
         contains    : null,
-        readMode    : "random",
+        readMode    : "end",
         private     : false,
     },
     {
@@ -105,7 +105,7 @@ export const en_r: g.Ribosome[] = [
         avatar      : "https://i0.wp.com/speechisbeautiful.com/wp-content/uploads/2016/03/storylineonline.png",
         source      : "storylineonline.net",
         contains    : null,
-        readMode    : "random",
+        readMode    : "end",
         private     : false,
     },
     {
@@ -117,7 +117,7 @@ export const en_r: g.Ribosome[] = [
         avatar      : "https://i0.wp.com/speechisbeautiful.com/wp-content/uploads/2016/03/storylineonline.png",
         source      : "storylineonline.net",
         contains    : null,
-        readMode    : "random",
+        readMode    : "end",
         private     : false,
     },
 ]
