@@ -55,12 +55,12 @@ export const DNA: g.gene[] = [
 		"avatarURL"	: "https://ichef.bbci.co.uk/images/ic/1248xn/p03ks7q5.jpg",
 		"mediaURL"	: "https://downloads.bbc.co.uk/learningenglish/shakespeare/bbc_shakespeare_the_worlds_mine_oyster_download.mp3"
 	},
-	// {
-	// 	"title"		: "",
-	// 	"text"		: "",
-	// 	"avatarURL"	: "",
-	// 	"mediaURL"	: ""
-	// },
+	{
+		"title"		: "A tower of strength",
+		"text"		: "Narrator: It was a dark and stormy night. Thomas Swann is in his favourite pub, the Duck and Whistle. He's rehearsing the role of King Richard in Shakespeare's Richard III.\nThomas: The King's name is a tower of strength... Hmmm. I could play it quietly: The King's name is a tower of strength... or angrily: The King's name is a tower of strength...\nBarmaid: Here you go Mr Will, Mr Thomas, two more ales.\nThomas: Will, how should I play this line? What is Richard's motivation here?\nWill: Thomas, Thomas, don't you understand? King Richard is about to go into battle. The opposing army has six or seven thousand men.\nThomas: That's a lot of men!\nWill: Richard is not afraid. He has three times that number of soldiers.\nThomas: Twenty thousand men - that's a big army!\nWill: Yes, but Richard has something more powerful than even the greatest army. He has his name: King Richard. That name makes him strong; powerful. It makes ordinary people fear and respect him.\nThomas: So the name King Richard is as strong as a tower...\nWill: Exactly. Richard's enemies don't have that.\nThomas: So this line needs strength and confidence.\nWill: Yes. This play is about power - and what people will do to get it. Let us rehearse. I am Norfolk, your general. Six or seven thousand is their utmost power.\nThomas Swann as Richard III: Why, our battalion trebles that account. Besides, the King's name is a tower of strength\nWhich they upon the adverse party want.\nWill: You have it! Well done! I'll drink to that. Another jug of ale! \nBarmaid: Here you are, sir.\nNarrator: We'll leave them there for now. In Richard III, or as I like to call it, the Mafia play, King Richard murdered everyone that stood between him and the absolute power that he wanted, including the Prince of Wales, his brother Clarence, Misters Rivers, Vaughn and Grey, Lord Hastings, King Edward IV's two young sons - and his own wife! Of course, these days, you don't have to kill your family to be described as a tower of strength - you just have to be strong, reliable, trustworthy, dependable and good in a crisis. Like footballer David Beckham, who said:\nClip 1: Alex Ferguson was like a father to me. He was a tower of strength.\nClip 2: My husband was a tower of strength when I had that operation - he really looked after me well.\nBarmaid: Mr Will, a message from your wife. She says if you're not home in five minutes, don't bother coming home ever again.\nThomas: The old ball and chain at it again, eh? Come on Will, have another beer!\nWill: Hmmm... To beer, or not to beer: that is the question.",
+		"avatarURL"	: "https://ichef.bbci.co.uk/images/ic/1248xn/p03ls7xq.jpg",
+		"mediaURL"	: "https://downloads.bbc.co.uk/learningenglish/shakespeare/bbc_shakespeare_a_tower_of_strength_download.mp3"
+	},
 	// {
 	// 	"title"		: "",
 	// 	"text"		: "",
