@@ -74,6 +74,18 @@ export const en_r: g.Ribosome[] = [
     },
     {
         institute   : "en",
+        code        : "BBCINNM",
+        type        : "audio",
+		level       : "C1",
+		title       : "Jamaica Inn",
+        avatar      : "https://ichef.bbci.co.uk/images/ic/320x180/p08hqrpl.jpg",
+        source      : "bbc.co.uk",
+        contains    : null,
+        readMode    : "start",
+        private     : false,
+    },
+    {
+        institute   : "en",
         code        : "STRYOA1",
         type        : "video",
 		level       : "A1",
