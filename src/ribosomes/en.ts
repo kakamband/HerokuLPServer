@@ -41,7 +41,7 @@ export const en_r: g.Ribosome[] = [
         code        : "BBCALIC",
         type        : "audio",
 		level       : "B2",
-		title       : "Alice in Wonderland",
+		title       : "Alice in Wonder-\nland",
         avatar      : "https://ichef.bbci.co.uk/images/ic/320x180/p02kvlvk.jpg",
         source      : "bbc.co.uk",
         contains    : null,
