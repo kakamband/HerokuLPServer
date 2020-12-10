@@ -88,7 +88,7 @@ export const en_r: g.Ribosome[] = [
         institute   : "en",
         code        : "BBCRACE",
         type        : "audio",
-		level       : "C2",
+		level       : "C1",
 		title       : "Race",
         avatar      : "https://ichef.bbci.co.uk/images/ic/320x180/p0252gs9.jpg",
         source      : "bbc.co.uk",
