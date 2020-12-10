@@ -29,6 +29,6 @@ export const ribosomeToRNA = {
     "BBCITBE"   : "x555"    ,
     "BBCINNM"   : "x555"    ,
     "BBCRACE"   : "x555"    ,
-    "ELLOBGR"   : "x555"    ,
+    "ELLOLV2"   : "x555"    ,
     
 }
