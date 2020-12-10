@@ -79,76 +79,46 @@ export const DNA: g.gene[] = [
 		"avatarURL"	: "https://ichef.bbci.co.uk/images/ic/1248xn/p03r4wcr.jpg",
 		"mediaURL"	: "https://downloads.bbc.co.uk/learningenglish/shakespeare/bbc_shakespeare_forever_and_a_day_download.mp3"
 	},
-	// {
-	// 	"title"		: "",
-	// 	"text"		: "",
-	// 	"avatarURL"	: "",
-	// 	"mediaURL"	: ""
-	// },
-	// {
-	// 	"title"		: "",
-	// 	"text"		: "",
-	// 	"avatarURL"	: "",
-	// 	"mediaURL"	: ""
-	// },
-	// {
-	// 	"title"		: "",
-	// 	"text"		: "",
-	// 	"avatarURL"	: "",
-	// 	"mediaURL"	: ""
-	// },
-	// {
-	// 	"title"		: "",
-	// 	"text"		: "",
-	// 	"avatarURL"	: "",
-	// 	"mediaURL"	: ""
-	// },
-	// {
-	// 	"title"		: "",
-	// 	"text"		: "",
-	// 	"avatarURL"	: "",
-	// 	"mediaURL"	: ""
-	// },
-	// {
-	// 	"title"		: "",
-	// 	"text"		: "",
-	// 	"avatarURL"	: "",
-	// 	"mediaURL"	: ""
-	// },
-	// {
-	// 	"title"		: "",
-	// 	"text"		: "",
-	// 	"avatarURL"	: "",
-	// 	"mediaURL"	: ""
-	// },
-	// {
-	// 	"title"		: "",
-	// 	"text"		: "",
-	// 	"avatarURL"	: "",
-	// 	"mediaURL"	: ""
-	// },
-	// {
-	// 	"title"		: "",
-	// 	"text"		: "",
-	// 	"avatarURL"	: "",
-	// 	"mediaURL"	: ""
-	// },
-	// {
-	// 	"title"		: "",
-	// 	"text"		: "",
-	// 	"avatarURL"	: "",
-	// 	"mediaURL"	: ""
-	// },
-	// {
-	// 	"title"		: "",
-	// 	"text"		: "",
-	// 	"avatarURL"	: "",
-	// 	"mediaURL"	: ""
-	// },
-	// {
-	// 	"title"		: "",
-	// 	"text"		: "",
-	// 	"avatarURL"	: "",
-	// 	"mediaURL"	: ""
-	// },
+	{
+		"title"		: "Give no words but mum",
+		"text"		: "Narrator: It was the 23rd of April. William Shakespeare's daughter and his actor friends Robert Harley and Thomas Swann are at the Duck and Whistle. They're getting ready for a celebration. Bess the barmaid is in charge.\nBess: Now have we got everything? Beer, ale… Where's that Mary Bassett? She's supposed to be bringing the pies…\nMary: Here I am, pies and all! I've brought some lovely meat pies and I've got Mr Will's favourite here: a nice cherry pie.\nAll: Ooohhh lovely, he'll like that, lovely…\nDaughter: Oh, I'm so excited Mary! I love parties! Isn't it wonderful having a party for Father's birthday!\nMary: Now don't you go telling Mr Will before he gets here, Miss Shakespeare, remember: it's a surprise. Like John Hume says in your father's play Henry VI part II: Seal up your lips, and give no words but mum…\nThomas Swann as John Hume: Seal up your lips, and give no words but mum:: The business asketh silent secrecy.\nDaughter: Give no words but mum… I promise, I won't say a word to anyone. Really, I won't!\nNarrator: We'll leave them there for now. The exact date of William Shakespeare's birth is not recorded, but it's generally believed that the most likely date was Sunday the 23rd of April, which, interestingly, was also the date of his death, in 1616, at the age of 52. The phrase Give no words but mum, simply means: don't tell anyone - it's a secret. These days, it's usually simplified to just keep mum. Take Australian news website 9News, writing about Mark Hamill, the Star Wars actor, who spoke of how he had to keep the Star Wars storyline secret. The headline was:\nClip 1: Mark Hamill to keep mum amid Star Wars Skywalker speculation\nNarrator: Another version of the phrase is Mum's the word.\nClip 2: Don't tell anyone you saw me here. Mum's the word!\nMary: Ssshhh everybody, here he comes now!\nAll: Quick, hide, behind the bar, get down, he'll see you…\nWill: Good afternoon Bess, a pint of your finest… Bess? Hello? Where is everyone?!\nAll: Surprise!!!! Happy birthday!!!\nDaughter: Happy birthday father!\nWill: Daughter?! Is all this for me?!\nDaughter: Yes, father, it is!\nThomas Swann: Happy birthday Will!\nWill: Thank you, Thomas.\nMary: Happy birthday, Mr Will. Have some cherry pie.\nBess: Here Mr Will, pint of ale for you.\nWill: Well now! To party, or… no. Let's party!\nAll: Hooray!",
+		"avatarURL"	: "https://ichef.bbci.co.uk/images/ic/1248xn/p03rtybz.jpg",
+		"mediaURL"	: "https://downloads.bbc.co.uk/learningenglish/shakespeare/bbc_shakespeare_give_no_words_but_mum_download.mp3"
+	},
+	{
+		"title"		: "A pound of flesh",
+		"text"		: "Narrator: It was late in the evening. William Shakespeare is at the palace of King James I.\nKing James: Mr Shakespeare! Welcome, welcome.\nWill: Your majesty, it is a great honour to perform The Merchant of Venice for you a second time.\nKing James: The Queen and I enjoyed it so much we just had to see it again.\nThe Queen: You fell asleep halfway through dear, that's why you want to see it again.\nKing James: Nonsense. Mr Shakespeare, I particularly enjoyed your character Shylock. But what was all that about a pound of flesh?\nWill: Well, Shylock lent some money to the businessman Antonio. And Antonio promised that if he didn't pay the money back, Shylock could cut a pound of flesh from his body.\nKing James: That's right, that's right. I remember it well now. What did he say? If you repay me not on such a day…\nShylock: If you repay me not on such a day,: In such a place, such sum or sums as are: Express'd in the condition, let the forfeit: Be nominated for an equal pound: Of your fair flesh, to be cut off and taken: In what part of your body pleaseth me.\nNarrator: We'll leave them there for now. A pound of flesh? That's nearly half a kilogram! Modern English speakers use the phrase a pound of flesh when someone says they want justice, but the punishment they're asking for is so severe that it seems more like revenge. In the terrible case of US cinema gunman James Holmes, former prosecutor Bob Grant said:\nClip 1: The district attorney will argue that although the defendant is mentally ill, he is not insane under the law, and society deserves its pound of flesh from him.\nClip 2: I apologised and paid for the repairs after I crashed his car, but it isn't enough for him. He wants his pound of flesh. I think he's going to call the police…\nThe Queen: Mr Shakespeare, please tell the King what happens in the end, just in case he falls asleep again.\nKing James: I did not fall asleep! But yes, do tell me.\nWill: Well, Antonio didn't pay the money back. The court agreed that Shylock could have his pound of flesh, but the court also said that he could not take even a single drop of blood.\nKing James: Aha! So Antonio was saved.\nWill: Yes, your majesty.\nThe Queen: Ooh, the play is starting. Now do stay awake this time, dear…\nKing James: To sleep, or not to sleep: that is the question…",
+		"avatarURL"	: "https://ichef.bbci.co.uk/images/ic/1248xn/p03s3tmq.jpg",
+		"mediaURL"	: "https://downloads.bbc.co.uk/learningenglish/shakespeare/bbc_shakespeare_a_pound_of_flesh_download.mp3"
+	},
+	{
+		"title"		: "A fool's paradise",
+		"text"		: "Narrator: It was a sunny August morning. William Shakespeare is at the market.\nStallholder: Get your cherries, lovely ripe cherries! Come over here and get your cherries…\nWill: Ahhh… sweet, ripe cherries! Two pounds, please, Mary.\nStallholder: Here you are Mr Will.\nWill: And how's the family Mary? All well?\nStallholder: Growing up fast, you know how it is… my Janet's a worry though. That Robert Harley says he wants to marry her, but I don't trust him: I think he just wants to have his way with her and what will we do Mr Will if she ends up just 14 years old with a baby and no husband?!\nWill: Now Mary, I'm sure young Robert will do right by Janet. Look at me, didn't I marry my Anne when she was in trouble? And here we are now, still together with three children…\nStallholder: You're not too happy though, are you Mr Will?\nWill: Marriage isn't easy Mary, you know that.\nStallholder: Oh, Mr Will. Last week he was in love with that Rosie from the village and this week it's my Janet's turn. He's promised her clothes, money, ribbons for her hair, and she's so in love with him she believes all of it! I tell you, she's living in a fool's paradise!\nWill: A fool's paradise… hmmm… That might sound good in my play! Romeo and Juliet, the star-cross'd lovers. Romeo says he'll marry Juliet but Juliet's nurse doesn't trust him. She warns him not to make false promises just to get Juliet into bed. Listen Mary, it'll go like this: …let me tell ye, if ye should lead her…\nNurse: let me tell ye, if ye should lead her into: a fool's paradise, as they say, it were a very gross: kind of behaviour,\nStallholder: That's really good Mr Will.\nWill: Thank you, Mary. You can use it if you like…\nNarrator: We'll leave them there for now. In Shakespeare's day, it was legal for girls to marry at the age of 14, although people usually got married when they were older. It was not uncommon for women to already be pregnant when they got married – as was the case with William Shakespeare's own marriage. These days, the phrase a fool's paradise describes any situation that somebody thinks is good, without realising that it won't last – or that it's actually bad. Take this 2015 BBC News headline, written when the value of the single European currency fell to record lows – making it cheap to buy for investors, but not particularly safe:\nClip 1: The euro: Good bet or a fool's paradise?\nClip 2: Jack's work is terrible. He's living in a fool's paradise if he thinks he's getting a pay rise.\nStallholder: Just wait till I catch up with that Mr Robert. If you see him Mr Will, you be sure to tell me.\nWill: Hmmm… to tell, or not to tell: that is the question.",
+		"avatarURL"	: "https://ichef.bbci.co.uk/images/ic/1248xn/p03sl8jd.jpg",
+		"mediaURL"	: "https://downloads.bbc.co.uk/learningenglish/shakespeare/bbc_shakespeare_a_fools_paradise_download.mp3"
+	},
+	{
+		"title"		: "Not budge an inch",
+		"text"		: "Narrator: It's evening at the Duck and Whistle. William Shakespeare and his actor friend Thomas Swann are rehearsing the opening scene of Shakespeare's comedy The Taming of the Shrew.\nThomas: I'll answer him by law. I won't budge an inch…\nWill: Just a minute Thomas: Christopher Sly is drunk, but we do need to understand the words!\nThomas: You're criticising my acting, Will. Again.\nWill: Thomas, Thomas. You're a great actor. A wonderful actor. But Thomas, can the audience please actually hear the words I wrote for your character to say…?\nThomas: The audience can see what's happening! I'm in the pub, I'm drunk, there's broken glass everywhere and -\nBess: Thomas Swann! If you've broken one of my glasses, I'll have your guts for garters…\nWill / Thomas: No, no, no!\nThomas: Bess, it's in the play.\nWill: The innkeeper - in the play, Bess - is going to call the police unless Christopher Sly pays for the glasses he broke. But Sly says he doesn't care about the police, he's entitled to be in the pub, and he's not moving.:  : Bess: Oh… well just you be careful. I won't have people breaking glasses in my pub.\nWill: Of course, Bess. Now, Thomas. Please. Speak more clearly.\nThomas: No. I'm an artist, and I have to do it my way.\nWill: Bess, please read the innkeepers lines. I'll be Christopher Sly. Thomas, just listen.\nBess: Alright Mr Will, the innkeeper's lines: I know my remedy. I must go fetch the third-borough.\nWill as Christopher Sly: Third, or fourth, or fifth borough, I'll answer him by law.: I'll not budge an inch, boy. Let him come, and kindly.\nWill: Now please Thomas, do it like that.\nThomas: I will not do it like that.\nBess: He's just like Christopher Sly isn't he Mr Will? He won't budge an inch either.\nNarrator: We'll leave them there for now. Christopher Sly is just one of several stubborn characters in The Taming of the Shrew, Shakespeare's early comedy about the battle of the sexes. The phrase not budge an inch is used these days to describe not only objects that won't move but also people who won't change their minds. Take Simon Walker, the director general of the British Institute of Directors, who said that the British chancellor George Osborne…\nClip 1: …must not budge an inch on the crucial job of deficit reduction.\nClip 2: That stupid dog refused to move. I kept pulling on the lead, but he wouldn't budge an inch.\nThomas: Will, it's my way or –\nWill: Now look here Thomas -\nBess: Now stop arguing you two or I'll knock your heads together. Thomas, do what Mr Will says. It's his play.\nThomas: Grrrr. To budge, or not to budge: that is the question.",
+		"avatarURL"	: "https://ichef.bbci.co.uk/images/ic/1248xn/p03tm3kq.jpg",
+		"mediaURL"	: "https://downloads.bbc.co.uk/learningenglish/shakespeare/bbc_shakespeare_not_budge_an_inch_download.mp3"
+	},
+	{
+		"title"		: "I must be cruel, only to be kind",
+		"text"		: "Narrator: It was a windy November day. William Shakespeare is at the palace of King James I. He's having dinner with the King and Queen.\nKing James: Mr Shakespeare, have some more wine. What's this? Water? Where's my wine?!\nThe Queen: Now dear, you know you mustn't drink too much wine. The doctor says it's bad for your health!\nKing James: No wine?! Madam, you are very cruel to me. Don't you agree, Mr Shakespeare?\nWill: Your Majesty, the Queen is being cruel, only to be kind, like my character Hamlet, the Prince of Denmark.\nKing James: Does Hamlet take away the King's wine?\nWill: No, no, your Majesty: Hamlet says cruel and terrible things to his mother, the Queen. He's angry because she married his uncle Claudius, very soon after his father's death. Hamlet suspects that his mother, or his uncle, or both of them, killed his father, so that they could marry each other.\nKing James: Well! No wonder he's saying cruel things. But how is he going to be kind, I wonder? Go on, go on…\nWill: Your Majesty. Hamlet tells his mother that he said these cruel and terrible things to shock her into realising that this marriage is wrong – it's a sin. But he says she can begin to make up for the sin and be a better person if she leaves her new husband. That's why he says 'I must be cruel, only to be kind'.\nRobert Harley as Hamlet: So, again, good night.: I must be cruel, only to be kind:: Thus bad begins and worse remains behind.: One word more, good lady.\nNarrator: We'll leave them there for now. Shakespeare's audiences loved the violence and powerful emotions in his revenge tragedies. But Hamlet is not your typical revenge character. He's a thinker who becomes a man of action. In modern English, Shakespeare's phrase is usually shortened to I must be cruel to be kind. Or just cruel to be kind. People say it when they do something unkind that will actually benefit someone. It's the title of a song in the American movie 10 Things I Hate About You.\nClip 1: Cruel to be kind, it's a very good sign: Cruel to be kind, means that I love you, baby…\nClip 2: I know I upset her when I told her to get a haircut, but it was such a mess: I had to be cruel to be kind.\nKing James: Tell me Mr Shakespeare, does the Queen follow Hamlet's advice?\nWill: I'm afraid not, your Majesty.\nThe Queen: She should have listened to him.\nKing James: Quite right, quite right.\nThe Queen: And you should listen to me dear. No more wine!\nKing James : Hmmm. To listen or not to listen, that is the question.",
+		"avatarURL"	: "https://ichef.bbci.co.uk/images/ic/1248xn/p03tt2qg.jpg",
+		"mediaURL"	: "https://downloads.bbc.co.uk/learningenglish/shakespeare/bbc_shakespeare_cruel_to_be_kind_download.mp3"
+	},
+	{
+		"title"		: "Wear my heart on my sleeve",
+		"text"		: "Narrator: It was a sunny day. William Shakespeare's daughter and Bess the barmaid are at the fair.\nDaughter: Lalalalala…\nBess: You're very happy today aren't you my duck?\nDaughter: Oh Bess, I'm in love.\nBess: You're not still after that Robert Harley are you?\nDaughter: Nooooo! It's Henry Bull. He's wonderful: handsome and brave… and he loves me too… but Bess, father mustn't find out. Henry hasn't got any money. Father wouldn't approve.\nBess: Well my duck, you need to hide your feelings better then! You're wearing your heart upon your sleeve; the whole world can see how you feel! Oh! Hello Mr Will…\nDaughter: Father!\nWill: Good afternoon Bess; Daughter… and what are you two gossiping about? Who's wearing their heart upon their sleeve?\nBess: We were …err… discussing that evil Iago, in your play Othello. He wears his heart upon his sleeve, doesn't he Mr Will?\nWill: Ah, yes, Othello, my tragedy. A very good topic for discussion. Iago says: I will wear my heart upon my sleeve…\nRobert Harley as Iago: I will wear my heart upon my sleeve: For daws to peck at. I am not what I am.\nWill: But, even though Iago talks about wearing his heart on his sleeve he doesn't actually intend to do it. Iago never reveals his true feelings, except perhaps to the audience, and even they cannot fully trust him!\nBess: Well, showing your true feelings certainly can lead to trouble.\nDaughter: What feelings does Iago hide, father? Is he in love?\nWill: No: quite the opposite. Iago pretends to be loyal to Othello so that he can destroy him! That's why he says: I am not what I am.\nNarrator: We'll leave them there for now. Many of Shakespeare's characters conceal their true feelings. Some hide their love, while Iago, Shakespeare's most hateful villain, hides his plans to destroy everyone around him. Nowadays, the phrase to wear your heart upon - or on - your sleeve still means: to make your feelings and emotions obvious, even if it makes you vulnerable. In a 2015 interview, US actress Kristen Stewart, star of the Twilight movies, said:\nClip 1: I wear my heart on my sleeve. If I'm in a mood, my mood shows.\nNarrator: It's often used to talk about love and romance.\nClip 2: When I told him I loved him, he broke up with me. I'll never wear my heart on my sleeve again.\nWill: Now, dear daughter, who is this young man who's made you so cheerful?\nDaughter: Oh… errr… nobody…\nWill: Nobody…?\nBess: Didn't I tell you not to wear your heart on your sleeve?!\nDaughter: Oh dear. To wear, or not to wear: that is the question…",
+		"avatarURL"	: "https://ichef.bbci.co.uk/images/ic/1248xn/p03vmqnn.jpg",
+		"mediaURL"	: "https://downloads.bbc.co.uk/learningenglish/shakespeare/bbc_shakespeare_wear_my_heart_upon_my_sleeve_download.mp3"
+	},
+	{
+		"title"		: "Greek to me",
+		"text"		: "Narrator: It’s October 1599. Shakespeare has finished writing his history play Julius Caesar and is visiting a fair in his home town of Stratford, with his daughter. She has just had her fortune told…\nWill: Now, dear daughter, what did Old Mother Howard say? What does the future hold for us, I wonder?\nDaughter: Oh father, Mother Howard talked a lot, but she had such a strange accent – I couldn't understand a word she said!\nWill: You're just like Casca in my play Julius Caesar.\nDaughter: Casca? He's one of the men that kills Caesar, the Roman general! How can you say that, father – I'm not a murderer!!!\nWill: Dear daughter, Casca was in a group of people who were listening to the great Roman speaker Cicero. But Cicero was speaking Greek, so Casca couldn't understand him.\nDaughter: Oh… why was Cicero speaking Greek?\nWill: That's what educated people spoke in Roman times. Casca says that some of the people listening to Cicero could actually understand him. Here are the lines: …those that understood him smiled at one another…\nThomas Swann as Casca: … those that understood him smiled at: one another and shook their heads; but, for mine own: part, it was Greek to me.\nDaughter: So Casca had no idea what Cicero was talking about. Just like me and Mother Howard!\nNarrator: We'll leave them there for now. Fortune tellers were common in Shakespeare's day, and they appear in many of his plays including Macbeth, the Comedy of Errors and Julius Caesar, in which the fortune teller warns Caesar to "beware the Ides of March" – the day on which Caesar was eventually assassinated by his closest friends. The phrase It was Greek to me has become It's all Greek to me in modern English, and it's used when something – not just a foreign language – is difficult to understand. For example, in a report about the 2015 Greek debt crisis, UK newspaper The Daily Telegraph carried the headline:\nClip 1: It's all Greek to me: a glossary of Eurozone crisis jargon\nClip 2: I'll never understand the rules of cricket: out for a duck, silly mid-off, googlies… It's all Greek to me!\nWill: Now tell me, daughter, did you understand anything Old Mother Howard said?\nDaughter: Yes! She talked about you, father. She said that you're going to be the most famous Englishman of all time! …but I think she was making it up.\nWill: Oh no, no, no… I'm sure she's absolutely right about that … She's obviously a very gifted woman. What shall we look at now, daughter?\nDaughter: Can we go to the gold stall father? Pleeeeeease???\nWill: I didn't need a fortune teller to predict that! To gold, or not to gold: that is the question.",
+		"avatarURL"	: "https://ichef.bbci.co.uk/images/ic/1248xn/p03w1lj5.jpg",
+		"mediaURL"	: "https://downloads.bbc.co.uk/learningenglish/shakespeare/bbc_shakespeare_greek_to_me_download.mp3"
+	}
 ]
