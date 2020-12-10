@@ -62,6 +62,18 @@ export const en_r: g.Ribosome[] = [
     },
     {
         institute   : "en",
+        code        : "BBCITBE",
+        type        : "audio",
+		level       : "B2",
+		title       : "The Importance of Being Earnest",
+        avatar      : "https://ichef.bbci.co.uk/images/ic/320x180/p06t92r9.jpg",
+        source      : "bbc.co.uk",
+        contains    : null,
+        readMode    : "start",
+        private     : false,
+    },
+    {
+        institute   : "en",
         code        : "STRYOA1",
         type        : "video",
 		level       : "A1",
