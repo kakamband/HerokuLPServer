@@ -168,6 +168,18 @@ export const en_r: g.Ribosome[] = [
         readMode    : "start",
         private     : true,
     },
+    {
+        institute   : "en",
+        code        : "VOASTRY",
+        type        : "audio",
+		level       : "B1",
+		title       : "American Stories",
+        avatar      : "https://cdn.pixabay.com/photo/2019/05/14/21/50/storytelling-4203628__340.jpg",
+        source      : "learningenglish.voanews.com",
+        contains    : null,
+        readMode    : "start",
+        private     : true,
+    },
     // {
     //     institute   : "en",
     //     code        : "EASYRED",
