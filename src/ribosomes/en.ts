@@ -98,6 +98,18 @@ export const en_r: g.Ribosome[] = [
     },
     {
         institute   : "en",
+        code        : "ELLOBGR",
+        type        : "audio",
+		level       : "A1",
+		title       : "Basic Grammar",
+        avatar      : "https://64.media.tumblr.com/0e1b36be91f7372c82cb25da9d261521/tumblr_pe897gsz5r1smilgz_og_540.jpg",
+        source      : "elllo.org",
+        contains    : null,
+        readMode    : "start",
+        private     : false,
+    },
+    {
+        institute   : "en",
         code        : "STRYOA1",
         type        : "video",
 		level       : "A1",
