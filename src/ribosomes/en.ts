@@ -101,7 +101,7 @@ export const en_r: g.Ribosome[] = [
         code        : "ELLOLV2",
         type        : "audio",
 		level       : "A1",
-		title       : "25 Simple Conversations",
+		title       : "25\nSimple Dialogues",
         avatar      : "https://cdn.pixabay.com/photo/2019/05/22/22/28/brainstorm-4222728_960_720.jpg",
         source      : "elllo.org",
         contains    : null,
