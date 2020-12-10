@@ -21,4 +21,6 @@ export const ribosomeToRNA = {
     "EATGOUT"   : "x555"    ,
     "ENGSTRY"   : "x555"    ,
     "LTLPRNC"   : "x555"    ,
+
+    
 }
