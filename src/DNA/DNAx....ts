@@ -55,5 +55,10 @@ export const DNA: g.gene[] = [
 		"avatarURL"	: "",
 		"mediaURL"	: ""
 	},
-	
+	{
+		"title"		: "",
+		"text"		: "",
+		"avatarURL"	: "",
+		"mediaURL"	: ""
+	},
 ]
