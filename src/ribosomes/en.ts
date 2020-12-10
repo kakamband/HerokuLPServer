@@ -132,4 +132,16 @@ export const en_r: g.Ribosome[] = [
         readMode    : "start",
         private     : false,
     },
+    {
+        institute   : "en",
+        code        : "BBCCHCO",
+        type        : "audio",
+		level       : "B2",
+		title       : "A Christmas Carol",
+        avatar      : "https://ichef.bbci.co.uk/images/ic/1200x675/p07xny96.jpg",
+        source      : "bbc.co.uk",
+        contains    : null,
+        readMode    : "start",
+        private     : false,
+    },
 ]
