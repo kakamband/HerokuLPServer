@@ -9,18 +9,17 @@ export const ribosomeToRNA = {
 
     "ILCUORE"   : "x555"    ,
 
-    "CMSTRIP"   : "x555"    ,
-    "BBCSHSP"   : "x555"    ,
-    "BBCCHCO"   : "x555"    ,
-    "STRYOA1"   : "x555"    ,
-    "STRYOA2"   : "x555"    ,
-    "STRYOB1"   : "x555"    ,
-    "STRYOB2"   : "x555"    ,
-    "INTSDAY"   : "x555"    ,
     "EASYRED"   : "x555"    ,
     "EATGOUT"   : "x555"    ,
     "ENGSTRY"   : "x555"    ,
     "LTLPRNC"   : "x555"    ,
-
+    "INTSDAY"   : "x555"    ,
+    "CMSTRIP"   : "x555"    ,
+    "STRYOA1"   : "x555"    ,
+    "STRYOA2"   : "x555"    ,
+    "STRYOB1"   : "x555"    ,
+    "STRYOB2"   : "x555"    ,
+    "BBCSHSP"   : "x555"    ,
+    "BBCCHCO"   : "x555"    ,
     
 }
