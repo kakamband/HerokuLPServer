@@ -178,7 +178,7 @@ export const en_r: g.Ribosome[] = [
         source      : "learningenglish.voanews.com",
         contains    : null,
         readMode    : "start",
-        private     : true,
+        private     : false,
     },
     // {
     //     institute   : "en",
