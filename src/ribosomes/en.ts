@@ -54,7 +54,7 @@ export const en_r: g.Ribosome[] = [
         type        : "audio",
 		level       : "B2",
 		title       : "Gulliver's Travels",
-        avatar      : "http://ichef.bbci.co.uk/images/ic/320x180/p033wm70.jpg",
+        avatar      : "https://ichef.bbci.co.uk/images/ic/320x180/p033wm70.jpg",
         source      : "bbc.co.uk",
         contains    : null,
         readMode    : "start",
