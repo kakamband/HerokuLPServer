@@ -86,6 +86,18 @@ export const en_r: g.Ribosome[] = [
     },
     {
         institute   : "en",
+        code        : "BBCINNM",
+        type        : "audio",
+		level       : "C2",
+		title       : "Race",
+        avatar      : "https://ichef.bbci.co.uk/images/ic/320x180/p0252gs9.jpg",
+        source      : "bbc.co.uk",
+        contains    : null,
+        readMode    : "start",
+        private     : false,
+    },
+    {
+        institute   : "en",
         code        : "STRYOA1",
         type        : "video",
 		level       : "A1",

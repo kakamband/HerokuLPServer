@@ -11,7 +11,7 @@ export const ribosomeToRNA = {
 
     "ILCUORE"   : "x555"    ,
 
-    
+
     "EASYRED"   : "x555"    ,
     "EATGOUT"   : "x555"    ,
     "ENGSTRY"   : "x555"    ,
@@ -28,5 +28,6 @@ export const ribosomeToRNA = {
     "BBCGVTR"   : "x555"    ,
     "BBCITBE"   : "x555"    ,
     "BBCINNM"   : "x555"    ,
+    "BBCRACE"   : "x555"    ,
 
 }
