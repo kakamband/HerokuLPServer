@@ -25,7 +25,7 @@ export const DNA: g.gene[] = [
 		"mediaURL": "https://av.voanews.com/clips/VLE/2015/02/17/05e0f1d8-2397-41cb-94f9-f52fdd441f01.mp3",
 		"avatarURL": "https://cdn.pixabay.com/photo/2017/01/22/00/18/the-old-man-1998604_960_720.jpg",
 		"source": "https://learningenglish.voanews.com/a/doctor-heidegger-experiment/2647445.html",
-		snaps: [ [-1,14*60*19],[0,4]]
+		snaps: [ [-1,14*60+19],[0,4]]
 	}
 	// {
     //     "title": "The Legend of Sleepy Hollow",
