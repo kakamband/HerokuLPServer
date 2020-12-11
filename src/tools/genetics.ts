@@ -57,7 +57,6 @@ export function _crypto_cell (
 
 function cell ( ribosome: g.Ribosome, gene: g.gene, junk:g.junk ): Promise<g.cell> {
 
-
     return new Promise ( (rs, rx) => {
 
         let cellText = gene.text;
@@ -84,6 +83,7 @@ function cell ( ribosome: g.Ribosome, gene: g.gene, junk:g.junk ): Promise<g.cel
                     media_C     : !!gene.media_C            ,
                 }                                           ,
                 isYouTube       : !!gene.isYouTube          ,
+                snaps           : gene.snaps                ,
             }                                               ,
                                                              
             rawText             : cellText                  ,
