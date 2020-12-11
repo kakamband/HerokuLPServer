@@ -18,8 +18,9 @@ export interface gene {
     title           : string;
     text            : string;
     avatarURL       : string;
-    avatarCopyRight?: boolean;
+    avatar_C?       : boolean;
     mediaURL        : string;
+    media_C?        : boolean;
     hPath?          : string[];
     isYouTube?      : boolean;
 }
@@ -63,8 +64,10 @@ export interface Chromosome {
         avatar      : string                        ,
     }                                               ,
     wPath           : {                              
-        mediaURL?   : string                        ,
         avatarURL?  : string                        ,
+        avatar_C    : boolean                       ,
+        mediaURL?   : string                        ,
+        media_C     : boolean                       ,
     }                                               ,
     status          : LessonStatus                  ,
     etikett         : { [key: string]: number[] }   ,
