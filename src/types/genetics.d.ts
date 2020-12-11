@@ -23,6 +23,7 @@ export interface gene {
     media_C?        : boolean;
     hPath?          : string[];
     isYouTube?      : boolean;
+    source?         : string;
 }
 
 export interface _new_gene { 
