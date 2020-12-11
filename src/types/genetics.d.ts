@@ -18,6 +18,7 @@ export interface gene {
     title           : string;
     text            : string;
     avatarURL       : string;
+    avatarCopyRight?: boolean;
     mediaURL        : string;
     hPath?          : string[];
     isYouTube?      : boolean;
