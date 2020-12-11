@@ -86,7 +86,9 @@ function cell (
                 vPath           : [ gene.title ]            ,
                 wPath           : {                          
                     avatarURL   : gene.avatarURL            ,
+                    avatar_C    : !!gene.avatar_C           ,
                     mediaURL    : gene.mediaURL             ,
+                    media_C     : !!gene.media_C            ,
                 }                                           ,
                 isYouTube       : !!gene.isYouTube          ,
             }                                               ,
