@@ -11,7 +11,7 @@ export function gene ( user: u.user ): Promise<g.gene> {
         DNA_maker()
         .then( DNA => {
             if ( !user.gotFromThisRibosome.includes( DNA[0].id ) ) 
-                rs( { ...DNA[0], snaps: [ ...ABC, ...DNA[0].snaps ] } );
+                rs( { ...DNA[0], snaps: [ ...ABC, ...DNA[0].snaps || [] ] } );
             else 
                 rx( "No more News for Today!" );
         } )

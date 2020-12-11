@@ -16,7 +16,7 @@ export const DNA: g.gene[] = [
 		"mediaURL": "https://av.voanews.com/clips/VLE/2014/10/22/6acd0477-c85a-4dcb-9eb8-eef138d46831.mp3",
 		"avatarURL": "https://cdn.pixabay.com/photo/2017/06/10/12/42/man-and-horses-2389830_960_720.png",
 		"source": "https://learningenglish.voanews.com/a/californian-tale-twain-american-stories/2492936.html",
-		"snaps": []
+		// "snaps": []
 	},
 	// {
     //     "title": "The Legend of Sleepy Hollow",
