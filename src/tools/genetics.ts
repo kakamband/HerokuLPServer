@@ -88,7 +88,6 @@ function cell ( ribosome: g.Ribosome, gene: g.gene, junk:g.junk ): Promise<g.cel
                                                              
             rawText             : cellText                  ,
                                                              
-                                                             
         } );
 
     } );
