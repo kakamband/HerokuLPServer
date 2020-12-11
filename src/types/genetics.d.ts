@@ -23,8 +23,10 @@ export interface gene {
     media_C?        : boolean;
     hPath?          : string[];
     isYouTube?      : boolean;
+    snaps?          : [number,number][];
     source?         : string;
 }
+export type snapMargin = [ [0, number], [-1, number] ];
 
 export interface _new_gene { 
     [key: string ]  : ( ribosomeCode: string, user: u.user ) => Promise<gene> 
@@ -77,16 +79,14 @@ export interface Chromosome {
     isYouTube?      : boolean                       ,
     pinnedPoint?    : number                        ,
     forceRender?    : boolean                       ,
+    snaps?          : [number,number][]              
                                                      
 }
 
 export interface cell { 
     "chromosome"    : Chromosome                    ,
     "rawText"       : string                        ,
-    "rawSnap"       : rawSnap                       ,
 }
-
-export interface rawSnap { [key: string]: string }
 
 type LessonType = 'audio' | 'video' | 'slide' | 'comic';
 type LessonStatus = 'reading' | 'read';

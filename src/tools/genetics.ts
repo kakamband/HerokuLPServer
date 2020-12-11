@@ -55,14 +55,7 @@ export function _crypto_cell (
 
 // -- =====================================================================================
 
-function cell ( 
-
-    ribosome: g.Ribosome, 
-    gene: g.gene, 
-    junk:g.junk, 
-    snap: g.rawSnap 
-
-): Promise<g.cell> {
+function cell ( ribosome: g.Ribosome, gene: g.gene, junk:g.junk ): Promise<g.cell> {
 
 
     return new Promise ( (rs, rx) => {
@@ -71,8 +64,8 @@ function cell (
         // if ( !gene.text && !!gene.isYouTube ) cellText = 
 
         rs ( {
-                                                 
-            chromosome: {                            
+                                                             
+            chromosome: {                                    
                 title           : gene.title                ,
                 code            : {                          
                     ribosome    : ribosome.code             ,
@@ -95,7 +88,6 @@ function cell (
                                                              
             rawText             : cellText                  ,
                                                              
-            rawSnap             : snap                      ,
                                                              
         } );
 
@@ -123,17 +115,15 @@ function new_cell ( ribosome: g.Ribosome, user: u.user ): Promise<g.cell> {
                 let requiredData = [
                     RNA[ rCode ].gene( user, ribosome ),
                     RNA[ rCode ].junk( ribosome ),
-                    RNA[ rCode ].snap(),
                 ] as [ 
                     Promise<g.gene>,
                     Promise<g.junk>,
-                    Promise<g.rawSnap>
                 ]
         
-                Promise.all( requiredData )
-                .then( i => cell( ribosome, i[0], i[1], i[2] ) )
-                .then( cell => rs( cell ) )
-                .catch( err => rx(err) );
+                Promise.all( requiredData ).
+                then( i => cell( ribosome, i[0], i[1] ) ).
+                then( cell => rs( cell ) ).
+                catch( err => rx(err) );
 
             }
             // .. this rRNA is not coded yet!

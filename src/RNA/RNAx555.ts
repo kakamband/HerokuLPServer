@@ -9,9 +9,10 @@ export function gene ( user: u.user, ribosome: g.Ribosome ): Promise<g.gene> {
     return new Promise ( (rs, rx) => { 
         
         let DNA = require( "../DNA/DNAx" + ribosome.code ).DNA;
+        let ABC = require( "../DNA/DNAx" + ribosome.code ).ABC;
 
         a_good_gene_4_user( user, DNA, ribosome.readMode )
-        .then( gene => rs( gene ) )
+        .then( gene => rs( { ...gene, snaps: [ ...ABC, ...gene.snaps ] } ) )
         .catch( err => rx( err ) );
     
     } );
@@ -41,19 +42,6 @@ export function junk ( ribosome: g.Ribosome ): Promise<g.junk> {
 
         rs( junk )
     
-    } );
-
-}
-
-// -- =====================================================================================
-
-export function snap (): Promise<{ [key: string]: string }> {
-
-    return new Promise ( (rs, rx) => { 
-        let snap = {} as { [key: string]: string };
-        snap.a = "10";
-        snap.b = "10";
-        rs( snap )
     } );
 
 }

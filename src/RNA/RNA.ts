@@ -8,7 +8,6 @@ import * as u                           from "../types/user";
 interface aRNA { 
    gene: ( user: u.user, ribosome?: g.Ribosome ) => Promise<g.gene>
    junk: ( ribosome: g.Ribosome ) => Promise<g.junk>
-   snap: () => Promise<g.rawSnap>
 } 
 
 export const RNA: { [key: string]: aRNA } = { 

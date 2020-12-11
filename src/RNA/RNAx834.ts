@@ -1,6 +1,6 @@
 import * as g                           from '../types/genetics'
 import * as u                           from "../types/user";
-import { DNAxList, DNA_maker }          from "../DNA/DNAxTPTHEMA";
+import { DNAxList, DNA_maker, ABC }     from "../DNA/DNAxTPTHEMA";
 
 // -- =====================================================================================
 
@@ -17,7 +17,7 @@ export function gene ( user: u.user ): Promise<g.gene> {
         
             else {
                 DNA_maker( list[0].id ,list[0].link )
-                .then( DNA => rs( DNA[0] ) )
+                .then( DNA => rs( { ...DNA[0], snaps: [ ...ABC, ...DNA[0].snaps ] } ) )
                 .catch( err => rx( err ) );
             };
         
@@ -56,17 +56,3 @@ export function junk ( ribosome: g.Ribosome ): Promise<g.junk> {
 }
 
 // -- =====================================================================================
-
-export function snap (): Promise<{ [key: string]: string }> {
-
-    return new Promise ( (rs, rx) => { 
-        let snap = {} as { [key: string]: string };
-        snap.a = "12";
-        snap.b = "12";
-        rs( snap )
-    } );
-
-}
-
-// -- =====================================================================================
-

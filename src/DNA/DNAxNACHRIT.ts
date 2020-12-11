@@ -4,6 +4,10 @@ import * as g                           from '../types/genetics'
 
 // -- =====================================================================================
 
+export const ABC: g.snapMargin = [] as any; 
+
+// -- =====================================================================================
+
 export function DNA_maker (): Promise<g.gene[]> {
 
     return new Promise ( (rs, rx) => { 
