@@ -1,6 +1,6 @@
-import * as x1127                       from "../RNA/RNAx1127";
-import * as x834                        from "../RNA/RNAx834";
-import * as commonRNA                   from "../RNA/common";
+import * as x1127                       from "../db/RNA/RNAx1127";
+import * as x834                        from "../db/RNA/RNAx834";
+import * as commonRNA                   from "../db/RNA/common";
 import * as g                           from '../types/genetics'
 import * as u                           from "../types/user";
 import { crypto }                       from "../tools/crypto";

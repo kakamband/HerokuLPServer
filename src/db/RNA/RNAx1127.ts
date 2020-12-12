@@ -1,18 +1,20 @@
-import * as g                           from '../types/genetics'
-import * as u                           from "../types/user";
-import { a_good_gene_4_user }           from "../tools/user";
+import * as g                           from '../../types/genetics'
+import * as u                           from "../../types/user";
+import { DNA_maker, ABC }               from "../DNA/NACHRIT";
 
 // -- =====================================================================================
 
-export function gene ( user: u.user, ribosome: g.Ribosome ): Promise<g.gene> {
+export function gene ( user: u.user ): Promise<g.gene> {
 
     return new Promise ( (rs, rx) => { 
-        
-        let DNA = require( "../DNA/" + ribosome.code ).DNA;
-        let ABC = require( "../DNA/" + ribosome.code ).ABC;
 
-        a_good_gene_4_user( user, DNA, ribosome.readMode )
-        .then( gene => rs( { ...gene, snaps: [ ...ABC, ...gene.snaps || [] ] } ) )
+        DNA_maker()
+        .then( DNA => {
+            if ( !user.gotFromThisRibosome.includes( DNA[0].id ) ) 
+                rs( { ...DNA[0], snaps: [ ...ABC ] } );
+            else 
+                rx( "No more News for Today!" );
+        } )
         .catch( err => rx( err ) );
     
     } );
@@ -47,4 +49,3 @@ export function junk ( ribosome: g.Ribosome ): Promise<g.junk> {
 }
 
 // -- =====================================================================================
-

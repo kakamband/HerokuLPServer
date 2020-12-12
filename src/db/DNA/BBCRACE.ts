@@ -1,4 +1,4 @@
-import * as g from '../types/genetics'
+import * as g from '../../types/genetics'
 
 export const ABC: g.snapMargin = [] as any; 
 export const DNA: g.gene[] = [

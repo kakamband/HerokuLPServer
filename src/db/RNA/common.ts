@@ -1,27 +1,18 @@
-import * as g                           from '../types/genetics'
-import * as u                           from "../types/user";
-import { DNAxList, DNA_maker, ABC }     from "../DNA/TPTHEMA";
+import * as g                           from '../../types/genetics'
+import * as u                           from "../../types/user";
+import { a_good_gene_4_user }           from "../../tools/user";
 
 // -- =====================================================================================
 
-export function gene ( user: u.user ): Promise<g.gene> {
+export function gene ( user: u.user, ribosome: g.Ribosome ): Promise<g.gene> {
 
     return new Promise ( (rs, rx) => { 
-
-        DNAxList().then( list => {
-
-            // .. filter list to new ones for user
-            list = list.filter( item => !user.gotFromThisRibosome.includes( item.id ) );
-            
-            if ( !list.length ) rx( "No more Thema for now!" );
         
-            else {
-                DNA_maker( list[0].id ,list[0].link )
-                .then( DNA => rs( { ...DNA[0], snaps: [ ...ABC ] } ) )
-                .catch( err => rx( err ) );
-            };
-        
-        } )
+        let DNA = require( "../DNA/" + ribosome.code ).DNA;
+        let ABC = require( "../DNA/" + ribosome.code ).ABC;
+
+        a_good_gene_4_user( user, DNA, ribosome.readMode )
+        .then( gene => rs( { ...gene, snaps: [ ...ABC, ...gene.snaps || [] ] } ) )
         .catch( err => rx( err ) );
     
     } );
@@ -56,3 +47,4 @@ export function junk ( ribosome: g.Ribosome ): Promise<g.junk> {
 }
 
 // -- =====================================================================================
+

@@ -1,5 +1,5 @@
 import { audio_page, avatar, audio, _ } from './DWXXXXX'
-import * as g                           from '../types/genetics'
+import * as g                           from '../../types/genetics'
 
 // -- =====================================================================================
 

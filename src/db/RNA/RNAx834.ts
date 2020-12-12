@@ -1,6 +1,6 @@
-import * as g                           from '../types/genetics'
-import * as u                           from "../types/user";
-import { DNA_maker, ABC }               from "../DNA/NACHRIT";
+import * as g                           from '../../types/genetics'
+import * as u                           from "../../types/user";
+import { DNAxList, DNA_maker, ABC }     from "../DNA/TPTHEMA";
 
 // -- =====================================================================================
 
@@ -8,12 +8,19 @@ export function gene ( user: u.user ): Promise<g.gene> {
 
     return new Promise ( (rs, rx) => { 
 
-        DNA_maker()
-        .then( DNA => {
-            if ( !user.gotFromThisRibosome.includes( DNA[0].id ) ) 
-                rs( { ...DNA[0], snaps: [ ...ABC ] } );
-            else 
-                rx( "No more News for Today!" );
+        DNAxList().then( list => {
+
+            // .. filter list to new ones for user
+            list = list.filter( item => !user.gotFromThisRibosome.includes( item.id ) );
+            
+            if ( !list.length ) rx( "No more Thema for now!" );
+        
+            else {
+                DNA_maker( list[0].id ,list[0].link )
+                .then( DNA => rs( { ...DNA[0], snaps: [ ...ABC ] } ) )
+                .catch( err => rx( err ) );
+            };
+        
         } )
         .catch( err => rx( err ) );
     
