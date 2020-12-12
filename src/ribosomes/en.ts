@@ -216,4 +216,18 @@ export const en_r: g.Ribosome[] = [
         readMode    : "start",
         private     : false,
     },
+    {
+        institute   : "en",
+        code        : "VOAMURM",
+        type        : "audio",
+		level       : "B1",
+		title       : "The Murders in the Rue Morgue",
+        avatar      : "https://cdn.pixabay.com/photo/2012/12/24/08/40/depression-72318_960_720.jpg",
+        source      : "learningenglish.voanews.com",
+        contains    : null,
+        readMode    : "start",
+        private     : false,
+    },
+
+    
 ]
