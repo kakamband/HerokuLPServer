@@ -252,12 +252,18 @@ export const en_r: g.Ribosome[] = [
         readMode    : "start",
         private     : false,
     },
-    
-
-
-
-
-
+    {
+        institute   : "en",
+        code        : "VOADLNS",
+        type        : "audio",
+		level       : "B1",
+		title       : "The Diamond Lens",
+        avatar      : "https://cdn.pixabay.com/photo/2018/03/19/17/38/desktop-3240606_960_720.jpg",
+        source      : "learningenglish.voanews.com",
+        contains    : null,
+        readMode    : "start",
+        private     : false,
+    },
 
 
 
