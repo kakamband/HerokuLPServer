@@ -33,7 +33,7 @@ export function _ribosomes ( institute: string ): Promise<g.Ribosome[]> {
         
         for ( let item of list ) 
             if ( !item.contains )
-                item.contains = require( "../DNA/" + item.code ).DNA.length;
+                item.contains = require( "../db/DNA/" + item.code ).DNA.length;
 
         rs ( list );
 
