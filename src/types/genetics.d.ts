@@ -24,12 +24,12 @@ export interface gene {
     hPath?          : string[]                      ,
     isYouTube?      : boolean                       ,
     snaps?          : [number,number][]             ,
-    source?         : string                        ,
     flags?          : UnifiedGeneFlags              ,
 }
 export interface UnifiedGeneFlags {
     author?         : string                        ,
     genre?          : "melodrama"|"drama"|"funny"   ,
+    source?         : string                        ,
 }
 export type snapMargin = [ [0, number], [-1, number] ];
 
