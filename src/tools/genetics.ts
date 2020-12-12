@@ -35,6 +35,12 @@ export function _ribosomes ( institute: string ): Promise<g.Ribosome[]> {
             if ( !item.contains )
                 item.contains = require( "../db/DNA/" + item.code ).DNA.length;
 
+        list = list.sort ( (a,b) => {
+            if ( a.title.toLowerCase() == b.title.toLowerCase() ) return 0;
+            if ( a.title.toLowerCase() >  b.title.toLowerCase() ) return 1;
+            return -1;
+        } );
+
         rs ( list );
 
     } )
