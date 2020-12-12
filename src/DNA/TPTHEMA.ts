@@ -1,5 +1,4 @@
-import { html }                         from './DNAx'
-import { audio_page, avatar, audio }    from './DNAxDW'
+import { audio_page, avatar, audio, _ } from './DWXXXXX'
 import * as g                           from '../types/genetics'
 
 // -- =====================================================================================
@@ -12,8 +11,8 @@ export function DNA_maker ( id: string, link: string ): Promise<g.gene[]> {
 
     return new Promise ( (rs, rx) => { 
 
-        html( link ).then( themaPage => {
-            html( audio_page( themaPage ) ).then( audioPage => { 
+        _( link ).then( themaPage => {
+            _( audio_page( themaPage ) ).then( audioPage => { 
                 rs ( [ { 
                     id          : id,
                     title       : title( themaPage ),
@@ -36,7 +35,7 @@ export function DNAxList (): Promise< { id: string, link: string }[] > {
 
         let homeURL = "https://www.dw.com/de/deutsch-lernen/top-thema/s-8031";
 
-        html( homeURL ).then( homePage => {
+        _( homeURL ).then( homePage => {
 
             let aCut: string, 
                 bCut: string, 

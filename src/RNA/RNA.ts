@@ -1,6 +1,6 @@
 import * as x1127                       from "./RNAx1127";
 import * as x834                        from "./RNAx834";
-import * as x555                        from "./RNAx555";
+import * as commonRNA                   from "./common";
 import * as g                           from "../types/genetics"
 import * as u                           from "../types/user";
 
@@ -13,5 +13,5 @@ interface aRNA {
 export const RNA: { [key: string]: aRNA } = { 
    x1127,
    x834,
-   x555
+   commonRNA
 }

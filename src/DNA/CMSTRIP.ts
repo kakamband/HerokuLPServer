@@ -1,5 +1,6 @@
 import * as g                           from '../types/genetics'
 
+export const ABC: g.snapMargin = [] as any; 
 export const DNA: g.gene[] = [
 	{
 		"title"		: "The best bet for 2030",

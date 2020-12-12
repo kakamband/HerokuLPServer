@@ -1,5 +1,6 @@
 import * as g                           from '../types/genetics'
 
+export const ABC: g.snapMargin = [] as any; 
 export const DNA: g.gene[] = [
 	{
 		"title": "Ottobre - Il primo giorno di scuola. 17, lunedì",

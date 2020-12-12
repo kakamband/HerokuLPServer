@@ -1,5 +1,4 @@
-import { html }                         from './DNAx'
-import { audio_page, avatar, audio }    from './DNAxDW'
+import { audio_page, avatar, audio, _ } from './DWXXXXX'
 import * as g                           from '../types/genetics'
 
 // -- =====================================================================================
@@ -15,10 +14,10 @@ export function DNA_maker (): Promise<g.gene[]> {
         let heute = heuteIst();
         let homeURL = "https://www.dw.com/de/deutsch-lernen/nachrichten/s-8030";
 
-        html( homeURL ).then( homePage => {
+        _( homeURL ).then( homePage => {
             if ( homePage.includes( heute.code ) ) {
-                html( newsPage( homePage, heute.code ) ).then( newsPage => {
-                    html( audio_page( newsPage ) ).then( audioPage => {
+                _( newsPage( homePage, heute.code ) ).then( newsPage => {
+                    _( audio_page( newsPage ) ).then( audioPage => {
                         rs ( [ {
                             id          : heute.code,
                             title       : heute.name,

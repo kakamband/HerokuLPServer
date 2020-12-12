@@ -2,7 +2,6 @@ import { RNA }                          from "../RNA/RNA";
 import * as g                           from '../types/genetics'
 import * as u                           from "../types/user";
 import { crypto }                       from "../tools/crypto";
-import { ribosomeToRNA }                from "../ribosomes/rRNA";
 import { rpi }                          from "../ribosomes/rpi";
 
 // -- =====================================================================================
@@ -15,7 +14,7 @@ export function _ribosomes ( institute: string ): Promise<g.Ribosome[]> {
         
         for ( let item of list ) 
             if ( !item.contains )
-                item.contains = require( "../DNA/DNAx" + item.code ).DNA.length;
+                item.contains = require( "../DNA/" + item.code ).DNA.length;
 
         rs ( list );
 
@@ -96,7 +95,6 @@ function cell ( ribosome: g.Ribosome, gene: g.gene, junk:g.junk ): Promise<g.cel
 
 // -- =====================================================================================
 
-// TODO define return type!!!
 function new_cell ( ribosome: g.Ribosome, user: u.user ): Promise<g.cell> {
 
     return new Promise ( (rs, rx) => {
@@ -104,33 +102,32 @@ function new_cell ( ribosome: g.Ribosome, user: u.user ): Promise<g.cell> {
         // .. insufficient data
         if ( !ribosome.code ) return rx( "Entry mismatched!" );
         
-        let rCode = ribosomeToRNA[ ribosome.code ];
+        // .. RNA parser allocating
+        let rCode: string;
+        if      ( ribosome.code === "NACHRIT" ) rCode = "x1127";
+        else if ( ribosome.code === "TPTHEMA" ) rCode = "x834";
+        else rCode = "commonRNA";
         
-        if ( rCode ) {
+        // .. rRNA has been found
+        if ( RNA.hasOwnProperty( rCode ) ) {
             
-            // .. rRNA has been found
-            if ( RNA.hasOwnProperty( rCode ) ) {
-                
-                let requiredData = [
-                    RNA[ rCode ].gene( user, ribosome ),
-                    RNA[ rCode ].junk( ribosome ),
-                ] as [ 
-                    Promise<g.gene>,
-                    Promise<g.junk>,
-                ]
-        
-                Promise.all( requiredData ).
-                then( i => cell( ribosome, i[0], i[1] ) ).
-                then( cell => rs( cell ) ).
-                catch( err => rx(err) );
-
-            }
-            // .. this rRNA is not coded yet!
-            else return rx( "rRNA error!" );
+            let requiredData = [
+                RNA[ rCode ].gene( user, ribosome ),
+                RNA[ rCode ].junk( ribosome ),
+            ] as [ 
+                Promise<g.gene>,
+                Promise<g.junk>,
+            ]
+    
+            Promise.all( requiredData ).
+            then( i => cell( ribosome, i[0], i[1] ) ).
+            then( cell => rs( cell ) ).
+            catch( err => rx(err) );
 
         }
-        // .. no rRNA no way
-        else return rx( "rRNA mismatched!" );
+        // .. this rRNA is not coded yet!
+        else return rx( "rRNA error!" );
+
 
     } )
 
