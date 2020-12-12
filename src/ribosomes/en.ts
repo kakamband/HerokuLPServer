@@ -186,7 +186,7 @@ export const en_r: g.Ribosome[] = [
         type        : "audio",
 		level       : "B1",
 		title       : "A Princess of Mars",
-        avatar      : "https://edgarriceburroughs.com/store/wp-content/uploads/2016/10/A-PRINCESS-OF-MARS-Poster-cover.jpg",
+        avatar      : "https://4.bp.blogspot.com/-198vAkdju2E/V9hcNtX3l1I/AAAAAAABaI4/BtQnCf2rgrAhhgUh7qs5Si-V9_kOkkzGACLcB/w1200-h630-p-k-no-nu/A%2BPrincess%2Bof%2BMars%2Bby%2BMatt%2BTaylor.jpg",
         source      : "learningenglish.voanews.com",
         contains    : null,
         readMode    : "start",
