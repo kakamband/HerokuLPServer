@@ -240,6 +240,18 @@ export const en_r: g.Ribosome[] = [
         readMode    : "start",
         private     : false,
     },
+    {
+        institute   : "en",
+        code        : "VOAFHUS",
+        type        : "audio",
+		level       : "B1",
+		title       : "The Fall of the House of Usher",
+        avatar      : "https://i.ytimg.com/vi/J3wo6ISCWQU/maxresdefault.jpg",
+        source      : "learningenglish.voanews.com",
+        contains    : null,
+        readMode    : "start",
+        private     : false,
+    },
     
 
 
