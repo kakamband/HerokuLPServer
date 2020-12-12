@@ -204,4 +204,16 @@ export const en_r: g.Ribosome[] = [
         readMode    : "start",
         private     : false,
     },
+    {
+        institute   : "en",
+        code        : "VOAWISN",
+        type        : "audio",
+		level       : "B1",
+		title       : "William Wilson",
+        avatar      : "http://moellerlit.weebly.com/uploads/1/0/2/4/10248653/533359_orig.jpg",
+        source      : "learningenglish.voanews.com",
+        contains    : null,
+        readMode    : "start",
+        private     : false,
+    },
 ]
