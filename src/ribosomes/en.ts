@@ -180,4 +180,16 @@ export const en_r: g.Ribosome[] = [
         readMode    : "start",
         private     : false,
     },
+    {
+        institute   : "en",
+        code        : "VOAPRMS",
+        type        : "audio",
+		level       : "B1",
+		title       : "A Princess of Mars",
+        avatar      : "https://edgarriceburroughs.com/store/wp-content/uploads/2016/10/A-PRINCESS-OF-MARS-Poster-cover.jpg",
+        source      : "learningenglish.voanews.com",
+        contains    : null,
+        readMode    : "start",
+        private     : false,
+    },
 ]
