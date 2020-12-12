@@ -222,7 +222,7 @@ export const en_r: g.Ribosome[] = [
         type        : "audio",
 		level       : "B1",
 		title       : "The Murders in the Rue Morgue",
-        avatar      : "https://minsthorpe.cc/wp-content/uploads/2015/04/ruemorgue-img.jpg",
+        avatar      : "https://cdn.pixabay.com/photo/2017/10/10/08/36/halloween-2836379_960_720.jpg",
         source      : "learningenglish.voanews.com",
         contains    : null,
         readMode    : "start",
