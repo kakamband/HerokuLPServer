@@ -230,6 +230,30 @@ export const en_r: g.Ribosome[] = [
     },
     {
         institute   : "en",
+        code        : "VOALLWF",
+        type        : "audio",
+		level       : "B1",
+		title       : "The Law of Life",
+        avatar      : "https://cdn.pixabay.com/photo/2020/10/24/11/48/wolf-5681260_960_720.png",
+        source      : "learningenglish.voanews.com",
+        contains    : null,
+        readMode    : "start",
+        private     : false,
+    },
+    
+
+
+
+
+
+
+
+
+
+
+
+    {
+        institute   : "en",
         code        : "EATGOUT",
         type        : "audio",
 		level       : "A2",
