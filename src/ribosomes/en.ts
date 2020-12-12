@@ -276,9 +276,21 @@ export const en_r: g.Ribosome[] = [
         readMode    : "start",
         private     : false,
     },
+    {
+        institute   : "en",
+        code        : "VOABLUH",
+        type        : "audio",
+		level       : "B1",
+		title       : "The Blue Hotel",
+        avatar      : "https://0701.static.prezi.com/preview/v2/igxadm32yaec6yfkndtnn3plnl6jc3sachvcdoaizecfr3dnitcq_1_0.png",
+        source      : "learningenglish.voanews.com",
+        contains    : null,
+        readMode    : "start",
+        private     : false,
+    },
 
 
-
+    
 
 
     {
