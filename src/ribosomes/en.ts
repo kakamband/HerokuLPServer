@@ -198,7 +198,7 @@ export const en_r: g.Ribosome[] = [
         type        : "audio",
 		level       : "B1",
 		title       : "Benito Cereno",
-        avatar      : "https://cdn.pixabay.com/photo/2016/05/02/10/13/ship-1366926_960_720.jpg",
+        avatar      : "https://cdn.pixabay.com/photo/2016/10/18/07/30/ship-1749467_960_720.jpg",
         source      : "learningenglish.voanews.com",
         contains    : null,
         readMode    : "start",
