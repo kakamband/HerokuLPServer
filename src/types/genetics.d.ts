@@ -14,17 +14,22 @@ export interface Ribosome {
 }
 
 export interface gene {
-    id?             : string;
-    title           : string;
-    text            : string;
-    avatarURL       : string;
-    avatar_C?       : boolean;
-    mediaURL        : string;
-    media_C?        : boolean;
-    hPath?          : string[];
-    isYouTube?      : boolean;
-    snaps?          : [number,number][];
-    source?         : string;
+    id?             : string                        ,
+    title           : string                        ,
+    text            : string                        ,
+    avatarURL       : string                        ,
+    avatar_C?       : boolean                       ,
+    mediaURL        : string                        ,
+    media_C?        : boolean                       ,
+    hPath?          : string[]                      ,
+    isYouTube?      : boolean                       ,
+    snaps?          : [number,number][]             ,
+    source?         : string                        ,
+    flags?          : UnifiedGeneFlags              ,
+}
+export interface UnifiedGeneFlags {
+    author?         : string                        ,
+    genre?          : "melodrama"|"drama"|"funny"   ,
 }
 export type snapMargin = [ [0, number], [-1, number] ];
 
