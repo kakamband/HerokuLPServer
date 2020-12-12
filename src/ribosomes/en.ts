@@ -228,6 +228,18 @@ export const en_r: g.Ribosome[] = [
         readMode    : "start",
         private     : false,
     },
+    {
+        institute   : "en",
+        code        : "EATGOUT",
+        type        : "audio",
+		level       : "A2",
+		title       : "Eating\nOut",
+        avatar      : "https://image.freepik.com/free-vector/people-eating-out-public-place-sitting-outdoors_82574-11144.jpg",
+        source      : "LingQ",
+        contains    : null,
+        readMode    : "start",
+        private     : true,
+    },
 
     
 ]
