@@ -1,8 +1,27 @@
-import { RNA }                          from "../RNA/RNA";
+import * as x1127                       from "../RNA/RNAx1127";
+import * as x834                        from "../RNA/RNAx834";
+import * as commonRNA                   from "../RNA/common";
 import * as g                           from '../types/genetics'
 import * as u                           from "../types/user";
 import { crypto }                       from "../tools/crypto";
-import { rpi }                          from "../ribosomes/rpi";
+import { de_r }                         from "../ribosomes/de"
+import { it_r }                         from "../ribosomes/it"
+import { en_r }                         from "../ribosomes/en"
+
+// -- =====================================================================================
+
+const rpi = [ ...de_r, ...en_r, ...it_r ];
+
+const RNA: { 
+    [key: string]: { 
+        gene: ( user: u.user, ribosome?: g.Ribosome ) => Promise<g.gene>
+        junk: ( ribosome: g.Ribosome ) => Promise<g.junk>
+    } 
+} = { 
+    x1127,
+    x834,
+    commonRNA
+}
 
 // -- =====================================================================================
 
