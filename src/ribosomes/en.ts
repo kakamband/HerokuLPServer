@@ -269,7 +269,6 @@ export const en_r: g.Ribosome[] = [
 
 
 
-
     {
         institute   : "en",
         code        : "EATGOUT",
