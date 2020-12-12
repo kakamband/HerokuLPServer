@@ -282,7 +282,7 @@ export const en_r: g.Ribosome[] = [
         type        : "audio",
 		level       : "B1",
 		title       : "The Blue Hotel",
-        avatar      : "https://0701.static.prezi.com/preview/v2/igxadm32yaec6yfkndtnn3plnl6jc3sachvcdoaizecfr3dnitcq_1_0.png",
+        avatar      : "https://cdn.pixabay.com/photo/2019/07/31/17/21/pool-4375669_960_720.jpg",
         source      : "learningenglish.voanews.com",
         contains    : null,
         readMode    : "start",
