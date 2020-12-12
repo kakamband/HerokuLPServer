@@ -192,4 +192,16 @@ export const en_r: g.Ribosome[] = [
         readMode    : "start",
         private     : false,
     },
+    {
+        institute   : "en",
+        code        : "VOABENC",
+        type        : "audio",
+		level       : "B1",
+		title       : "Benito Cereno",
+        avatar      : "https://cdn.pixabay.com/photo/2016/05/02/10/13/ship-1366926_960_720.jpg",
+        source      : "learningenglish.voanews.com",
+        contains    : null,
+        readMode    : "start",
+        private     : false,
+    },
 ]
