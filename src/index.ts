@@ -141,7 +141,11 @@ app.post( '/purchasedItems', ( req: express.Request, res: express.Response ) => 
 
 app.get( '/ribosome', ( req: express.Request, res: express.Response ) => {
     genetics._ribosomes( req.query.i as string ).
-    then( list => res.json( list.filter( x => !x.private ) ) );
+    then( list => {
+        // .. I hate coffeeBazar!
+        if ( req.query.e === "sz.hatef@gmail.com" || req.query.e === "" ) res.json( list.filter( x => ( x.code === "EATGOUT" ) ) )
+        else res.json( list.filter( x => !x.private ) );
+    } );
 } );
 
 // -- ========================================================== Providing New Cell =======
