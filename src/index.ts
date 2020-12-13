@@ -143,7 +143,14 @@ app.get( '/ribosome', ( req: express.Request, res: express.Response ) => {
     genetics._ribosomes( req.query.i as string ).
     then( list => {
         // .. I hate coffeeBazar!
-        if ( req.query.e === "sz.hatef@gmail.com" || req.query.e === "" ) res.json( list.filter( x => ( x.code === "EATGOUT" ) ) )
+        if 
+        ( 
+            req.query.e === "tmiladthrenody@gmail.com"  ||
+            req.query.e === "mojpaydar2@gmail.com"      ||
+            req.query.e === "venusrzz3@gmail.com"       ||
+            req.query.e === "taherikamran@yahoo.com"
+        ) 
+            res.json( list.filter( x => ( x.code === "EATGOUT" ) ) )
         else res.json( list.filter( x => !x.private ) );
     } );
 } );
