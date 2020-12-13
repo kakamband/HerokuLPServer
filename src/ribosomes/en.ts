@@ -288,7 +288,18 @@ export const en_r: g.Ribosome[] = [
         readMode    : "start",
         private     : false,
     },
-
+    {
+        institute   : "en",
+        code        : "VOAANNA",
+        type        : "video",
+		level       : "A1",
+		title       : "Let's Learn English\nA1",
+        avatar      : "https://cdn.pixabay.com/photo/2017/03/23/12/23/vintage-2168174_960_720.jpg",
+        source      : "learningenglish.voanews.com",
+        contains    : null,
+        readMode    : "start",
+        private     : false,
+    },
 
     
 
