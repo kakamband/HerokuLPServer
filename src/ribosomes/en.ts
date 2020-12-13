@@ -294,7 +294,7 @@ export const en_r: g.Ribosome[] = [
         type        : "video",
 		level       : "A1",
 		title       : "Let's Learn English\nA1",
-        avatar      : "https://cdn.pixabay.com/photo/2017/03/23/12/23/vintage-2168174_960_720.jpg",
+        avatar      : "https://cdn.pixabay.com/photo/2018/05/13/17/08/notebook-3397136_960_720.jpg",
         source      : "learningenglish.voanews.com",
         contains    : null,
         readMode    : "start",
