@@ -49,6 +49,10 @@ export interface junk {
     }                                               ,
     status          : LessonStatus                  ,
     etikett         : { [key: string]: number[] }   ,
+    pinnedPoints    : {                              
+        page?       : number                        , 
+        snap?       : number                        ,
+    }                                               ,
 }
 
 export interface _junk { 
@@ -82,9 +86,12 @@ export interface Chromosome {
     // .. common properties                          
     icon?           : string                        ,
     isYouTube?      : boolean                       ,
-    pinnedPoint?    : number                        ,
+    initSnaps?      : [number,number][]             ,
     forceRender?    : boolean                       ,
-    initSnaps?      : [number,number][]              
+    pinnedPoints    : {                              
+        page?       : number                        , 
+        snap?       : number                        ,
+    }                                               ,
                                                      
 }
 

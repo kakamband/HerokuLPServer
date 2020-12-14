@@ -47,6 +47,7 @@ export function junk ( ribosome: g.Ribosome ): Promise<g.junk> {
             }                                   ,
             status      : "reading"             ,
             etikett     : {}                    ,
+            pinnedPoints: {}                    ,
         };
 
         rs( junk )
