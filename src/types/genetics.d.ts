@@ -23,7 +23,7 @@ export interface gene {
     media_C?        : boolean                       ,
     hPath?          : string[]                      ,
     isYouTube?      : boolean                       ,
-    snaps?          : [number,number][]             ,
+    initSnaps?      : [number,number][]             ,
     flags?          : UnifiedGeneFlags              ,
 }
 export interface UnifiedGeneFlags {
@@ -84,7 +84,7 @@ export interface Chromosome {
     isYouTube?      : boolean                       ,
     pinnedPoint?    : number                        ,
     forceRender?    : boolean                       ,
-    snaps?          : [number,number][]              
+    initSnaps?      : [number,number][]              
                                                      
 }
 

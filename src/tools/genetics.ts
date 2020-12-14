@@ -107,7 +107,7 @@ function cell ( ribosome: g.Ribosome, gene: g.gene, junk:g.junk ): Promise<g.cel
                     media_C     : !!gene.media_C            ,
                 }                                           ,
                 isYouTube       : !!gene.isYouTube          ,
-                snaps           : gene.snaps                ,
+                initSnaps       : gene.initSnaps            ,
             }                                               ,
                                                              
             rawText             : cellText                  ,

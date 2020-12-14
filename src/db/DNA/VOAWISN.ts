@@ -8,7 +8,7 @@ export const DNA: g.gene[] = [
 		mediaURL	: "https://av.voanews.com/clips/VLE/2017/03/09/bb857d11-9b8b-4a74-8012-08a6f94edced_hq.mp3",
 		avatarURL	: "https://edgarallanpoe-walz.weebly.com/uploads/2/5/7/0/25708144/3315042.jpg?475",
 		avatar_C	: true,
-		snaps		: [],
+		initSnaps	: [],
 		flags		: {
 			source	: "https://learningenglish.voanews.com/a/william-wilson-by-edgar-allan-poe-part-one/4550844.html",
 			author	: "Edgar Allan Poe",
@@ -20,7 +20,7 @@ export const DNA: g.gene[] = [
 		mediaURL	: "https://av.voanews.com/clips/VLE/2017/03/09/8a7b3dbb-5dd2-4c50-89e4-1e8f17a5961c_hq.mp3",
 		avatarURL	: "https://edgarallanpoe-walz.weebly.com/uploads/2/5/7/0/25708144/3315042.jpg?475",
 		avatar_C	: true,
-		snaps		: [],
+		initSnaps	: [],
 		flags		: {
 			source	: "https://learningenglish.voanews.com/a/william-wilson-by-edgar-allan-poe-part-two/4550846.html",
 			author	: "Edgar Allan Poe",
@@ -32,7 +32,7 @@ export const DNA: g.gene[] = [
 		mediaURL	: "https://av.voanews.com/clips/VLE/2017/03/09/b18d8777-7984-499e-839b-6591c7c236e3_hq.mp3",
 		avatarURL	: "https://edgarallanpoe-walz.weebly.com/uploads/2/5/7/0/25708144/3315042.jpg?475",
 		avatar_C	: true,
-		snaps		: [],
+		initSnaps	: [],
 		flags		: {
 			source	: "https://learningenglish.voanews.com/a/william-wilson-by-edgar-allan-poe-part-three/4550847.html",
 			author	: "Edgar Allan Poe",
@@ -44,7 +44,7 @@ export const DNA: g.gene[] = [
 		mediaURL	: "https://av.voanews.com/clips/VLE/2017/03/09/621a7c80-7b34-41ea-8f5f-c312f00e85af_hq.mp3",
 		avatarURL	: "https://edgarallanpoe-walz.weebly.com/uploads/2/5/7/0/25708144/3315042.jpg?475",
 		avatar_C	: true,
-		snaps		: [],
+		initSnaps	: [],
 		flags		: {
 			source	: "https://learningenglish.voanews.com/a/william-wilson-by-edgar-allan-poe-part-four/4550851.html",
 			author	: "Edgar Allan Poe",

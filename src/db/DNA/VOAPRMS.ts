@@ -8,7 +8,7 @@ export const DNA: g.gene[] = [
 		mediaURL	: "https://av.voanews.com/clips/VLE/2014/11/25/c517f4fe-347d-4086-90e1-026c825d5727_hq.mp3",
 		avatarURL	: "https://i.ytimg.com/vi/EY2qDNvV3RI/maxresdefault.jpg",
 		avatar_C	: true,
-		snaps		: [[0,17],[-1,12*60+55]],
+		initSnaps	: [[0,17],[-1,12*60+55]],
 		flags		: {
 			source	: "https://learningenglish.voanews.com/a/a-princess-of-mars-by-edgar-rice-burroughs-part-one/4773681.html",
 			author	: "Edgar Rice Burroughs",
@@ -20,7 +20,7 @@ export const DNA: g.gene[] = [
 		mediaURL	: "https://av.voanews.com/clips/VLE/2014/12/01/f2351c79-4ea9-4014-9eeb-fcded32b0179_hq.mp3",
 		avatarURL	: "https://i.ytimg.com/vi/yjoom7Tym-U/maxresdefault.jpg",
 		avatar_C	: true,
-		snaps		: [[0,17],[-1,12*60+5]],
+		initSnaps	: [[0,17],[-1,12*60+5]],
 		flags		: {
 			source	: "https://learningenglish.voanews.com/a/a-princess-of-mars-by-edgar-rice-burroughs-part-two/4773682.html",
 			author	: "Edgar Rice Burroughs",
@@ -32,7 +32,7 @@ export const DNA: g.gene[] = [
 		mediaURL	: "https://av.voanews.com/clips/VLE/2014/12/01/ef627c60-7f1a-46ca-85cb-b7692c0ac5e8.mp3",
 		avatarURL	: "https://i.ytimg.com/vi/CE9aPNmVZNA/maxresdefault.jpg",
 		avatar_C	: true,
-		snaps		: [[0,10],[-1,12*60+28]],
+		initSnaps	: [[0,10],[-1,12*60+28]],
 		flags		: {
 			source	: "https://learningenglish.voanews.com/a/a-princess-of-mars-by-edgar-rice-burroughs-part-three/4773684.html",
 			author	: "Edgar Rice Burroughs",
@@ -44,7 +44,7 @@ export const DNA: g.gene[] = [
 		mediaURL	: "https://av.voanews.com/clips/VLE/2014/12/01/2bdb68db-0062-4d1a-a0cf-3b920cfcc476.mp3",
 		avatarURL	: "https://i.ytimg.com/vi/Sc5x7sMHEqg/maxresdefault.jpg",
 		avatar_C	: true,
-		snaps		: [[0,10],[-1,12*60+12]],
+		initSnaps	: [[0,10],[-1,12*60+12]],
 		flags		: {
 			source	: "https://learningenglish.voanews.com/a/a-princess-of-mars-by-edgar-rice-burroughs-part-four/4773687.html",
 			author	: "Edgar Rice Burroughs",

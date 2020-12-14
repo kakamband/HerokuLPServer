@@ -8,7 +8,7 @@ export const DNA: g.gene[] = [
 		mediaURL	: "https://av.voanews.com/clips/VLE/2017/09/05/3708f5c2-d0f7-4eba-b88c-910d8854a6af_hq.mp3",
 		avatarURL	: "https://hollywoodsuite.ca/wp-content/uploads/poster/HS904000_poster_1920_1080.JPG",
 		avatar_C	: true,
-		snaps		: [],
+		initSnaps	: [],
 		flags		: {
 			source	: "https://learningenglish.voanews.com/a/murders-in-rue-morgue-part-one-edgar-allen-poe/4015874.html",
 			author	: "by Edgar Allen Poe",
@@ -20,7 +20,7 @@ export const DNA: g.gene[] = [
 		mediaURL	: "https://av.voanews.com/clips/VLE/2017/09/05/c120d55f-2c70-4e1a-b942-977ab81208f7_hq.mp3",
 		avatarURL	: "https://hollywoodsuite.ca/wp-content/uploads/poster/HS904000_poster_1920_1080.JPG",
 		avatar_C	: true,
-		snaps		: [],
+		initSnaps	: [],
 		flags		: {
 			source	: "https://learningenglish.voanews.com/a/murders-in-rue-morgue-edgar-allen-poe-part-two/4015911.html",
 			author	: "by Edgar Allen Poe",
@@ -32,7 +32,7 @@ export const DNA: g.gene[] = [
 		mediaURL	: "https://av.voanews.com/clips/VLE/2017/09/05/123d543f-a06a-4bf8-b254-0c5517ebc68c_hq.mp3",
 		avatarURL	: "https://hollywoodsuite.ca/wp-content/uploads/poster/HS904000_poster_1920_1080.JPG",
 		avatar_C	: true,
-		snaps		: [],
+		initSnaps	: [],
 		flags		: {
 			source	: "https://learningenglish.voanews.com/a/murders-in-rue-morgue-edgar-allen-poe-part-three/4017514.html",
 			author	: "by Edgar Allen Poe",
@@ -44,7 +44,7 @@ export const DNA: g.gene[] = [
 		mediaURL	: "https://av.voanews.com/clips/VLE/2017/09/06/f88dffd8-1577-46f5-bd6a-de447c15ab4d_hq.mp3",
 		avatarURL	: "https://hollywoodsuite.ca/wp-content/uploads/poster/HS904000_poster_1920_1080.JPG",
 		avatar_C	: true,
-		snaps		: [],
+		initSnaps	: [],
 		flags		: {
 			source	: "https://learningenglish.voanews.com/a/murders-in-rue-morgue-edgar-allen-poe-part-four/4017535.html",
 			author	: "by Edgar Allen Poe",
@@ -56,7 +56,7 @@ export const DNA: g.gene[] = [
 		mediaURL	: "https://av.voanews.com/clips/VLE/2017/09/08/6b1694f1-95dc-4e0a-8d1e-c6b3f0bd8e0b_hq.mp3",
 		avatarURL	: "https://hollywoodsuite.ca/wp-content/uploads/poster/HS904000_poster_1920_1080.JPG",
 		avatar_C	: true,
-		snaps		: [],
+		initSnaps	: [],
 		flags		: {
 			source	: "https://learningenglish.voanews.com/a/murders-in-rue-morgue-edgar-allen-poe-part-five/4024330.html",
 			author	: "by Edgar Allen Poe",

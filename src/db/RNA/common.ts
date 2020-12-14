@@ -12,7 +12,7 @@ export function gene ( user: u.user, ribosome: g.Ribosome ): Promise<g.gene> {
         let ABC = require( "../DNA/" + ribosome.code ).ABC;
 
         a_good_gene_4_user( user, DNA, ribosome.readMode )
-        .then( gene => rs( { ...gene, snaps: [ ...ABC, ...gene.snaps || [] ] } ) )
+        .then( gene => rs( { ...gene, initSnaps: [ ...ABC, ...gene.initSnaps || [] ] } ) )
         .catch( err => rx( err ) );
     
     } );

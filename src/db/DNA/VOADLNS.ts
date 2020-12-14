@@ -8,7 +8,7 @@ export const DNA: g.gene[] = [
 		mediaURL	: "https://av.voanews.com/clips/VLE/2015/06/30/7bd7b4d8-74bf-4a15-903f-1f13c0533db9_hq.mp3",
 		avatarURL	: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1479081940i/32958277._UY630_SR1200,630_.jpg",
 		avatar_C	: true,
-		snaps		: [],
+		initSnaps	: [],
 		flags		: {
 			author 	: "Fitz-James O'Brien",
 			source	: "https://learningenglish.voanews.com/a/fitz-james-o-brien-a-diamond-lens-part-one/4190866.html"
@@ -20,7 +20,7 @@ export const DNA: g.gene[] = [
 		mediaURL	: "https://av.voanews.com/clips/VLE/2015/07/06/d61852b6-15fc-4885-8971-68cd9f03670d.mp3",
 		avatarURL	: "https://gdb.voanews.com/523BFBDC-670E-4D13-959C-7ACED7D7B649_w1200_r1.jpg",
 		avatar_C	: true,
-		snaps		: [],
+		initSnaps	: [],
 		flags		: {
 			author 	: "Fitz-James O'Brien",
 			source	: "https://learningenglish.voanews.com/a/fitz-james-o-brien-the-diamond-lens-part-two/4190874.html"
