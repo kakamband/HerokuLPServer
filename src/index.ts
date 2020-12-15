@@ -32,8 +32,9 @@ app.get( '/beautyBGList', ( req: express.Request, res: express.Response ) => {
 // -- ===================================================== CHECKING  Email Address =======
 
 app.get( '/giveMeBG', ( req: express.Request, res: express.Response ) => {
-    let filePath = "/beautyBGs/" + req.query.f + ".jpg";
-    res.download( filePath, "pic" ); 
+    let fileName = req.query.f + ".jpg";
+    let filePath = "home/beautyBGs/" + fileName;
+    res.download( filePath, fileName ); 
 } );
 
 // -- ===================================================== CHECKING  Email Address =======
