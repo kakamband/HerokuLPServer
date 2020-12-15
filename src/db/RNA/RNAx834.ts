@@ -17,7 +17,7 @@ export function gene ( user: u.user ): Promise<g.gene> {
         
             else {
                 DNA_maker( list[0].id ,list[0].link )
-                .then( DNA => rs( { ...DNA[0], initSnaps: [ [10,10] ] } ) )
+                .then( DNA => rs( { ...DNA[0], initSnaps: [ ...ABC ] } ) )
                 .catch( err => rx( err ) );
             };
         
