@@ -27,7 +27,7 @@ app.get( '/beautyBGList', ( req: express.Request, res: express.Response ) => {
         tree: true,
         sign: true
     }
-    res.json( { status: 200, answer: JSON.stringify( list ) } )
+    res.json( { status: 200, answer: list } )
 } );
 
 // -- ===================================================== CHECKING  Email Address =======
