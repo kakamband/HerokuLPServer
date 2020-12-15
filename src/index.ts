@@ -16,6 +16,20 @@ var bodyParser = require('body-parser');
 app.use( bodyParser.urlencoded( { extended: false } ) );
 app.use( bodyParser.json() );
 
+
+// -- ===================================================== CHECKING  Email Address =======
+
+app.get( '/beautyBGList', ( req: express.Request, res: express.Response ) => {
+    let list = {
+        bird: true,
+        mountain: true,
+        skull: true,
+        tree: true,
+        sign: true
+    }
+    res.json( { status: 200, answer: JSON.stringify( list ) } )
+} );
+
 // -- ===================================================== CHECKING  Email Address =======
 
 app.get( '/isEmailExists', ( req: express.Request, res: express.Response ) => {
