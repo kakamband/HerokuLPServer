@@ -20,12 +20,12 @@ app.use( bodyParser.json() );
 // -- ===================================================== CHECKING  Email Address =======
 
 app.get( '/beautyBGList', ( req: express.Request, res: express.Response ) => {
-    let list = [
-        { src: "sign",      height: "35%", translateY: 0     },
-        { src: "skull",     height: "40%", translateY: -30   },
-        { src: "mountain",  height: "45%", translateY: 0     },
-        { src: "bird",      height: "30%", translateY: -100  },
-    ]
+    let list = {
+        sign    : { height: "35%", translateY: 0    } ,
+        skull   : { height: "40%", translateY: -30  } ,
+        mountain: { height: "45%", translateY: 0    } ,
+        bird    : { height: "30%", translateY: -100 } ,
+    }
     res.json( { status: 200, answer: list } )
 } );
 
