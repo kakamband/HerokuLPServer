@@ -31,6 +31,13 @@ app.get( '/beautyBGList', ( req: express.Request, res: express.Response ) => {
 
 // -- ===================================================== CHECKING  Email Address =======
 
+app.get( '/giveMeBG', ( req: express.Request, res: express.Response ) => {
+    let filePath = "/beautyBGs/" + req.query.f + ".jpg";
+    res.download( filePath, "pic" ); 
+} );
+
+// -- ===================================================== CHECKING  Email Address =======
+
 app.get( '/isEmailExists', ( req: express.Request, res: express.Response ) => {
     usr._userExists( req.query.e as string ).
     then( user => res.json( { status: 200, answer: !user } ) ).
