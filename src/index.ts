@@ -33,7 +33,7 @@ app.get( '/beautyBGList', ( req: express.Request, res: express.Response ) => {
 
 app.get( '/giveMeBG', ( req: express.Request, res: express.Response ) => {
     // let fileName = req.query.f + ".jpg";
-    let filePath = "/beautyBGs/bird_dark.jpg";
+    let filePath = "beautyBGs/bird_dark.jpg";
     res.download( filePath, "fileName" ); 
 } );
 
