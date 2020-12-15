@@ -1,6 +1,6 @@
 import * as g                           from '../../types/genetics'
 import * as u                           from "../../types/user";
-import { DNAxList, DNA_maker, ABC }     from "../DNA/TPTHEMA";
+import { DNAxList, DNA_maker, ABC }     from "../DNA/DWTPTMA";
 
 // -- =====================================================================================
 

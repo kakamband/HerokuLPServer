@@ -1,6 +1,6 @@
 import * as g                           from '../../types/genetics'
 import * as u                           from "../../types/user";
-import { DNA_maker, ABC }               from "../DNA/NACHRIT";
+import { DNA_maker, ABC }               from "../DNA/DWNCHRT";
 
 // -- =====================================================================================
 
