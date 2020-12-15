@@ -25,6 +25,14 @@ app.get( '/beautyBGList', ( req: express.Request, res: express.Response ) => {
         skull   : { height: "40%", translateY: -30  } ,
         mountain: { height: "45%", translateY: 0    } ,
         bird    : { height: "30%", translateY: -100 } ,
+        elephant: { height: "40%", translateY: 0    } ,
+        mother  : { height: "40%", translateY: 0    } ,
+        coffee  : { height: "40%", translateY: 0    } ,
+        girl    : { height: "40%", translateY: 0    } ,
+        crow    : { height: "40%", translateY: 0    } ,
+        man     : { height: "40%", translateY: 0    } ,
+        puppy   : { height: "40%", translateY: 0    } ,
+        wizard  : { height: "40%", translateY: 0    } ,
     }
     res.json( { status: 200, answer: list } )
 } );
