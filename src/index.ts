@@ -176,6 +176,7 @@ app.get( '/ribosome', ( req: express.Request, res: express.Response ) => {
             req.query.e === "tmiladthrenody@gmail.com"  ||
             req.query.e === "mojpaydar2@gmail.com"      ||
             req.query.e === "venusrzz3@gmail.com"       ||
+            req.query.e === "nilmax99@gmail.com"        ||
             req.query.e === "taherikamran@yahoo.com"
         ) 
             res.json( list.filter( x => ( x.code === "EATGOUT" ) ) )
