@@ -290,6 +290,18 @@ export const en_r: g.Ribosome[] = [
     },
     {
         institute   : "en",
+        code        : "VOALVLF",
+        type        : "audio",
+		level       : "B1",
+		title       : "Love of Life",
+        avatar      : "https://cdn.pixabay.com/photo/2018/10/22/09/09/jaguar-3764824_960_720.jpg",
+        source      : "learningenglish.voanews.com",
+        contains    : null,
+        readMode    : "start",
+        private     : false,
+    },
+    {
+        institute   : "en",
         code        : "VOAANA1",
         type        : "video",
 		level       : "A1",
