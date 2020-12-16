@@ -16,7 +16,6 @@ var bodyParser = require('body-parser');
 app.use( bodyParser.urlencoded( { extended: false } ) );
 app.use( bodyParser.json() );
 
-
 // -- ===================================================== CHECKING  Email Address =======
 
 app.get( '/beautyBGList', ( req: express.Request, res: express.Response ) => {
