@@ -302,6 +302,18 @@ export const en_r: g.Ribosome[] = [
     },
     {
         institute   : "en",
+        code        : "VOAPACA",
+        type        : "audio",
+		level       : "B1",
+		title       : "Paul's Case",
+        avatar      : "https://cdn.pixabay.com/photo/2020/01/12/16/46/blue-rose-near-rail-4760412_960_720.jpg",
+        source      : "learningenglish.voanews.com",
+        contains    : null,
+        readMode    : "start",
+        private     : false,
+    },
+    {
+        institute   : "en",
         code        : "VOAANA1",
         type        : "video",
 		level       : "A1",
