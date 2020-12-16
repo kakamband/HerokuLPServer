@@ -306,7 +306,7 @@ export const en_r: g.Ribosome[] = [
         type        : "audio",
 		level       : "B1",
 		title       : "Paul's Case",
-        avatar      : "https://cdn.pixabay.com/photo/2020/01/12/16/46/blue-rose-near-rail-4760412_960_720.jpg",
+        avatar      : "https://cdn.pixabay.com/photo/2016/03/09/09/37/railway-1245906_960_720.jpg",
         source      : "learningenglish.voanews.com",
         contains    : null,
         readMode    : "start",
