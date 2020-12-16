@@ -25,6 +25,8 @@ export const DNA: g.gene[] = [
 	},
 
 
+
+	
 	
 	{
 		"title"		: "Chester's Way",
@@ -67,12 +69,6 @@ export const DNA: g.gene[] = [
 		"avatarURL"	: "https://www.storylineonline.net/wp-content/uploads/2015/01/TheKissingHand.jpg",
 		"mediaURL"	: "https://youtu.be/dPUW1t9Gu4s",
 		"isYouTube"	: true
-	},
+	}
 
-
-
-
-
-	
-		
 ]
