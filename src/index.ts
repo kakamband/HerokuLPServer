@@ -32,6 +32,10 @@ app.get( '/beautyBGList', ( req: express.Request, res: express.Response ) => {
         man     : { height: "40%", translateY: 0    } ,
         puppy   : { height: "40%", translateY: 0    } ,
         wizard  : { height: "40%", translateY: 0    } ,
+        boat    : { height: "40%", translateY: 0    } ,
+        feather : { height: "40%", translateY: 0    } ,
+        london  : { height: "40%", translateY: 0    } ,
+        home    : { height: "40%", translateY: 0    } ,
     }
     res.json( { status: 200, answer: list } )
 } );
