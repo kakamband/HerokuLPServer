@@ -23,7 +23,7 @@ app.get( '/beautyBGList', ( req: express.Request, res: express.Response ) => {
         sign    : { height: "35%", translateY: 0    } ,
         // skull   : { height: "45%", translateY: -30  } ,
         mountain: { height: "45%", translateY: 0    } ,
-        bird    : { height: "30%", translateY: 0    } ,
+        bird    : { height: "30%", translateY: -30  } ,
         elephant: { height: "40%", translateY: 0    } ,
         mother  : { height: "40%", translateY: 0    } ,
         coffee  : { height: "40%", translateY: 0    } ,
