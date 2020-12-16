@@ -279,7 +279,7 @@ export const en_r: g.Ribosome[] = [
     {
         institute   : "en",
         code        : "VOAHRCR",
-        type        : "video",
+        type        : "audio",
 		level       : "B1",
 		title       : "Hearts and Crosses",
         avatar      : "https://cdn.pixabay.com/photo/2019/09/12/16/01/cross-4471977_960_720.jpg",
