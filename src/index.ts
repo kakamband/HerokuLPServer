@@ -36,6 +36,9 @@ app.get( '/beautyBGList', ( req: express.Request, res: express.Response ) => {
         feather : { height: "40%", translateY: 0    } ,
         london  : { height: "40%", translateY: 0    } ,
         home    : { height: "40%", translateY: 0    } ,
+        cat     : { height: "40%", translateY: 0    } ,
+        sunset  : { height: "40%", translateY: 0    } ,
+        march   : { height: "40%", translateY: 0    } ,
     }
     res.json( { status: 200, answer: list } )
 } );
