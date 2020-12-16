@@ -20,7 +20,7 @@ app.use( bodyParser.json() );
 
 app.get( '/beautyBGList', ( req: express.Request, res: express.Response ) => {
     let list = {
-        // skull   : { height: "45%", translateY: -30  } ,
+        // skull   : { height: "45%", translateY: -30 } ,
         sign    : { height: "35%", translateY: 0 } ,
         mountain: { height: "40%", translateY: 0 } ,
         bird    : { height: "40%", translateY: 0 } ,
@@ -40,6 +40,7 @@ app.get( '/beautyBGList', ( req: express.Request, res: express.Response ) => {
         sunset  : { height: "40%", translateY: 0 } ,
         march   : { height: "40%", translateY: 0 } ,
         leafs   : { height: "40%", translateY: 0 } ,
+        wet     : { height: "40%", translateY: 0 } ,
     }
     res.json( { status: 200, answer: list } )
 } );
