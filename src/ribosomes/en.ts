@@ -278,6 +278,18 @@ export const en_r: g.Ribosome[] = [
     },
     {
         institute   : "en",
+        code        : "VOAHRCR",
+        type        : "video",
+		level       : "B1",
+		title       : "Hearts and Crosses",
+        avatar      : "https://cdn.pixabay.com/photo/2019/09/12/16/01/cross-4471977_960_720.jpg",
+        source      : "learningenglish.voanews.com",
+        contains    : null,
+        readMode    : "start",
+        private     : false,
+    },
+    {
+        institute   : "en",
         code        : "VOAANA1",
         type        : "video",
 		level       : "A1",
@@ -288,6 +300,7 @@ export const en_r: g.Ribosome[] = [
         readMode    : "start",
         private     : false,
     },
+
 
     
 
