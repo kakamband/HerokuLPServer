@@ -282,39 +282,39 @@ export const DNA: g.gene[] = [
 			source	: "https://learningenglish.voanews.com/a/lets-learn-english-lesson-28-i-passed-it/3487865.html"
 		}
 	},
-	// {
-	// 	title		: "Lesson 29: A Long Time Ago",
-	// 	text		:"",
-	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2016/09/8/8c/8c2f9c27-2b7f-4c98-b6ae-0dbba2276950_hq.mp4?download=1",
-	// 	avatarURL	: "https://gdb.voanews.com/C73A33FD-A7AD-4F05-A5A9-4B829FB9252B_w408_r1.jpg",
-	// 	initSnaps	: [],
-	// 	flags		: {
-	// 		source	: "https://learningenglish.voanews.com/a/lets-learn-english-lesson-29-a-long-time-ago/3509519.html"
-	// 	}
-	// },
-	// {
-	// 	title		: "Lesson 30: Rolling on the River ",
-	// 	text		:"",
-	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2016/09/f/fb/fbeacd5d-675d-408c-abef-737e766c95ba_hq.mp4?download=1",
-	// 	avatarURL	: "https://gdb.voanews.com/0A5CBB57-0FBA-445D-A902-B47345FFB4C5_w408_r1.jpg",
-	// 	initSnaps	: [],
-	// 	flags		: {
-	// 		source	: "https://learningenglish.voanews.com/a/lets-learn-english-lesson-30-rolling-river/3522798.html"
-	// 	}
-	// },
-	// {
-	// 	title		: "Lesson 31: Take Me Out to the Ball Game",
-	// 	text		:"",
-	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2016/10/b/bf/bf4c681d-5ef1-447c-89b3-cb07ec46bf01_hq.mp4?download=1",
-	// 	avatarURL	: "https://gdb.voanews.com/BFB5C3F8-6024-4D19-94F7-D1BF4E2D2363_w408_r1.jpg",
-	// 	initSnaps	: [],
-	// 	flags		: {
-	// 		source	: "https://learningenglish.voanews.com/a/lets-learn-english-lesson-31-take-me-out-to-the-ball-game/3535235.html"
-	// 	}
-	// },
+	{
+		title		: "Lesson 29: A Long Time Ago",
+		text		: "1\n00:00:18,264 --> 00:00:19,736\nHello!\n\n2\n00:00:19,752 --> 00:00:25,368\nIn Washington, D.C., there are many places that bring history to life.\n\n3\n00:00:25,856 --> 00:00:30,152\nBut people who live here often do not have time to see them.\n\n4\n00:00:30,272 --> 00:00:34,480\nThey are too busy with work -- like me.\n\n5\n00:00:38,320 --> 00:00:39,848\nHi, Marsha!\n\n6\n00:00:39,848 --> 00:00:42,544\nHi, Anna! Have a seat.\n\n7\n00:00:43,328 --> 00:00:47,152\nThanks. This was a good idea.\n\n8\n00:00:47,150 --> 00:00:50,640\nWorking outdoors is nice.\n\n9\n00:00:50,640 --> 00:00:53,432\nUm-hum, it is.\n\n10\n00:00:53,432 --> 00:00:57,032\nI am tired.\n\n11\n00:00:57,032 --> 00:01:00,792\nToday was a busy day at work.\n\n12\n00:01:00,792 --> 00:01:03,968\nAnd I still have work to do!\n\n13\n00:01:03,968 --> 00:01:07,216\nHmm, that’s too bad.\n\n14\n00:01:07,216 --> 00:01:09,216\nHow are you these days?\n\n15\n00:01:09,216 --> 00:01:12,000\nI'm really busy too, Anna.\n\n16\n00:01:12,000 --> 00:01:14,000\nLet’s get to work.\n\n17\n00:01:15,184 --> 00:01:16,704\nMarsha, look!\n\n18\n00:01:16,704 --> 00:01:20,680\nThat bus has a photo of Abraham Lincoln!\n\n19\n00:01:20,680 --> 00:01:25,080\nThat’s an advertisement for Ford’s Theatre.\n\n20\n00:01:25,080 --> 00:01:27,080\nThey have a new show.\n\n21\n00:01:27,080 --> 00:01:31,056\nThey have shows where Abraham Lincoln died?\n\n22\n00:01:31,056 --> 00:01:36,064\nYeah, it’s a working theater and a museum.\n\n23\n00:01:36,064 --> 00:01:39,976\nI love Lincoln.\n\n24\n00:02:15,904 --> 00:02:21,072\nYou know, Marsha, that advertisement reminds me of something.\n\n25\n00:02:22,672 --> 00:02:25,648\nUm-hum. What’s that?\n\n26\n00:02:25,648 --> 00:02:28,568\nWhen I was a little girl …\n\n27\n00:02:29,064 --> 00:02:32,464\nWhen I was a little girl …\n\n28\n00:02:34,152 --> 00:02:36,200\nI was not like other children.\n\n29\n00:02:36,968 --> 00:02:39,936\nUm-hum, I can believe that.\n\n30\n00:02:41,752 --> 00:02:44,752\nI was a tall, serious child.\n\n31\n00:02:44,752 --> 00:02:48,520\nAt the playground the other children played silly games.\n\n32\n00:02:48,520 --> 00:02:51,344\nThey played with dart guns.\n\n33\n00:02:51,340 --> 00:02:53,340\nThey played on the swings,\n\n34\n00:02:53,340 --> 00:02:56,552\nthe slide and the teeter-totter.\n\n35\n00:02:56,552 --> 00:03:01,280\nThey also played ball But not me.\n\n36\n00:03:01,280 --> 00:03:06,680\nI loved to read serious books about U.S. presidents.\n\n37\n00:03:06,680 --> 00:03:11,776\nIn fact, I wanted to be … don’t laugh …\n\n38\n00:03:12,576 --> 00:03:15,512\nPresident of the United States.\n\n39\n00:03:17,272 --> 00:03:22,048\nStop! I know it’s a silly childhood dream.\n\n40\n00:03:22,040 --> 00:03:23,792\nI’m sorry.\n\n41\n00:03:23,808 --> 00:03:25,390\nIt’s not silly.\n\n42\n00:03:25,392 --> 00:03:27,392\nGuess what I wanted to be?\n\n43\n00:03:27,390 --> 00:03:28,672\nWhat?\n\n44\n00:03:28,670 --> 00:03:33,270\nWhen I was a kid, I studied the stars and planets.\n\n45\n00:03:33,270 --> 00:03:37,032\nI wanted to fly into outer space!\n\n46\n00:03:37,032 --> 00:03:41,984\nYou know, Marsha, childhood dreams are really important.\n\n47\n00:03:41,984 --> 00:03:45,968\nThey are. And it’s good to remember them.\n\n48\n00:03:47,760 --> 00:03:51,312\nHey! I have an idea. Let’s go.\n\n49\n00:03:51,312 --> 00:03:53,312\nGo where?\n\n50\n00:03:54,240 --> 00:03:59,520\nLet’s go make our childhood dreams come true.\n\n51\n00:04:07,992 --> 00:04:11,544\nWe’re going to the Air & Space Museum! Yes!\n\n52\n00:04:13,544 --> 00:04:18,224\nNo. We’re going to see a show at Ford’s Theatre just like Abraham Lincoln did when he died!\n\n53\n00:04:18,224 --> 00:04:20,224\nIt’s not far from here.\n\n54\n00:04:20,224 --> 00:04:25,376\nUh huh. That is your childhood dream.\n\n55\n00:04:25,376 --> 00:04:27,376\nGood point.\n\n56\n00:04:27,376 --> 00:04:31,400\nOkay, next week, we'll come here and be astronauts.\n\n57\n00:04:31,400 --> 00:04:32,720\nHonestly?\n\n58\n00:04:32,720 --> 00:04:34,008\nHonestly.\n\n59\n00:04:38,776 --> 00:04:46,000\nTonight we are seeing a show at Ford’s Theatre, where a man shot President Abraham Lincoln.\n\n60\n00:04:46,000 --> 00:04:49,960\nThis is history come to life …\n\n61\n00:04:49,960 --> 00:04:54,984\nand a childhood dream come true! Until next time ...",
+		mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2016/09/8/8c/8c2f9c27-2b7f-4c98-b6ae-0dbba2276950_hq.mp4?download=1",
+		avatarURL	: "https://gdb.voanews.com/C73A33FD-A7AD-4F05-A5A9-4B829FB9252B_w408_r1.jpg",
+		initSnaps	: [],
+		flags		: {
+			source	: "https://learningenglish.voanews.com/a/lets-learn-english-lesson-29-a-long-time-ago/3509519.html"
+		}
+	},
+	{
+		title		: "Lesson 30: Rolling on the River ",
+		text		: "1\n00:00:17,731 --> 00:00:18,531\nHello!\n\n2\n00:00:18,531 --> 00:00:22,120\nWashington, D.C. sits on the Potomac River.\n\n3\n00:00:22,120 --> 00:00:26,828\nThis river is important to the history and culture of the city.\n\n4\n00:00:26,828 --> 00:00:32,062\nToday, I am at an outdoor seafood market near the Potomac River.\n\n5\n00:00:32,062 --> 00:00:38,640\nSome say it is the oldest outdoor seafood market in the United States!\n\n6\n00:00:38,640 --> 00:00:41,640\nI am here to buy seafood.\n\n7\n00:00:41,640 --> 00:00:44,640\nLet’s see what they have!\n\n8\n00:00:47,931 --> 00:00:50,365\nExcuse me. Can you help me?\n\n9\n00:00:50,360 --> 00:00:52,440\nSure! What do you need?\n\n10\n00:00:52,440 --> 00:00:52,451\nPete!\nSure! What do you need?\n\n11\n00:00:52,451 --> 00:00:53,251\nPete!\n\n12\n00:00:53,250 --> 00:00:54,222\nAnna!\n\n13\n00:00:54,240 --> 00:00:56,291\nWhat are you doing here?\n\n14\n00:00:56,291 --> 00:00:58,040\nI work here.\n\n15\n00:00:58,040 --> 00:01:00,931\nYou know, it’s not easy to be a writer.\n\n16\n00:01:00,931 --> 00:01:04,017\nYeah, I heard that. Sorry.\n\n17\n00:01:04,010 --> 00:01:06,640\nBut this job is great.\n\n18\n00:01:06,640 --> 00:01:09,234\nI work outside by the river.\n\n19\n00:01:09,234 --> 00:01:13,548\nAnd I can eat all the free seafood I want!\n\n20\n00:01:13,548 --> 00:01:15,314\nThat is great, Pete.\n\n21\n00:01:15,314 --> 00:01:20,211\nIn fact, I am here to buy some seafood for my dinner party.\n\n22\n00:01:20,211 --> 00:01:22,011\nYou came to the right place.\n\n23\n00:01:22,011 --> 00:01:24,828\nThey have the freshest seafood in town.\n\n24\n00:01:24,828 --> 00:01:26,622\nHow much money can you spend?\n\n25\n00:01:26,622 --> 00:01:29,971\nI can only spend $50.\n\n26\n00:01:29,971 --> 00:01:32,285\nOkay. What do you want?\n\n27\n00:01:32,285 --> 00:01:36,177\nFirst, I want to buy some shrimp.\n\n28\n00:01:36,177 --> 00:01:39,177\nSure thing. Follow me.\n\n29\n00:02:07,148 --> 00:02:09,514\nHow much shrimp do you want?\n\n30\n00:02:09,514 --> 00:02:13,377\nHow much do I need for five people?\n\n31\n00:02:15,520 --> 00:02:18,177\nGive her a pound of shrimp!\n\n32\n00:02:23,422 --> 00:02:28,514\nOk, now I want to buy some crabs.\n\n33\n00:02:28,514 --> 00:02:31,514\nThe crabs here are delicious!\n\n34\n00:02:31,514 --> 00:02:37,062\nThey are the best because they come from the nearby Chesapeake Bay!\n\n35\n00:02:37,062 --> 00:02:39,160\nWalk this way.\n\n36\n00:02:46,194 --> 00:02:48,194\nHow many crabs do you want?\n\n37\n00:02:49,160 --> 00:02:52,371\nI want a dozen crabs.\n\n38\n00:02:52,382 --> 00:02:54,851\nYou should get the larger crabs.\n\n39\n00:02:54,851 --> 00:02:56,880\nThey have the most meat.\n\n40\n00:02:56,880 --> 00:03:02,571\nThen I want a dozen large crabs, please!\n\n41\n00:03:03,005 --> 00:03:04,902\nIs that everything you need?\n\n42\n00:03:04,902 --> 00:03:09,371\nLet’s see … I have shrimp and crabs.\n\n43\n00:03:09,371 --> 00:03:15,051\nAnd a friend is bringing a salad and many ears of corn-on-the-cob.\n\n44\n00:03:15,051 --> 00:03:18,051\nIs that all the seafood that you need?\n\n45\n00:03:18,050 --> 00:03:19,325\nYes.\n\n46\n00:03:19,342 --> 00:03:25,028\nThat’ll be $49.95. Cash or credit?\n\n47\n00:03:25,028 --> 00:03:27,022\nCredit, please.\n\n48\n00:03:53,714 --> 00:03:57,170\nAnna, you love to eat seafood.\n\n49\n00:03:57,170 --> 00:03:58,788\nDid you grow up on the water?\n\n50\n00:03:58,788 --> 00:04:02,560\nNo, I didn’t. But I love the water.\n\n51\n00:04:02,560 --> 00:04:05,508\nAnd I love being on the water.\n\n52\n00:04:05,508 --> 00:04:07,182\nYou know how to sail?\n\n53\n00:04:07,182 --> 00:04:11,440\nWell … this afternoon I am going on a boat.\n\n54\n00:04:11,440 --> 00:04:15,320\nYou are full of surprises.\n\n55\n00:04:15,320 --> 00:04:19,268\nWhat kind of boat? Is it a motorboat or a sailboat?\n\n56\n00:04:19,268 --> 00:04:22,457\nIt’s a special boat, Pete.\n\n57\n00:04:22,457 --> 00:04:25,811\nWell, thanks for your help. See you later!\n\n58\n00:04:25,811 --> 00:04:27,605\nSee you, Anna!\n\n59\n00:04:27,605 --> 00:04:32,628\nWow, Anna’s a sailor! Who knew?\n\n60\n00:04:36,485 --> 00:04:42,274\nYes, rivers are important to the history and culture of Washington, D.C.\n\n61\n00:04:42,274 --> 00:04:49,302\nAnd now I am part of this city’s interesting waterfront culture.\n\n62\n00:04:49,302 --> 00:04:52,302\nUntil next time!",
+		mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2016/09/f/fb/fbeacd5d-675d-408c-abef-737e766c95ba_hq.mp4?download=1",
+		avatarURL	: "https://gdb.voanews.com/0A5CBB57-0FBA-445D-A902-B47345FFB4C5_w408_r1.jpg",
+		initSnaps	: [],
+		flags		: {
+			source	: "https://learningenglish.voanews.com/a/lets-learn-english-lesson-30-rolling-river/3522798.html"
+		}
+	},
+	{
+		title		: "Lesson 31: Take Me Out to the Ball Game",
+		text		: "1\n00:00:16,794 --> 00:00:18,674\nHi, there, sports fans!\n\n2\n00:00:18,674 --> 00:00:22,285\nBaseball is America’s sport.\n\n3\n00:00:22,285 --> 00:00:25,771\nToday, I am going to Nationals Park.\n\n4\n00:00:25,771 --> 00:00:31,942\nIt is home to Washington, D.C.’s baseball team -- the Washington Nationals!\n\n5\n00:00:35,034 --> 00:00:36,428\nHi, Jonathan!\n\n6\n00:00:36,428 --> 00:00:39,142\nHi, Anna! Where are you going?\n\n7\n00:00:39,142 --> 00:00:43,862\nI am taking a bus to a Nationals baseball game!\n\n8\n00:00:44,400 --> 00:00:46,297\nDon’t take the bus.\n\n9\n00:00:46,290 --> 00:00:48,914\nA taxi is faster than a bus.\n\n10\n00:00:48,948 --> 00:00:51,340\nOh, good idea.\n\n11\n00:00:51,340 --> 00:00:54,340\nYou know I love baseball.\n\n12\n00:00:54,340 --> 00:00:57,340\nThat’s great. Have fun.\n\n13\n00:00:57,340 --> 00:01:02,674\nIn fact, I wanted to be a baseball player.\n\n14\n00:01:02,674 --> 00:01:04,194\nIs this one of your memories?\n\n15\n00:01:04,194 --> 00:01:05,394\nI’m really busy.\n\n16\n00:01:05,394 --> 00:01:07,040\nThis won’t take long.\n\n17\n00:01:07,040 --> 00:01:10,468\nI can see it now... I am at home plate.\n\n18\n00:01:10,468 --> 00:01:12,468\nI wait for the pitch.\n\n19\n00:01:12,460 --> 00:01:14,880\nThe ball comes. I swing.\n\n20\n00:01:14,880 --> 00:01:16,114\nIt’s a hit!\n\n21\n00:01:16,114 --> 00:01:23,577\nI run to first base, second base, third base, then home plate.\n\n22\n00:01:24,948 --> 00:01:26,577\nIt’s a home run!\n\n23\n00:01:26,577 --> 00:01:29,508\nThe crowd cheers! Woo hoo!\n\n24\n00:01:29,508 --> 00:01:31,771\nYou really love baseball.\n\n25\n00:01:31,771 --> 00:01:33,600\nHave fun at the game, Anna.\n\n26\n00:01:33,600 --> 00:01:36,600\nThanks, Jonathan.Taxi!\n\n27\n00:01:53,474 --> 00:01:55,382\nHi, Anna.\n\n28\n00:01:55,382 --> 00:01:56,388\nHi, Ashley.\n\n29\n00:01:56,388 --> 00:01:57,474\nWhere are you going?\n\n30\n00:01:57,474 --> 00:02:00,880\nI am going to see a Nationals baseball game!\n\n31\n00:02:00,880 --> 00:02:02,845\nWhat time is the game?\n\n32\n00:02:02,891 --> 00:02:04,148\n7 o’clock.\n\n33\n00:02:04,140 --> 00:02:05,348\nDo you have a ticket?\n\n34\n00:02:05,340 --> 00:02:06,662\nNo, not yet.\n\n35\n00:02:06,662 --> 00:02:11,348\nAnna, you should go a lot earlier than 7 o’clock.\n\n36\n00:02:11,348 --> 00:02:15,062\nThat is why I’m taking a taxi. Taxi!\n\n37\n00:02:15,062 --> 00:02:18,062\nAnna, Anna, that’s not a good idea.\n\n38\n00:02:18,062 --> 00:02:21,840\nA bicycle is faster than a taxi.\n\n39\n00:02:21,840 --> 00:02:25,588\nOh, Ashley. Ashley, Ashley, Ashley.\n\n40\n00:02:25,588 --> 00:02:29,588\nA car is faster than your bicycle.\n\n41\n00:02:29,588 --> 00:02:35,040\nIn D.C. traffic sometimes a bicycle is faster than a car.\n\n42\n00:02:35,040 --> 00:02:38,102\nAnd right now, there is a lot of traffic.\n\n43\n00:02:38,102 --> 00:02:39,280\nGood point.\n\n44\n00:02:39,280 --> 00:02:42,902\nBut I don’t have a bicycle.\n\n45\n00:02:48,434 --> 00:02:51,817\nOkay, Anna, you can use my bicycle.\n\n46\n00:02:51,817 --> 00:02:58,400\nThanks! I really want to learn how to ride one.\n\n47\n00:02:58,400 --> 00:03:02,194\nWhat do you mean, learn how to ride a bike?\n\n48\n00:03:02,194 --> 00:03:06,182\nOh, Anna! Anna, Anna!\n\n49\n00:03:13,782 --> 00:03:19,965\nYou know, Anna, the Metro is faster than a taxi and a bicycle.\n\n50\n00:03:19,965 --> 00:03:22,148\nYou ought to take the Metro.\n\n51\n00:03:22,148 --> 00:03:23,622\nIt’s that way.\n\n52\n00:03:23,622 --> 00:03:25,417\nGood idea.\n\n53\n00:03:25,417 --> 00:03:26,148\nOK.\n\n54\n00:03:26,148 --> 00:03:27,417\nSee you later!\n\n55\n00:03:27,417 --> 00:03:28,160\nBye, Anna!\n\n56\n00:03:28,160 --> 00:03:28,948\nBye!\n\n57\n00:03:49,531 --> 00:03:54,765\nThe Metro was a lot faster than a bus, taxi or bike.\n\n58\n00:03:54,765 --> 00:03:58,217\nAnd now I’m at Nationals Park!\n\n59\n00:04:02,240 --> 00:04:04,308\nLook at all these fans!\n\n60\n00:04:04,308 --> 00:04:07,897\nSo many people like to watch baseball.\n\n61\n00:04:12,102 --> 00:04:14,697\nThere’s the ticket window.\n\n62\n00:04:18,068 --> 00:04:21,680\nWhat? The tickets are sold out?\n\n63\n00:04:21,680 --> 00:04:29,725\nNooooooo!Nooooooo!\n\n64\n00:04:34,754 --> 00:04:38,720\nBut I really want to watch a baseball game.\n\n65\n00:04:38,720 --> 00:04:41,405\nDoes anyone have an extra ticket?\n\n66\n00:04:41,405 --> 00:04:44,754\nNext time, you should buy your ticket online.\n\n67\n00:04:44,754 --> 00:04:47,754\nThanks. Thanks a lot.\n\n68\n00:04:47,754 --> 00:04:49,851\nIt is good advice.\n\n69\n00:04:49,851 --> 00:04:53,017\nBeing early is better than being late.\n\n70\n00:04:55,085 --> 00:04:56,365\nUntil next time …",
+		mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2016/10/b/bf/bf4c681d-5ef1-447c-89b3-cb07ec46bf01_hq.mp4?download=1",
+		avatarURL	: "https://gdb.voanews.com/BFB5C3F8-6024-4D19-94F7-D1BF4E2D2363_w408_r1.jpg",
+		initSnaps	: [],
+		flags		: {
+			source	: "https://learningenglish.voanews.com/a/lets-learn-english-lesson-31-take-me-out-to-the-ball-game/3535235.html"
+		}
+	},
 	// {
 	// 	title		: "Lesson 32: Welcome to the Treehouse!",
-	// 	text		:"",
+	// 	text		: "",
 	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2016/10/3/3d/3d1c7d86-d4ce-47f4-b6a2-4540f0bf899e_hq.mp4?download=1",
 	// 	avatarURL	: "https://gdb.voanews.com/8110B26E-95C5-4E36-B947-12646F1B3FD2_w408_r1.jpg",
 	// 	initSnaps	: [],
@@ -324,7 +324,7 @@ export const DNA: g.gene[] = [
 	// },
 	// {
 	// 	title		: "Lesson 33: Learning America's Sport",
-	// 	text		:"",
+	// 	text		: "",
 	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2016/10/f/fb/fb1732d2-a64f-485e-93e9-40acb968c5ea_hq.mp4?download=1",
 	// 	avatarURL	: "https://gdb.voanews.com/76FD24B1-AF74-4523-9A19-1F73F56C330E_w408_r1.jpg",
 	// 	initSnaps	: [],
@@ -334,7 +334,7 @@ export const DNA: g.gene[] = [
 	// },
 	// {
 	// 	title		: "Lesson 34: What Will I Do?",
-	// 	text		:"",
+	// 	text		: "",
 	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2016/10/5/58/58320812-fc3c-4304-9a00-f2a54f99bc1a_hq.mp4?download=1",
 	// 	avatarURL	: "https://gdb.voanews.com/1A3F9E05-FBF7-4DD7-8867-0BCBE4455071_w408_r1.jpg",
 	// 	initSnaps	: [],
@@ -344,7 +344,7 @@ export const DNA: g.gene[] = [
 	// },
 	// {
 	// 	title		: "Lesson 35: Let’s Make Dinner!",
-	// 	text		:"",
+	// 	text		: "",
 	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2016/11/3/38/382d0bb2-438b-4de1-8733-2e27dbdd42e0_hq.mp4?download=1",
 	// 	avatarURL	: "https://gdb.voanews.com/B50F4543-A480-4D3A-A600-0759323CB59C_w408_r1.jpg",
 	// 	initSnaps	: [],
@@ -354,7 +354,7 @@ export const DNA: g.gene[] = [
 	// },
 	// {
 	// 	title		: "Lesson 36: I Can Fix This!",
-	// 	text		:"",
+	// 	text		: "",
 	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2016/11/a/a7/a7ba11f3-c76d-404d-9948-fd0bbb5e573f_hq.mp4?download=1",
 	// 	avatarURL	: "https://gdb.voanews.com/1F535D7A-8AC9-408D-8983-9940782CD296_w408_r1.jpg",
 	// 	initSnaps	: [],
@@ -364,7 +364,7 @@ export const DNA: g.gene[] = [
 	// },
 	// {
 	// 	title		: "Lesson 37: Let's Agree to Disagree",
-	// 	text		:"",
+	// 	text		: "",
 	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2016/11/a/ad/ad1f2f24-e763-44d3-8de8-7c7c2c526c64_hq.mp4?download=1",
 	// 	avatarURL	: "https://gdb.voanews.com/0B12980B-967A-44C5-B3D6-3251167CD8BD_w408_r1.jpg",
 	// 	initSnaps	: [],
@@ -374,7 +374,7 @@ export const DNA: g.gene[] = [
 	// },
 	// {
 	// 	title		: "Lesson 38: She's My Best Friend!",
-	// 	text		:"",
+	// 	text		: "",
 	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2016/11/1/16/160b46a5-30e5-4469-9098-c826d2f14e55_hq.mp4?download=1",
 	// 	avatarURL	: "https://gdb.voanews.com/DE96C7C5-06D3-4DCF-B84C-5D74F5AF6632_w408_r1.jpg",
 	// 	initSnaps	: [],
@@ -384,7 +384,7 @@ export const DNA: g.gene[] = [
 	// },
 	// {
 	// 	title		: "Lesson 39: It’s Unbelievable!",
-	// 	text		:"",
+	// 	text		: "",
 	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2016/12/f/f3/f3269877-dd73-4db5-bb46-82c8b81215af_hq.mp4?download=1",
 	// 	avatarURL	: "https://gdb.voanews.com/7B654EAE-13D8-440A-BF76-13F2A0798853_w408_r1.jpg",
 	// 	initSnaps	: [],
@@ -394,7 +394,7 @@ export const DNA: g.gene[] = [
 	// },
 	// {
 	// 	title		: "Lesson 40: The Woods Are Alive",
-	// 	text		:"",
+	// 	text		: "",
 	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2016/12/7/7c/7c61c547-7834-466f-b12a-befa0a9e8c1b_hq.mp4?download=1",
 	// 	avatarURL	: "https://gdb.voanews.com/F8922642-0FD5-457B-BDCA-BB52E8F5AB9B_w408_r1.jpg",
 	// 	initSnaps	: [],
@@ -404,7 +404,7 @@ export const DNA: g.gene[] = [
 	// },
 	// {
 	// 	title		: "Lesson 41: Teamwork Works Best With a Team",
-	// 	text		:"",
+	// 	text		: "",
 	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2017/01/6/63/631e44c7-a425-44cd-91cd-e8686d151683_hq.mp4?download=1",
 	// 	avatarURL	: "https://gdb.voanews.com/E6F0D328-A9A5-4C1A-BD9D-F061BF702042_w408_r1.png",
 	// 	initSnaps	: [],
@@ -414,7 +414,7 @@ export const DNA: g.gene[] = [
 	// },
 	// {
 	// 	title		: "Lesson 42: I Was Minding My Own Business",
-	// 	text		:"",
+	// 	text		: "",
 	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2017/01/9/95/9509c438-7958-4b5f-92ba-f942f553e0b6_hq.mp4?download=1",
 	// 	avatarURL	: "https://gdb.voanews.com/824B606C-4327-43E7-90A5-A8FDF7E20870_w408_r1.jpg",
 	// 	initSnaps	: [],
@@ -424,7 +424,7 @@ export const DNA: g.gene[] = [
 	// },
 	// {
 	// 	title		: "Lesson 43: Time for Plan B",
-	// 	text		:"",
+	// 	text		: "",
 	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2017/01/c/c4/c42b9a43-3a42-48a8-a152-a786a8546916_hq.mp4?download=1",
 	// 	avatarURL	: "https://gdb.voanews.com/33274B8C-0F6D-46E9-8111-09B7E27BF7E1_w408_r1.jpg",
 	// 	initSnaps	: [],
@@ -434,7 +434,7 @@ export const DNA: g.gene[] = [
 	// },
 	// {
 	// 	title		: "Lesson 44: Making Healthy Choices",
-	// 	text		:"",
+	// 	text		: "",
 	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2017/01/a/a0/a01af564-b8cf-487a-9e1e-59f70da87c08_hq.mp4?download=1",
 	// 	avatarURL	: "https://gdb.voanews.com/D72975CE-2AA4-4F24-83EB-E95DE94E5335_w408_r1.png",
 	// 	initSnaps	: [],
@@ -444,7 +444,7 @@ export const DNA: g.gene[] = [
 	// },
 	// {
 	// 	title		: "Lesson 45: This Land is Your Land",
-	// 	text		:"",
+	// 	text		: "",
 	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2017/03/1/19/19e8e43e-f2af-4026-aba2-e8067d2873e9_hq.mp4?download=1",
 	// 	avatarURL	: "https://gdb.voanews.com/874B3DA7-D5AB-430F-A9D5-BDDD66F194C4_w408_r1.jpg",
 	// 	initSnaps	: [],
@@ -454,7 +454,7 @@ export const DNA: g.gene[] = [
 	// },
 	// {
 	// 	title		: "Lesson 46: May I Borrow That? ",
-	// 	text		:"",
+	// 	text		: "",
 	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2017/02/b/b9/b9dfc6f9-e285-46b2-a579-f0588a6b8bcf_hq.mp4?download=1",
 	// 	avatarURL	: "https://gdb.voanews.com/9AAA0997-FA4C-4F68-A521-596E74BBEE6C_w408_r1.jpg",
 	// 	initSnaps	: [],
@@ -464,7 +464,7 @@ export const DNA: g.gene[] = [
 	// },
 	// {
 	// 	title		: "Lesson 47: How Can I help?",
-	// 	text		:"",
+	// 	text		: "",
 	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2017/03/2/2f/2f53f7d3-ebff-4f22-8ec7-deebf1a6c13a_hq.mp4?download=1",
 	// 	avatarURL	: "https://gdb.voanews.com/EBBC4A86-B4B9-4096-B8DC-D94021FDD4DB_w408_r1.jpg",
 	// 	initSnaps	: [],
@@ -474,7 +474,7 @@ export const DNA: g.gene[] = [
 	// },
 	// {
 	// 	title		: "Lesson 48: Have You Ever ...?",
-	// 	text		:"",
+	// 	text		: "",
 	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2017/03/4/4f/4f0a87f0-825e-4f38-b608-72d705be8ec2_hq.mp4?download=1",
 	// 	avatarURL	: "https://gdb.voanews.com/E41989E1-6812-40A5-A030-DDDFE0F05AC3_w408_r1.jpg",
 	// 	initSnaps	: [],
@@ -484,7 +484,7 @@ export const DNA: g.gene[] = [
 	// },
 	// {
 	// 	title		: "Lesson 49: Operation Spy!",
-	// 	text		:"",
+	// 	text		: "",
 	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2017/03/c/c4/c40ced29-0673-48e8-9cd3-1d59dff502e5_hq.mp4?download=1",
 	// 	avatarURL	: "https://gdb.voanews.com/439E3D2B-FF0A-4BD0-9F7A-EB3FD4442375_w408_r1.jpg",
 	// 	initSnaps	: [],
@@ -494,7 +494,7 @@ export const DNA: g.gene[] = [
 	// },
 	// {
 	// 	title		: "Lesson 50: Back to School",
-	// 	text		:"",
+	// 	text		: "",
 	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2017/04/5/51/51caa389-8c37-4e87-aa38-5d358cbf0632_hq.mp4?download=1",
 	// 	avatarURL	: "https://gdb.voanews.com/2AA254F1-4406-4F46-8604-3D30023A4FE3_w408_r1.png",
 	// 	initSnaps	: [],
@@ -504,7 +504,7 @@ export const DNA: g.gene[] = [
 	// },
 	// {
 	// 	title		: "Lesson 51: A Good Habit",
-	// 	text		:"",
+	// 	text		: "",
 	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2017/04/b/b7/b758b6e0-965a-48c2-b732-b641ece6b3c7_hq.mp4?download=1",
 	// 	avatarURL	: "https://gdb.voanews.com/26CAB0B6-F946-49C4-A33A-2168E0577101_w408_r1.jpg",
 	// 	initSnaps	: [],
@@ -514,7 +514,7 @@ export const DNA: g.gene[] = [
 	// },
 	// {
 	// 	title		: "Lesson 52: Taking Chances",
-	// 	text		:"",
+	// 	text		: "",
 	// 	mediaURL	: "https://av.voanews.com/Videoroot/Pangeavideo/2017/04/7/72/726f48c3-629f-4280-bbef-aca08504c20a_hq.mp4?download=1",
 	// 	avatarURL	: "https://gdb.voanews.com/BF617F89-C9CE-4355-A1B0-1A1BD76A6732_w408_r1.jpg",
 	// 	initSnaps	: [],
