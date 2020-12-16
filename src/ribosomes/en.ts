@@ -314,6 +314,18 @@ export const en_r: g.Ribosome[] = [
     },
     {
         institute   : "en",
+        code        : "VOARAPG",
+        type        : "audio",
+		level       : "B1",
+		title       : "Rappaccini’s Daughter",
+        avatar      : "https://images.squarespace-cdn.com/content/586c9aa4bebafbc74759b4d2/1484878357680-PXLNN6BQMSCVOTSI9VE9/key+scene+2+re.png?format=1000w&content-type=image%2Fpng",
+        source      : "learningenglish.voanews.com",
+        contains    : null,
+        readMode    : "start",
+        private     : false,
+    },
+    {
+        institute   : "en",
         code        : "VOAANA1",
         type        : "video",
 		level       : "A1",
