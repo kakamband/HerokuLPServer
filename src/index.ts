@@ -21,7 +21,7 @@ app.use( bodyParser.json() );
 app.get( '/beautyBGList', ( req: express.Request, res: express.Response ) => {
     let list = {
         sign    : { height: "35%", translateY: 0    } ,
-        skull   : { height: "40%", translateY: -30  } ,
+        // skull   : { height: "45%", translateY: -30  } ,
         mountain: { height: "45%", translateY: 0    } ,
         bird    : { height: "30%", translateY: -100 } ,
         elephant: { height: "40%", translateY: 0    } ,
